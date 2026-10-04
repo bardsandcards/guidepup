@@ -250,7 +250,10 @@ export class XcuiAgent {
    * Shut the agent down. VoiceOver keeps running.
    */
   async stop(): Promise<void> {
-    const exited = new Promise((done) => this.#child.once("exit", done));
+    const exited =
+      this.#child.exitCode === null && this.#child.signalCode === null
+        ? new Promise((done) => this.#child.once("exit", done))
+        : Promise.resolve();
 
     try {
       await this.#request({ command: "shutdown" });
