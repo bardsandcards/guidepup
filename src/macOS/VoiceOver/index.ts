@@ -56,3 +56,5 @@ export { _VoiceOver as VoiceOver };
 
 export { CommanderCommands as VoiceOverCommanderCommands } from "./CommanderCommands";
 export { keyCodeCommands as voiceOverKeyCodeCommands } from "./keyCodeCommands";
+export { XcuiAgent } from "./xcui/XcuiAgent";
+export type { XcuiDirection, XcuiSpeech } from "./xcui/XcuiAgent";
