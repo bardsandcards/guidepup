@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65DE1E23240CF38504FB5516 /* VoiceOverAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98572CB0E0A28F395C71E2FF /* VoiceOverAgentTests.swift */; };
+		F39D2C8A965348153465BF14 /* AgentHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DC1D172EFAFC010FEE971 /* AgentHostApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED97F6343890AB936659E522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28CFB022249CF5D3C775466B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE9A82B7285CEC897966D190;
+			remoteInfo = AgentHost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AB67EB80747BCAFB39825D2 /* AgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98572CB0E0A28F395C71E2FF /* VoiceOverAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverAgentTests.swift; sourceTree = "<group>"; };
+		A22D108BA63EFD0F406D7928 /* AgentHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgentHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78DC1D172EFAFC010FEE971 /* AgentHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentHostApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		148761415409A468CC7D51E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A22D108BA63EFD0F406D7928 /* AgentHost.app */,
+				3AB67EB80747BCAFB39825D2 /* AgentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6720CD03DCDF2156048C1106 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				E78DC1D172EFAFC010FEE971 /* AgentHostApp.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		D2F9E22B6218F4F2737CCABB = {
+			isa = PBXGroup;
+			children = (
+				F92B441E6A0CA77A8C7AF3DD /* AgentTests */,
+				6720CD03DCDF2156048C1106 /* Host */,
+				148761415409A468CC7D51E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F92B441E6A0CA77A8C7AF3DD /* AgentTests */ = {
+			isa = PBXGroup;
+			children = (
+				98572CB0E0A28F395C71E2FF /* VoiceOverAgentTests.swift */,
+			);
+			path = AgentTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B2C3078852BD7481DEE1EE0 /* AgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3E4F13C7DF21C2E99AAA66 /* Build configuration list for PBXNativeTarget "AgentTests" */;
+			buildPhases = (
+				AAAA2D9CA4C79F407DA63230 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4250E5402D73C8234DA8C24D /* PBXTargetDependency */,
+			);
+			name = AgentTests;
+			packageProductDependencies = (
+			);
+			productName = AgentTests;
+			productReference = 3AB67EB80747BCAFB39825D2 /* AgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EE9A82B7285CEC897966D190 /* AgentHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A0C8C7E16356DE94C33CB63 /* Build configuration list for PBXNativeTarget "AgentHost" */;
+			buildPhases = (
+				9B7E01B0AED91C3346D6876C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgentHost;
+			packageProductDependencies = (
+			);
+			productName = AgentHost;
+			productReference = A22D108BA63EFD0F406D7928 /* AgentHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CFB022249CF5D3C775466B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9B2C3078852BD7481DEE1EE0 = {
+						ProvisioningStyle = Manual;
+						TestTargetID = EE9A82B7285CEC897966D190;
+					};
+					EE9A82B7285CEC897966D190 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 7C1A9BC03D0479303E16B347 /* Build configuration list for PBXProject "VoiceOverAgent" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D2F9E22B6218F4F2737CCABB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 148761415409A468CC7D51E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9A82B7285CEC897966D190 /* AgentHost */,
+				9B2C3078852BD7481DEE1EE0 /* AgentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B7E01B0AED91C3346D6876C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39D2C8A965348153465BF14 /* AgentHostApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAA2D9CA4C79F407DA63230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DE1E23240CF38504FB5516 /* VoiceOverAgentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4250E5402D73C8234DA8C24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE9A82B7285CEC897966D190 /* AgentHost */;
+			targetProxy = ED97F6343890AB936659E522 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23B3EFB1DDE36F335B6409CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.guidepup.voiceover-agent.tests";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = AgentHost;
+			};
+			name = Debug;
+		};
+		2446B8B9D7D111FB7B7AB1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.guidepup.voiceover-agent.tests";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = AgentHost;
+			};
+			name = Release;
+		};
+		58AD237D62464091FE079850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		92AE350812E769F76F8BB8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.guidepup.voiceover-agent.host";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC35F85766762DE1B084347D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F3F5AAC1655E05008AB05C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.guidepup.voiceover-agent.host";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C1A9BC03D0479303E16B347 /* Build configuration list for PBXProject "VoiceOverAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC35F85766762DE1B084347D /* Debug */,
+				58AD237D62464091FE079850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E3E4F13C7DF21C2E99AAA66 /* Build configuration list for PBXNativeTarget "AgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B3EFB1DDE36F335B6409CA /* Debug */,
+				2446B8B9D7D111FB7B7AB1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A0C8C7E16356DE94C33CB63 /* Build configuration list for PBXNativeTarget "AgentHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F5AAC1655E05008AB05C10 /* Debug */,
+				92AE350812E769F76F8BB8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28CFB022249CF5D3C775466B /* Project object */;
+}

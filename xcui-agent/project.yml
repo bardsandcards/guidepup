@@ -1,0 +1,36 @@
+name: VoiceOverAgent
+options:
+  deploymentTarget:
+    macOS: "27.0"
+settings:
+  base:
+    GENERATE_INFOPLIST_FILE: YES
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    SWIFT_VERSION: "6.0"
+targets:
+  AgentHost:
+    type: application
+    platform: macOS
+    sources: [Host]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.guidepup.voiceover-agent.host
+  AgentTests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources: [AgentTests]
+    dependencies:
+      - target: AgentHost
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.guidepup.voiceover-agent.tests
+        TEST_TARGET_NAME: AgentHost
+schemes:
+  VoiceOverAgent:
+    build:
+      targets:
+        AgentHost: all
+        AgentTests: [test]
+    test:
+      targets: [AgentTests]
