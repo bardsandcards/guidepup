@@ -1,9 +1,9 @@
 import { ChildProcess, execFileSync, spawn } from "child_process";
+import { createInterface, Interface } from "node:readline";
 import { createServer, Server, Socket } from "node:net";
 import { existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { base } from "../../../debug";
-import { createInterface } from "node:readline";
 import { homedir } from "node:os";
 import { randomBytes } from "node:crypto";
 
@@ -22,6 +22,9 @@ const CONNECT_TIMEOUT = 120_000;
 const STOP_TIMEOUT = 10_000;
 const OUTPUT_TAIL = 4000;
 
+/** XCUIVoiceOverService's "No speech available" error. */
+const NO_SPEECH = { domain: "com.apple.xctest.voiceoverservice", code: 3 };
+
 export type XcuiDirection = "forward" | "backward" | "in" | "out";
 
 export interface XcuiSpeech {
@@ -29,10 +32,18 @@ export interface XcuiSpeech {
   utterance: string;
   /** Whether the utterance reached the 64 character limit and may be cut off. */
   truncated: boolean;
+  /**
+   * VoiceOver said nothing for this element. Often an unlabelled element worth
+   * investigating; repeated silence after moving can also mean the cursor is
+   * stuck at the end of a container.
+   */
+  silent: boolean;
 }
 
+type AgentResponse = Record<string, unknown>;
+
 interface Pending {
-  resolve: (response: Record<string, unknown>) => void;
+  resolve: (response: AgentResponse) => void;
   reject: (error: Error) => void;
 }
 
@@ -94,6 +105,10 @@ function buildAgent(): string {
   return xctestrun;
 }
 
+function agentError(response: AgentResponse): Error {
+  return new Error(`XCUI agent: ${response.error} (code ${response.code})`);
+}
+
 /**
  * Drives VoiceOver through Apple's XCUIVoiceOverService (macOS 27+).
  *
@@ -108,13 +123,19 @@ export class XcuiAgent {
   #child: ChildProcess;
   #queue: Promise<unknown> = Promise.resolve();
   #pending: Pending[] = [];
+  #closed = false;
 
-  private constructor(server: Server, socket: Socket, child: ChildProcess) {
+  private constructor(
+    server: Server,
+    socket: Socket,
+    lines: Interface,
+    child: ChildProcess,
+  ) {
     this.#server = server;
     this.#socket = socket;
     this.#child = child;
 
-    createInterface({ input: socket }).on("line", (line) => {
+    lines.on("line", (line) => {
       const pending = this.#pending.shift();
 
       try {
@@ -125,6 +146,8 @@ export class XcuiAgent {
     });
 
     socket.on("close", () => {
+      this.#closed = true;
+
       for (const pending of this.#pending.splice(0)) {
         pending.reject(new Error("XCUI agent disconnected"));
       }
@@ -174,11 +197,19 @@ export class XcuiAgent {
     child.stderr.on("data", collect);
 
     try {
-      const socket = await new Promise<Socket>((done, fail) => {
+      const { socket, lines } = await new Promise<{
+        socket: Socket;
+        lines: Interface;
+      }>((done, fail) => {
         const timer = setTimeout(
           () => fail(new Error("Timed out waiting for the XCUI agent")),
           CONNECT_TIMEOUT,
         );
+
+        child.once("error", (error) => {
+          clearTimeout(timer);
+          fail(new Error(`XCUI agent could not be launched: ${error.message}`));
+        });
 
         child.once("exit", (code) => {
           clearTimeout(timer);
@@ -190,7 +221,14 @@ export class XcuiAgent {
         });
 
         server.on("connection", (socket) => {
-          createInterface({ input: socket }).once("line", (line) => {
+          const lines = createInterface({ input: socket });
+
+          // A dropped connection surfaces as an error on the socket, which
+          // readline re-emits; "close" follows and fails pending requests.
+          const logError = (error: Error) => debug("connection error", error);
+          socket.on("error", logError);
+          lines.on("error", logError);
+          lines.once("line", (line) => {
             let hello: unknown;
 
             try {
@@ -207,14 +245,14 @@ export class XcuiAgent {
             }
 
             clearTimeout(timer);
-            done(socket);
+            done({ socket, lines });
           });
         });
       });
 
       debug("agent connected");
 
-      return new XcuiAgent(server, socket, child);
+      return new XcuiAgent(server, socket, lines, child);
     } catch (error) {
       child.kill();
       server.close();
@@ -236,14 +274,14 @@ export class XcuiAgent {
    * Move the VoiceOver cursor and return what VoiceOver said.
    */
   async move(direction: XcuiDirection): Promise<XcuiSpeech> {
-    return this.#speech(await this.#request({ command: "move", direction }));
+    return this.#speech({ command: "move", direction });
   }
 
   /**
    * What VoiceOver says for the element under the VoiceOver cursor.
    */
   async speech(): Promise<XcuiSpeech> {
-    return this.#speech(await this.#request({ command: "speech" }));
+    return this.#speech({ command: "speech" });
   }
 
   /**
@@ -269,35 +307,55 @@ export class XcuiAgent {
     this.#server.close();
   }
 
-  #speech(response: Record<string, unknown>): XcuiSpeech {
-    return {
-      utterance: response.utterance as string,
-      truncated: response.truncated as boolean,
-    };
+  async #speech(message: object): Promise<XcuiSpeech> {
+    const response = await this.#exchange(message);
+
+    if (response.ok) {
+      return {
+        utterance: response.utterance as string,
+        truncated: response.truncated as boolean,
+        silent: false,
+      };
+    }
+
+    if (
+      response.domain === NO_SPEECH.domain &&
+      response.code === NO_SPEECH.code
+    ) {
+      return { utterance: "", truncated: false, silent: true };
+    }
+
+    throw agentError(response);
   }
 
-  #request(message: object): Promise<Record<string, unknown>> {
+  async #request(message: object): Promise<AgentResponse> {
+    const response = await this.#exchange(message);
+
+    if (!response.ok) {
+      throw agentError(response);
+    }
+
+    return response;
+  }
+
+  #exchange(message: object): Promise<AgentResponse> {
     // The agent handles one request at a time, in order.
-    const request = this.#queue.then(
+    const exchange = this.#queue.then(
       () =>
-        new Promise<Record<string, unknown>>((done, fail) => {
-          this.#pending.push({
-            resolve: (response) =>
-              response.ok
-                ? done(response)
-                : fail(
-                    new Error(
-                      `XCUI agent: ${response.error} (code ${response.code})`,
-                    ),
-                  ),
-            reject: fail,
-          });
+        new Promise<AgentResponse>((resolve, reject) => {
+          if (this.#closed) {
+            reject(new Error("XCUI agent disconnected"));
+
+            return;
+          }
+
+          this.#pending.push({ resolve, reject });
           this.#socket.write(`${JSON.stringify(message)}\n`);
         }),
     );
 
-    this.#queue = request.catch(() => undefined);
+    this.#queue = exchange.catch(() => undefined);
 
-    return request;
+    return exchange;
   }
 }
