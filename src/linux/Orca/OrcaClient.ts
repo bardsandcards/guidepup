@@ -743,6 +743,8 @@ export class OrcaClient extends EventEmitter {
     this.#xvfbDisplay = null;
     this.#xvfbProcess = null;
 
+    await this.#sessionDBus?.close();
+
     this.#sessionDBusAddress = null;
     this.#sessionDBusProcess = null;
     this.#sessionDBus = null;
