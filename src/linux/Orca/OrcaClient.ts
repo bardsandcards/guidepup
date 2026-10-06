@@ -255,7 +255,10 @@ export class OrcaClient extends EventEmitter {
         throw new Error(ERR_ORCA_AT_SPI_LAUNCHER_MISSING);
       }
 
+      // In its own process group, so that stop() also reaches the a11y bus
+      // and at-spi2-registryd that the launcher starts, which outlive it.
       this.#atSpiProcess = spawn(atSpiLauncher, ["--launch-immediately"], {
+        detached: true,
         env: {
           ...process.env,
           DBUS_SESSION_BUS_ADDRESS: this.#sessionDBusAddress,
@@ -720,9 +723,9 @@ export class OrcaClient extends EventEmitter {
     }
 
     if (this.#atSpiProcess && this.#atSpiProcess.exitCode === null) {
-      debug("Terminating AT-SPI process...");
+      debug("Terminating AT-SPI process group...");
 
-      this.#atSpiProcess.kill("SIGTERM");
+      process.kill(-this.#atSpiProcess.pid, "SIGTERM");
     }
 
     if (
