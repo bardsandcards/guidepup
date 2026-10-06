@@ -631,10 +631,28 @@ export class OrcaClient extends EventEmitter {
     ): Promise<OrcaService[K]> => {
       const moduleDefinition = serviceDefinition.modules[name];
 
-      const dbusInterface = await sessionDBusOrcaService.getInterface(
-        moduleDefinition.objectPath,
-        "org.gnome.Orca.Module",
-      );
+      // Orca registers its module objects after taking its D-Bus name, so a
+      // module may not be available yet. Retry until it is.
+      const getModuleInterface = async () => {
+        const startTime = Date.now();
+
+        for (;;) {
+          try {
+            return await sessionDBusOrcaService.getInterface(
+              moduleDefinition.objectPath,
+              "org.gnome.Orca.Module",
+            );
+          } catch (error) {
+            if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
+              throw error;
+            }
+          }
+
+          await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL));
+        }
+      };
+
+      const dbusInterface = await getModuleInterface();
 
       return {
         commands: Object.fromEntries(
