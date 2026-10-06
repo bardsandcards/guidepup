@@ -38,6 +38,7 @@ const POLL_INTERVAL = 500;
 const MAX_POLL_TIMEOUT = 5_000;
 const MAX_CONSECUTIVE_CONNECTION_FAILURES = 20;
 const SPEECH_DEBOUNCE_TIMEOUT = 1000;
+const INITIAL_CAPTURE_QUIET_TIMEOUT = 100;
 const PROCESS_EXIT_TIMEOUT = 5_000;
 
 /**
@@ -871,13 +872,21 @@ export class OrcaClient extends EventEmitter {
 
         let timeoutId: NodeJS.Timeout = null;
 
+        const isInitialCapture =
+          (options?.capture ?? this.#capture) === "initial";
+
         const speechHandler = (spokenPhrase: string) => {
           spokenPhrases.push(spokenPhrase);
 
-          if ((options?.capture ?? this.#capture) === "initial") {
+          if (isInitialCapture) {
+            // Orca speaks a single item as several utterances in quick
+            // succession (e.g. "Skip to", "link."), so collect the burst
+            // until it goes quiet rather than stopping at the first one.
             clearTimeout(timeoutId);
-            this.removeListener(SPEECH, speechHandler);
-            speechPromiseResolver();
+            timeoutId = setTimeout(
+              timeoutHandler,
+              INITIAL_CAPTURE_QUIET_TIMEOUT,
+            );
           } else if (timeoutId !== null) {
             clearTimeout(timeoutId);
             timeoutId = setTimeout(timeoutHandler, SPEECH_DEBOUNCE_TIMEOUT);
@@ -895,7 +904,11 @@ export class OrcaClient extends EventEmitter {
         result = await action();
         debug("action completed");
 
-        timeoutId = setTimeout(timeoutHandler, SPEECH_DEBOUNCE_TIMEOUT);
+        // An initial capture that already heard speech during the action is
+        // waiting for that burst to go quiet.
+        if (!isInitialCapture || spokenPhrases.length === 0) {
+          timeoutId = setTimeout(timeoutHandler, SPEECH_DEBOUNCE_TIMEOUT);
+        }
 
         await speechPromise;
 
