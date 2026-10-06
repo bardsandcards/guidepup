@@ -322,7 +322,7 @@ export class Orca implements IScreenReader {
   /**
    * Move the Orca cursor to the previous location.
    *
-   * Equivalent of executing `Orca-Ctrl-Left Arrow`.
+   * Equivalent of executing `Up Arrow` in browse mode.
    *
    * ```ts
    * import { unstable_orca } from "@guidepup/guidepup";
@@ -345,14 +345,14 @@ export class Orca implements IScreenReader {
     }
 
     await this.#client.enqueueAndTap(async () => {
-      await this.#client.service.ObjectNavigator.commands.MoveToPreviousSibling.execute();
+      await this.#client.service.CaretNavigator.commands.PreviousLine.execute();
     }, options);
   }
 
   /**
    * Move the Orca cursor to the next location.
    *
-   * Equivalent of executing `Orca-Ctrl-Right Arrow`.
+   * Equivalent of executing `Down Arrow` in browse mode.
    *
    * ```ts
    * import { unstable_orca } from "@guidepup/guidepup";
@@ -375,7 +375,7 @@ export class Orca implements IScreenReader {
     }
 
     await this.#client.enqueueAndTap(async () => {
-      await this.#client.service.ObjectNavigator.commands.MoveToNextSibling.execute();
+      await this.#client.service.CaretNavigator.commands.NextLine.execute();
     }, options);
   }
 

@@ -50,13 +50,19 @@ export async function headerNavigation({
   ) {
     tabCount++;
 
-    log(`Performing command: "Orca+Ctrl+Right Arrow"`);
+    log(`Performing command: "Down Arrow"`);
     await orca.next();
     log(`Screen reader output: "${await orca.lastSpokenPhrase()}".`);
   }
 
-  log(`Performing command: "Orca+Ctrl+Left Arrow"`);
+  // "Get Started" and "GitHub" share a line, so step back a line and return
+  // to it. Acting then activates the first link on the line, "Get Started".
+  log(`Performing command: "Up Arrow"`);
   await orca.previous();
+  log(`Screen reader output: "${await orca.lastSpokenPhrase()}".`);
+
+  log(`Performing command: "Down Arrow"`);
+  await orca.next();
   log(`Screen reader output: "${await orca.lastSpokenPhrase()}".`);
 
   log(`Performing command: "Orca+Ctrl+Enter"`);
