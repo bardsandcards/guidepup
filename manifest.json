@@ -8,11 +8,11 @@
       "defaultDownload": true,
       "assets": [
         {
-          "version": "0.2.3-50.2-bnc.2",
+          "version": "0.2.3-50.2-bnc.3",
           "platformVersion": "7",
           "repository": "bardsandcards/orca",
-          "asset": "guidepup-orca-0.2.3-50.2-bnc.2.tar.gz",
-          "sha256": "51808b05e1c6b7ba240b97484a9197d5f7292e118e1109bbf475b5f75c6356af"
+          "asset": "guidepup-orca-0.2.3-50.2-bnc.3.tar.gz",
+          "sha256": "0743d0e10bfde9984e3cc60f2b35816690f35e6289ab58de57babee871362aca"
         }
       ]
     },
