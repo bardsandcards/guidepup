@@ -751,6 +751,9 @@ export class OrcaClient extends EventEmitter {
       await this.#connectSpeechdSocket();
       await this.#startOrca();
       await this.#mapOrcaDBusService();
+      await this.#orcaService.SpeechPresenter.commands.ToggleMonitor.execute(
+        false,
+      );
 
       this.#started = true;
     } catch (cause) {
