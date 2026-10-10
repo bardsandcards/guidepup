@@ -755,9 +755,6 @@ export class OrcaClient extends EventEmitter {
       await this.#orcaService.SpeechPresenter.commands.ToggleMonitor.execute(
         false,
       );
-      await this.#orcaService.ObjectNavigator.commands.ToggleSimplify.execute(
-        false,
-      );
 
       this.#started = true;
     } catch (cause) {
