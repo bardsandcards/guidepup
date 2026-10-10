@@ -751,7 +751,11 @@ export class OrcaClient extends EventEmitter {
       await this.#connectSpeechdSocket();
       await this.#startOrca();
       await this.#mapOrcaDBusService();
+
       await this.#orcaService.SpeechPresenter.commands.ToggleMonitor.execute(
+        false,
+      );
+      await this.#orcaService.ObjectNavigator.commands.ToggleSimplify.execute(
         false,
       );
 
