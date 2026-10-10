@@ -66,7 +66,7 @@ test.describe("Firefox Playwright Screen Reader", () => {
       <button id="trigger">Update</button>
     </main>
 
-    <div role="alert" id="live"></div>
+    <div aria-live="assertive" role="alert" id="live"></div>
 
     <script>
       document.querySelector("#trigger").addEventListener("click", () => {

@@ -61,8 +61,10 @@ test.describe("Firefox Playwright Screen Reader", () => {
       await screenReader.navigateToWebContent();
       await delay(500);
 
-      // Navigate out of the skip to main content
+      // Navigate out of the skip to main content and into the navigation bar
       await screenReader.stopInteracting();
+      await screenReader.next();
+      await screenReader.interact();
 
       let navigationCount = 0;
 
