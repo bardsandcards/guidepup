@@ -1,8 +1,11 @@
 import { platform, release } from "os";
-import { headerNavigation } from "../headerNavigation";
+import { delay } from "../../../../src/delay";
+import { log } from "../../../log";
 import { logIncludesExpectedPhrases } from "../../../logIncludesExpectedPhrases";
 import spokenPhraseSnapshot from "./firefox.spokenPhrase.snapshot.json";
 import { screenReaderTest as test } from "../../screenreader-test";
+
+const MAX_NAVIGATION_LOOP = 10;
 
 const record = async (filepath: string) => {
   try {
@@ -46,7 +49,42 @@ test.describe("Firefox Playwright Screen Reader", () => {
     try {
       stopRecording = await record(recordingFilePath);
 
-      await headerNavigation({ page, screenReader });
+      log("Navigating to URL: https://www.guidepup.dev.");
+      await page.goto("https://www.guidepup.dev", {
+        waitUntil: "load",
+      });
+
+      const header = page.locator("h1");
+      await header.waitFor();
+      await delay(500);
+
+      await screenReader.navigateToWebContent();
+      await delay(500);
+
+      // Navigate out of the skip to main content
+      await screenReader.stopInteracting();
+
+      let navigationCount = 0;
+
+      // Move across the header content
+      while (
+        !(await screenReader.itemText())
+          .replaceAll(/\s/g, "")
+          .includes("GitHub") &&
+        navigationCount <= MAX_NAVIGATION_LOOP
+      ) {
+        navigationCount++;
+
+        log(`Performing command: next`);
+        await screenReader.next();
+        log(
+          `Screen reader output: "${await screenReader.lastSpokenPhrase()}".`,
+        );
+      }
+
+      log(`Performing command: act`);
+      await screenReader.act();
+      log(`Screen reader output: "${await screenReader.lastSpokenPhrase()}".`);
 
       // Assert that we've ended up where we expected and what we were told on
       // the way there is as expected.

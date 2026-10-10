@@ -4,6 +4,8 @@ import { expect } from "@playwright/test";
 import { log } from "../../../log";
 import { screenReaderTest as test } from "../../screenreader-test";
 
+const MAX_NAVIGATION_LOOP = 10;
+
 const record = async (filepath: string) => {
   try {
     const { record: guidepupRecord } = await import("@guidepup/record");
@@ -17,7 +19,7 @@ const record = async (filepath: string) => {
 };
 
 test.describe("Firefox Playwright Screen Reader", () => {
-  test("I can capture screen reader output from Playwright commands", async ({
+  test("I can capture screen reader output from live regions", async ({
     browser,
     browserName,
     page,
@@ -82,25 +84,26 @@ test.describe("Firefox Playwright Screen Reader", () => {
       await screenReader.navigateToWebContent();
       await delay(500);
 
-      log(`Performing capture: Playwright focus`);
-      const { spokenPhrase: focusSpokenPhrase } = await screenReader.capture(
-        () => button.focus(),
-      );
-      log(`Screen reader output: "${focusSpokenPhrase}".`);
+      let navigationCount = 0;
 
-      log(`Performing capture: Playwright click`);
-      const { spokenPhrase: clickSpokenPhrase } = await screenReader.capture(
-        () => button.click(),
-        {
-          // Capture full output as there is potential for multiple phrases:
-          //
-          // 1. The button itself
-          // 2. And the live region announcement
-          //
-          // And the default capture of "initial" will cut off the announcement.
-          capture: true,
-        },
-      );
+      while (
+        !(await screenReader.itemText())
+          .replaceAll(/\s/g, "")
+          .includes("Update") &&
+        navigationCount <= MAX_NAVIGATION_LOOP
+      ) {
+        navigationCount++;
+
+        log(`Performing command: "Orca+Ctrl+Right Arrow"`);
+        await screenReader.next();
+        log(
+          `Screen reader output: "${await screenReader.lastSpokenPhrase()}".`,
+        );
+      }
+
+      log(`Performing command: "Orca+Ctrl+Enter"`);
+      await screenReader.act();
+      const clickSpokenPhrase = await screenReader.lastSpokenPhrase();
       log(`Screen reader output: "${clickSpokenPhrase}".`);
 
       expect(clickSpokenPhrase).toContain("testing testing 123");
