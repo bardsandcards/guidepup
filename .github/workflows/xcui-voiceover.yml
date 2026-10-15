@@ -1,0 +1,48 @@
+name: XCUI VoiceOver
+
+on:
+  push:
+    branches: [feat/xcui-voiceover]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  xcui-voiceover:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 setup --ci
+      - run: npm ci --no-audit --no-fund --no-progress
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
+      - name: Environment
+        continue-on-error: true
+        run: |
+          sw_vers
+          xcode-select -p
+          xcodebuild -version
+          automationmodetool || true
+      - name: Read the example page with XCUIVoiceOverService
+        env:
+          DEBUG: guidepup:xcui*
+        run: |
+          npx ts-node ./examples/xcui-voiceover/index.ts 2>&1 | tee xcui-output.txt
+          grep -q "heading level 1 Hello from XCUIVoiceOverService" xcui-output.txt
+          grep -q "end of the page" xcui-output.txt
+      - if: failure()
+        continue-on-error: true
+        run: screencapture -x screen.png
+      - uses: actions/upload-artifact@v7
+        if: always()
+        continue-on-error: true
+        with:
+          name: xcui-voiceover
+          path: |
+            xcui-output.txt
+            screen.png
+            ~/Library/Caches/guidepup/xcui-agent/Logs/Test/**/*
