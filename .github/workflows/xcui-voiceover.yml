@@ -33,7 +33,7 @@ jobs:
         run: |
           npx ts-node ./examples/xcui-voiceover/index.ts 2>&1 | tee xcui-output.txt
           grep -q "heading level 1 Hello from XCUIVoiceOverService" xcui-output.txt
-          grep -q "end of the page" xcui-output.txt
+          grep -q "forward: end of main" xcui-output.txt
       - if: failure()
         continue-on-error: true
         run: screencapture -x screen.png
