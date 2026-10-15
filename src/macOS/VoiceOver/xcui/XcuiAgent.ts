@@ -1,11 +1,18 @@
 import { ChildProcess, execFileSync, spawn } from "child_process";
+import { createHash, randomBytes } from "node:crypto";
 import { createInterface, Interface } from "node:readline";
 import { createServer, Server, Socket } from "node:net";
-import { existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
-import { join, resolve } from "node:path";
+import {
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
+import { join, relative, resolve, sep } from "node:path";
 import { base } from "../../../debug";
 import { homedir } from "node:os";
-import { randomBytes } from "node:crypto";
 
 const debug = base.extend("xcui");
 
@@ -18,6 +25,7 @@ const AGENT_SOURCES = [
 ];
 const DERIVED_DATA = join(homedir(), "Library/Caches/guidepup/xcui-agent");
 const PRODUCTS = join(DERIVED_DATA, "Build/Products");
+const BUILT_SOURCES_HASH = join(DERIVED_DATA, "sources.sha256");
 const CONNECT_TIMEOUT = 120_000;
 const STOP_TIMEOUT = 10_000;
 const OUTPUT_TAIL = 4000;
@@ -47,14 +55,34 @@ interface Pending {
   reject: (error: Error) => void;
 }
 
-function newestSourceMtime(): number {
-  return AGENT_SOURCES.flatMap((dir) =>
-    readdirSync(dir).map((name) => statSync(join(dir, name)).mtimeMs),
-  ).reduce((newest, mtime) => Math.max(newest, mtime), 0);
+/**
+ * A hash of the agent's source files. Compared by content rather than
+ * modification time, so a fresh checkout or a rebase doesn't rebuild the agent.
+ * Every rebuild makes macOS ask again to allow UI automation.
+ */
+function sourcesHash(): string {
+  const hash = createHash("sha256");
+
+  for (const source of AGENT_SOURCES) {
+    const files = (readdirSync(source, { recursive: true }) as string[])
+      // Xcode keeps per-user window state in xcuserdata.
+      .filter((file) => !file.split(sep).includes("xcuserdata"))
+      .filter((file) => !file.endsWith(".DS_Store"))
+      .filter((file) => statSync(join(source, file)).isFile())
+      .sort();
+
+    for (const file of files) {
+      hash.update(`${relative(AGENT_DIR, join(source, file))}\0`);
+      hash.update(readFileSync(join(source, file)));
+    }
+  }
+
+  return hash.digest("hex");
 }
 
 /**
- * The built agent's .xctestrun, if it exists and is newer than the sources.
+ * The built agent's .xctestrun, if it exists and was built from the current
+ * sources.
  */
 function findXctestrun(): string | undefined {
   if (!existsSync(PRODUCTS)) {
@@ -69,16 +97,22 @@ function findXctestrun(): string | undefined {
     return undefined;
   }
 
-  const xctestrun = join(PRODUCTS, file);
+  let builtSourcesHash: string;
 
-  return statSync(xctestrun).mtimeMs > newestSourceMtime()
-    ? xctestrun
-    : undefined;
+  try {
+    builtSourcesHash = readFileSync(BUILT_SOURCES_HASH, "utf8");
+  } catch {
+    return undefined;
+  }
+
+  return builtSourcesHash === sourcesHash() ? join(PRODUCTS, file) : undefined;
 }
 
 function buildAgent(): string {
   debug("building agent", { project: AGENT_PROJECT });
   mkdirSync(DERIVED_DATA, { recursive: true });
+
+  const hash = sourcesHash();
 
   execFileSync(
     "xcodebuild",
@@ -95,6 +129,8 @@ function buildAgent(): string {
     ],
     { stdio: "ignore" },
   );
+
+  writeFileSync(BUILT_SOURCES_HASH, hash);
 
   const xctestrun = findXctestrun();
 

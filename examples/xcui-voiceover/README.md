@@ -36,11 +36,11 @@ Step 18 is the icon-only button in `page.html`: VoiceOver can only say "button",
 
 - macOS 27 and Xcode 27 (`xcode-select -s /Applications/Xcode.app`). Command Line Tools alone don't include XCTest.
 - The usual [VoiceOver prerequisites](https://www.guidepup.dev/docs/guides/environment).
-- Approve the UI automation prompt the first time. While the agent runs, macOS may show an "automation running" overlay; keyboard and mouse keep working.
+- Approve the UI automation prompt the first time. macOS asks again whenever the agent is rebuilt, which only happens when the files in `xcui-agent/` change. While the agent runs, macOS may show an "automation running" overlay; keyboard and mouse keep working.
 
 ## How it works
 
-`XCUIDevice.shared.voiceOverService` only works inside an authorised UI test run. So `XcuiAgent` builds a small XCTest target ([`xcui-agent/`](../../xcui-agent)) and runs it as a long-lived "test" that takes commands. The build happens once and is cached in `~/Library/Caches/guidepup/xcui-agent`. Xcode's test runner is app-sandboxed and isn't allowed to listen on a port, so the agent connects back to a socket that `XcuiAgent` opens on `127.0.0.1`. It identifies itself with a random token, then answers newline-delimited JSON commands.
+`XCUIDevice.shared.voiceOverService` only works inside an authorised UI test run. So `XcuiAgent` builds a small XCTest target ([`xcui-agent/`](../../xcui-agent)) and runs it as a long-lived "test" that takes commands. The build is cached in `~/Library/Caches/guidepup/xcui-agent` along with a hash of the agent's files, so it's only rebuilt when they change. Xcode's test runner is app-sandboxed and isn't allowed to listen on a port, so the agent connects back to a socket that `XcuiAgent` opens on `127.0.0.1`. It identifies itself with a random token, then answers newline-delimited JSON commands.
 
 guidepup still starts and stops VoiceOver (`voiceOver.start()` / `voiceOver.stop()`). The agent never turns VoiceOver on or off.
 

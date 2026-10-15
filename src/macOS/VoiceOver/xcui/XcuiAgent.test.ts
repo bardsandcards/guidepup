@@ -1,6 +1,12 @@
 import { connect, Socket } from "node:net";
 import { execFileSync, spawn } from "child_process";
-import { existsSync, readdirSync, statSync } from "node:fs";
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
 import { createInterface } from "node:readline";
 import { EventEmitter } from "node:events";
 import { XcuiAgent } from "./XcuiAgent";
@@ -15,7 +21,9 @@ jest.mock("node:fs", () => ({
   existsSync: jest.fn(),
   mkdirSync: jest.fn(),
   readdirSync: jest.fn(),
+  readFileSync: jest.fn(),
   statSync: jest.fn(),
+  writeFileSync: jest.fn(),
 }));
 
 type Request = Record<string, unknown>;
@@ -93,8 +101,20 @@ function fakeAgent({
   });
 }
 
-/** An agent build that is up to date unless `stale` is set. */
-function builtAgent({ exists = true, stale = false, xctestrun = true } = {}) {
+/** The contents of the agent's one source file. */
+let agentSource = "source";
+/** What the last build recorded about the sources it was built from. */
+let builtSourcesHash: string | undefined;
+
+/**
+ * Fake agent build output and sources. `newerSources` gives the sources newer
+ * modification times than the build, as a fresh checkout or rebase does.
+ */
+function builtAgent({
+  exists = true,
+  xctestrun = true,
+  newerSources = false,
+} = {}) {
   jest.mocked(existsSync).mockReturnValue(exists);
   jest.mocked(readdirSync).mockImplementation(((dir: string) => {
     if (!dir.endsWith("Build/Products")) {
@@ -104,8 +124,28 @@ function builtAgent({ exists = true, stale = false, xctestrun = true } = {}) {
     return xctestrun ? ["VoiceOverAgent_macosx27.0-arm64.xctestrun"] : [];
   }) as never);
   jest.mocked(statSync).mockImplementation(((file: string) => ({
-    mtimeMs: file.endsWith(".xctestrun") ? (stale ? 1 : 3) : 2,
+    isFile: () => true,
+    mtimeMs: file.endsWith(".xctestrun") ? 2 : newerSources ? 3 : 1,
   })) as never);
+  jest.mocked(readFileSync).mockImplementation(((file: string) => {
+    if (!file.endsWith("sources.sha256")) {
+      return agentSource;
+    }
+
+    if (builtSourcesHash === undefined) {
+      throw new Error("ENOENT");
+    }
+
+    return builtSourcesHash;
+  }) as never);
+  jest.mocked(writeFileSync).mockImplementation(((
+    file: string,
+    data: string,
+  ) => {
+    if (file.endsWith("sources.sha256")) {
+      builtSourcesHash = data;
+    }
+  }) as never);
 }
 
 describe("XcuiAgent", () => {
@@ -116,6 +156,8 @@ describe("XcuiAgent", () => {
     received = [];
     agent = undefined;
     agentSocket = undefined;
+    agentSource = "source";
+    builtSourcesHash = undefined;
     builtAgent();
   });
 
@@ -126,18 +168,35 @@ describe("XcuiAgent", () => {
   });
 
   describe("start", () => {
+    /** Starts and stops the agent once, so a build exists. */
+    async function buildOnce() {
+      fakeAgent();
+      await (await XcuiAgent.start()).stop();
+      jest.mocked(execFileSync).mockClear();
+    }
+
     it.each`
-      description             | build                              | rebuilds
-      ${"is up to date"}      | ${{}}                              | ${false}
-      ${"is older than code"} | ${{ stale: true }}                 | ${true}
-      ${"has never been run"} | ${{ exists: false, stale: false }} | ${true}
-      ${"is missing"}         | ${{ xctestrun: false }}            | ${true}
+      description                          | before            | rebuilds
+      ${"has never been built"}            | ${async () => {}} | ${true}
+      ${"was built from the same sources"} | ${buildOnce}      | ${false}
+      ${"was built from sources that only look newer"} | ${async () => {
+        await buildOnce();
+        builtAgent({ newerSources: true });
+      }} | ${false}
+      ${"was built from different sources"} | ${async () => {
+        await buildOnce();
+        agentSource = "changed";
+      }} | ${true}
+      ${"is missing"} | ${async () => {
+        await buildOnce();
+        builtAgent({ xctestrun: false });
+      }} | ${true}
     `(
-      "should only build the agent when the build $description",
-      async ({ build, rebuilds }) => {
-        builtAgent(build);
+      "should only build the agent when it $description",
+      async ({ before, rebuilds }) => {
+        await before();
         jest.mocked(execFileSync).mockImplementation((() => {
-          // The build produces an up-to-date .xctestrun.
+          // The build produces a .xctestrun.
           builtAgent();
         }) as never);
         fakeAgent();
