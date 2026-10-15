@@ -91,7 +91,22 @@ export const orcaTest = test.extend<{
         // Ensure the document is ready and focused.
         await page.bringToFront();
         await page.locator("body").waitFor();
-        await page.locator("body").focus();
+        // <body> isn't focusable, so focus() alone does nothing. Make it focusable
+        // just long enough to focus it: the focus change is what moves Orca into
+        // the document after another window (e.g. its speech monitor) had focus.
+        await page.locator("body").evaluate((body) => {
+          const hasTabIndex = body.hasAttribute("tabindex");
+
+          if (!hasTabIndex) {
+            body.tabIndex = -1;
+          }
+
+          body.focus();
+
+          if (!hasTabIndex) {
+            body.removeAttribute("tabindex");
+          }
+        });
         await page.locator("body").click();
         await page.locator("body").blur();
 
