@@ -1,15 +1,22 @@
-import { exec, ExecException, execFileSync } from "child_process";
+import { exec, ExecException } from "child_process";
 import { activate } from "../activate";
 import { Applications } from "../Applications";
-import { DEFAULT_TIMEOUT } from "../../constants";
 import { delay } from "../../delay";
 import { ERR_VOICE_OVER_CANNOT_BE_STARTED } from "../errors";
+import { keyCodeCommands } from "./keyCodeCommands";
 import { release } from "node:os";
+import { sendKeys } from "../sendKeys";
 import { start } from "./start";
+import { waitForReady } from "./waitForReady";
 
 jest.mock("child_process", () => ({
   exec: jest.fn(),
-  execFileSync: jest.fn(),
+}));
+jest.mock("../sendKeys", () => ({
+  sendKeys: jest.fn(),
+}));
+jest.mock("./waitForReady", () => ({
+  waitForReady: jest.fn(),
 }));
 jest.mock("node:os", () => ({
   release: jest.fn(),
@@ -57,7 +64,7 @@ describe("when starting VoiceOver", () => {
     );
   });
 
-  test("should open VoiceOver on macOS 27 and later", async () => {
+  test("should toggle VoiceOver on with its keyboard shortcut on macOS 27 and later", async () => {
     completeStarter();
     await resultPromise;
     jest.clearAllMocks();
@@ -66,24 +73,23 @@ describe("when starting VoiceOver", () => {
     await start(options);
 
     expect(release).toHaveBeenCalled();
-    expect(execFileSync).toHaveBeenCalledWith(
-      "/usr/bin/open",
-      ["-a", "/System/Library/CoreServices/VoiceOver.app"],
-      { stdio: "ignore", timeout: DEFAULT_TIMEOUT },
+    expect(sendKeys).toHaveBeenCalledWith(
+      keyCodeCommands.start,
+      undefined,
+      options,
     );
+    expect(waitForReady).toHaveBeenCalledWith(options);
     expect(exec).not.toHaveBeenCalled();
   });
 
-  test("should reject when opening VoiceOver fails on macOS 27 and later", async () => {
+  test("should reject when toggling VoiceOver on fails on macOS 27 and later", async () => {
     completeStarter();
     await resultPromise;
     jest.clearAllMocks();
     jest.mocked(release).mockReturnValue("27.0.0");
 
-    const error = new Error("open failed");
-    jest.mocked(execFileSync).mockImplementation(() => {
-      throw error;
-    });
+    const error = new Error("send keys failed");
+    jest.mocked(sendKeys).mockRejectedValue(error);
 
     await expect(start(options)).rejects.toEqual(
       new Error(ERR_VOICE_OVER_CANNOT_BE_STARTED, { cause: error }),

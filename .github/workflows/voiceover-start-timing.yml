@@ -1,0 +1,51 @@
+name: VoiceOver start timing
+
+# Fork-only experiment: compares how fast VoiceOver answers after each way of
+# launching it, and times guidepup's start() and stop() on this branch.
+
+on:
+  push:
+    branches: [exp/voiceover-cmdf5-start]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  timing:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-26, xcode-27]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 setup --ci
+      - run: npm ci --no-audit --no-fund --no-progress
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
+      - run: npm run build
+      - run: sw_vers
+      - name: Launch paths
+        run: |
+          if [ "$(uname -r | cut -d. -f1)" -ge 27 ]; then
+            node .github/voiceover-timing/launch-paths.js 3 open cmdf5
+          else
+            node .github/voiceover-timing/launch-paths.js 3 starter open cmdf5
+          fi
+      - name: guidepup start() and stop()
+        env:
+          DEBUG: guidepup:start
+        run: node .github/voiceover-timing/start-cycles.js lib 5
+      - if: failure()
+        continue-on-error: true
+        run: screencapture -x screen.png
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        continue-on-error: true
+        with:
+          name: screen-${{ matrix.os }}
+          path: screen.png
