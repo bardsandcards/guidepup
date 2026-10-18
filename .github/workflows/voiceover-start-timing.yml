@@ -32,9 +32,9 @@ jobs:
       - name: Launch paths
         run: |
           if [ "$(uname -r | cut -d. -f1)" -ge 27 ]; then
-            node .github/voiceover-timing/launch-paths.js 3 open cmdf5
+            node .github/voiceover-timing/launch-paths.js 3 open cmdf5 jxa
           else
-            node .github/voiceover-timing/launch-paths.js 3 starter open cmdf5
+            node .github/voiceover-timing/launch-paths.js 3 starter open cmdf5 jxa
           fi
       - name: guidepup start() and stop()
         env:

@@ -1,6 +1,7 @@
 // Times how long VoiceOver takes to answer its first AppleEvent after each
 // way of launching it. Usage: node launch-paths.js <runs> <method>...
-// Methods: open, cmdf5, starter (VoiceOverStarter, before macOS 27).
+// Methods: open, cmdf5, starter (VoiceOverStarter, before macOS 27), and
+// jxa (libScreenReader's private _ScreenReaderStart, called from JXA).
 const { spawnSync } = require("child_process");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const running = () => spawnSync("pgrep", ["-x", "VoiceOver"]).status === 0;
@@ -10,10 +11,17 @@ const answers = () =>
     timeout: 2500,
   }).status === 0;
 const APP = "/System/Library/CoreServices/VoiceOver.app";
+const JXA_START = `
+ObjC.bindFunction("dlopen", ["void *", ["char *", "int"]]);
+$.dlopen("/usr/lib/libScreenReader.dylib", 1);
+ObjC.bindFunction("_ScreenReaderStart", ["void", ["int"]]);
+$._ScreenReaderStart(0);
+`;
 const METHODS = {
   open: () => spawnSync("/usr/bin/open", ["-a", APP]),
   cmdf5: () => spawnSync("/usr/bin/osascript", ["-e", 'tell application "System Events" to key code 96 using command down']),
   starter: () => spawnSync(`${APP}/Contents/MacOS/VoiceOverStarter`),
+  jxa: () => spawnSync("/usr/bin/osascript", ["-l", "JavaScript", "-e", JXA_START]),
 };
 
 (async () => {
