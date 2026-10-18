@@ -38,6 +38,8 @@ jobs:
       - run: npm ci --no-audit --no-fund --no-progress && npm run build
         working-directory: pr
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
+        working-directory: main
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: pr
       - run: sw_vers
       - name: Launch paths
