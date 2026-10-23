@@ -33,13 +33,14 @@ const METHODS = {
       await sleep(2000);
       const t0 = Date.now();
       const r = METHODS[name]();
+      const took = (Date.now() - t0) / 1000;
       let proc = null, ans = null;
       while (Date.now() - t0 < 40000) {
         if (proc === null && running()) proc = (Date.now() - t0) / 1000;
         if (proc !== null && answers()) { ans = (Date.now() - t0) / 1000; break; }
         await sleep(200);
       }
-      console.log(`${name} ${i}: launcher exit ${r.status}${r.error ? ` (${r.error.code})` : ""}, process at ${proc}s, first answer at ${ans}s`);
+      console.log(`${name} ${i}: launcher exit ${r.status}${r.error ? ` (${r.error.code})` : ""} after ${took}s, process at ${proc}s, first answer at ${ans}s`);
       await sleep(1500);
       spawnSync("/usr/bin/osascript", ["-e", 'tell application "VoiceOver" to quit'], { timeout: 8000 });
       for (let j = 0; j < 30 && running(); j++) await sleep(500);
