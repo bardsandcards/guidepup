@@ -43,8 +43,21 @@ import { isUnixSocket } from "./isUnixSocket";
 import { join } from "node:path";
 import { serviceDefinition } from "./serviceDefinition";
 import { tmpdir } from "node:os";
+import { waitForCondition } from "../../waitForCondition";
 
 const debug = base.extend("OrcaClient");
+
+interface AtSpiAccessibilityBus {
+  GetAddress(): PromiseLike<string>;
+}
+
+interface AtSpiDeviceEventController {
+  GenerateKeyboardEvent(
+    keycode: number,
+    keystring: string,
+    synthType: number,
+  ): PromiseLike<void>;
+}
 
 const POLL_INTERVAL = 500;
 const MAX_POLL_TIMEOUT = 5_000;
@@ -134,6 +147,8 @@ export class OrcaClient extends EventEmitter {
   #sessionDBus: MessageBus = null;
 
   #atSpiProcess: ChildProcess = null;
+  #atSpiBus: MessageBus = null;
+  #atSpiDeviceEventController: AtSpiDeviceEventController = null;
 
   #runtimeDirectory: string = null;
 
@@ -212,32 +227,20 @@ export class OrcaClient extends EventEmitter {
 
     debug(`DISPLAY=${this.#xvfbDisplay}`);
 
-    const startTime = Date.now();
-
-    return new Promise((resolve, reject) => {
-      const poll = async () => {
-        if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
-          reject(new Error(ERR_ORCA_X_SERVER_TIMEOUT));
-
-          return;
-        }
-
+    await waitForCondition(
+      () => {
         debug("Polling for X Server running");
 
-        try {
-          execFileSync("xdpyinfo", ["-display", this.#xvfbDisplay]);
-          resolve();
+        execFileSync("xdpyinfo", ["-display", this.#xvfbDisplay]);
 
-          return;
-        } catch {
-          // Swallow
-        }
-
-        setTimeout(poll, POLL_INTERVAL);
-      };
-
-      poll();
-    });
+        return true;
+      },
+      {
+        pollInterval: POLL_INTERVAL,
+        pollTimeout: MAX_POLL_TIMEOUT,
+        timeoutErrorMessage: ERR_ORCA_X_SERVER_TIMEOUT,
+      },
+    );
   }
 
   async #ensureDBus(): Promise<void> {
@@ -293,36 +296,23 @@ export class OrcaClient extends EventEmitter {
       busAddress: this.#sessionDBusAddress,
     });
 
-    const startTime = Date.now();
-
-    return new Promise((resolve, reject) => {
-      const poll = async () => {
-        if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
-          reject(new Error(ERR_ORCA_DBUS_CONNECTION_TIMEOUT));
-
-          return;
-        }
-
+    await waitForCondition(
+      async () => {
         debug("Polling for D-Bus connectivity");
 
-        try {
-          await this.#sessionDBus.listNames();
+        await this.#sessionDBus.listNames();
 
-          resolve();
-
-          return;
-        } catch {
-          // Swallow
-        }
-
-        setTimeout(poll, POLL_INTERVAL);
-      };
-
-      poll();
-    });
+        return true;
+      },
+      {
+        pollInterval: POLL_INTERVAL,
+        pollTimeout: MAX_POLL_TIMEOUT,
+        timeoutErrorMessage: ERR_ORCA_DBUS_CONNECTION_TIMEOUT,
+      },
+    );
   }
 
-  #ensureAtSpi() {
+  async #ensureAtSpi(): Promise<void> {
     debug("Ensuring AT-SPI D-Bus running...");
 
     if (!isAtSpiRunning()) {
@@ -365,42 +355,25 @@ export class OrcaClient extends EventEmitter {
       });
     }
 
-    const startTime = Date.now();
+    await waitForCondition(
+      async () => {
+        debug(
+          `Polling for '${AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME}' name ownership`,
+        );
 
-    return new Promise<void>((resolve, reject) => {
-      const poll = async () => {
-        if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
-          reject(new Error(ERR_ORCA_AT_SPI_SERVICE_TIMEOUT));
-
-          return;
-        }
-
-        try {
-          debug(
-            `Polling for '${AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME}' name ownership`,
-          );
-
-          const hasOwner = await this.#sessionDBus.nameHasOwner(
-            AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME,
-          );
-
-          if (hasOwner) {
-            resolve();
-
-            return;
-          }
-        } catch {
-          // Swallow
-        }
-
-        setTimeout(poll, POLL_INTERVAL);
-      };
-
-      poll();
-    });
+        return await this.#sessionDBus.nameHasOwner(
+          AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME,
+        );
+      },
+      {
+        pollInterval: POLL_INTERVAL,
+        pollTimeout: MAX_POLL_TIMEOUT,
+        timeoutErrorMessage: ERR_ORCA_AT_SPI_SERVICE_TIMEOUT,
+      },
+    );
   }
 
-  #startSpeechd() {
+  async #startSpeechd(): Promise<void> {
     debug("Starting Speech Dispatcher");
 
     const installationPath = getOrcaInstallationPath();
@@ -466,33 +439,18 @@ export class OrcaClient extends EventEmitter {
 
     debug(`SPEECHD_ADDRESS=${this.#speechdAddress}`);
 
-    const startTime = Date.now();
+    await waitForCondition(
+      () => {
+        debug(`Polling for '${speechdSocketPath}' unix socket existence`);
 
-    return new Promise<void>((resolve, reject) => {
-      const poll = () => {
-        if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
-          reject(new Error(ERR_ORCA_SPEECH_DISPATCHER_SERVICE_TIMEOUT));
-
-          return;
-        }
-
-        try {
-          debug(`Polling for '${speechdSocketPath}' unix socket existence`);
-
-          if (isUnixSocket(speechdSocketPath)) {
-            resolve();
-
-            return;
-          }
-        } catch {
-          // Swallow
-        }
-
-        setTimeout(poll, POLL_INTERVAL);
-      };
-
-      poll();
-    });
+        return isUnixSocket(speechdSocketPath);
+      },
+      {
+        pollInterval: POLL_INTERVAL,
+        pollTimeout: MAX_POLL_TIMEOUT,
+        timeoutErrorMessage: ERR_ORCA_SPEECH_DISPATCHER_SERVICE_TIMEOUT,
+      },
+    );
   }
 
   #speechdDisconnect() {
@@ -611,7 +569,7 @@ export class OrcaClient extends EventEmitter {
     });
   }
 
-  #startOrca() {
+  async #startOrca(): Promise<void> {
     debug("Starting Orca");
 
     const installationPath = getOrcaInstallationPath();
@@ -666,39 +624,22 @@ export class OrcaClient extends EventEmitter {
       debug(`[orca] exited with code=${code}, signal=${signal}`);
     });
 
-    const startTime = Date.now();
+    await waitForCondition(
+      async () => {
+        debug(
+          `Polling for '${SESSION_DBUS_ORCA_WELL_KNOWN_SERVICE_NAME}' name ownership`,
+        );
 
-    return new Promise<void>((resolve, reject) => {
-      const poll = async () => {
-        if (Date.now() - startTime >= MAX_POLL_TIMEOUT) {
-          reject(new Error(ERR_ORCA_SERVICE_TIMEOUT));
-
-          return;
-        }
-
-        try {
-          debug(
-            `Polling for '${SESSION_DBUS_ORCA_WELL_KNOWN_SERVICE_NAME}' name ownership`,
-          );
-
-          const hasOwner = await this.#sessionDBus.nameHasOwner(
-            SESSION_DBUS_ORCA_WELL_KNOWN_SERVICE_NAME,
-          );
-
-          if (hasOwner) {
-            resolve();
-
-            return;
-          }
-        } catch {
-          // Swallow
-        }
-
-        setTimeout(poll, POLL_INTERVAL);
-      };
-
-      poll();
-    });
+        return await this.#sessionDBus.nameHasOwner(
+          SESSION_DBUS_ORCA_WELL_KNOWN_SERVICE_NAME,
+        );
+      },
+      {
+        pollInterval: POLL_INTERVAL,
+        pollTimeout: MAX_POLL_TIMEOUT,
+        timeoutErrorMessage: ERR_ORCA_SERVICE_TIMEOUT,
+      },
+    );
   }
 
   async #mapOrcaDBusService(): Promise<void> {
@@ -806,6 +747,56 @@ export class OrcaClient extends EventEmitter {
     );
   }
 
+  /**
+   * Connect to the AT-SPI device event controller, which generates real
+   * keyboard input (XTest under X11) that Orca hears like a person's keyboard.
+   */
+  async #connectAtSpiDeviceEventController(): Promise<void> {
+    debug("Connecting to AT-SPI device event controller...");
+
+    const a11yBus = await this.#sessionDBus
+      .getService(AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME)
+      .getInterface<AtSpiAccessibilityBus>(
+        "/org/a11y/bus",
+        AT_SPI_DBUS_A11Y_WELL_KNOWN_SERVICE_NAME,
+      );
+
+    const address: string = await a11yBus.GetAddress();
+
+    debug(`AT_SPI_BUS_ADDRESS=${address}`);
+
+    this.#atSpiBus = sessionBus({ busAddress: address });
+    this.#atSpiDeviceEventController = await this.#atSpiBus
+      .getService("org.a11y.atspi.Registry")
+      .getInterface<AtSpiDeviceEventController>(
+        "/org/a11y/atspi/registry/deviceeventcontroller",
+        "org.a11y.atspi.DeviceEventController",
+      );
+  }
+
+  /**
+   * Generate a real keyboard event.
+   *
+   * @param {number} keycode Keycode, keysym or modifier mask, depending on the synth type.
+   * @param {string} keystring Text to type for the string synth type, otherwise empty.
+   * @param {number} synthType An AT-SPI `KeySynthType`.
+   */
+  async generateKeyboardEvent(
+    keycode: number,
+    keystring: string,
+    synthType: number,
+  ): Promise<void> {
+    if (!this.#started || this.#stopping) {
+      throw new Error(ERR_ORCA_NOT_RUNNING);
+    }
+
+    await this.#atSpiDeviceEventController.GenerateKeyboardEvent(
+      keycode,
+      keystring,
+      synthType,
+    );
+  }
+
   async start(options?: Pick<CommandOptions, "capture">) {
     if (this.#started || this.#starting) {
       return;
@@ -820,6 +811,7 @@ export class OrcaClient extends EventEmitter {
       await this.#ensureXServer();
       await this.#ensureDBus();
       await this.#ensureAtSpi();
+      await this.#connectAtSpiDeviceEventController();
       await this.#startSpeechd();
       await this.#connectSpeechdSocket();
       await this.#startOrca();
@@ -873,7 +865,11 @@ export class OrcaClient extends EventEmitter {
     this.#xvfbDisplay = null;
     this.#xvfbProcess = null;
 
+    await this.#atSpiBus?.close();
     await this.#sessionDBus?.close();
+
+    this.#atSpiBus = null;
+    this.#atSpiDeviceEventController = null;
 
     this.#sessionDBusAddress = null;
     this.#sessionDBusProcess = null;
