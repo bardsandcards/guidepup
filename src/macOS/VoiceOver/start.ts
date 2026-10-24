@@ -1,59 +1,44 @@
-import { exec, execFileSync } from "child_process";
 import { activate } from "../activate";
 import { Applications } from "../Applications";
 import { base } from "../../debug";
 import type { CommandOptions } from "../../CommandOptions";
-import { DEFAULT_TIMEOUT } from "../../constants";
 import { delay } from "../../delay";
 import { ERR_VOICE_OVER_CANNOT_BE_STARTED } from "../errors";
-import { release } from "node:os";
+import { runAppleScript } from "../runAppleScript";
+import { waitForReady } from "./waitForReady";
 
 const debug = base.extend("start");
 
-const VOICE_OVER_APP = "/System/Library/CoreServices/VoiceOver.app";
-const VOICE_OVER_STARTER = `${VOICE_OVER_APP}/Contents/MacOS/VoiceOverStarter`;
+// Asks VoiceOver to start with libScreenReader's private `_ScreenReaderStart`,
+// which the Command-F5 shortcut also uses. Launched any other way, VoiceOver
+// waits ~9s for this request before it starts. AppleScript can't call C
+// functions, so the request runs as JavaScript for Automation.
+const START_SCRIPT = `run script "ObjC.bindFunction('dlopen', ['void *', ['char *', 'int']]);
+$.dlopen('/usr/lib/libScreenReader.dylib', 1);
+ObjC.bindFunction('_ScreenReaderStart', ['void', ['int']]);
+$._ScreenReaderStart(0);" in "JavaScript"`;
 
-function platformMajorVersion(): number {
-  const osVersion = release().split(".", 1)[0];
+async function requestStart(options?: CommandOptions): Promise<void> {
+  debug("requesting VoiceOver start");
 
-  return Number(osVersion);
+  try {
+    await runAppleScript(START_SCRIPT, options);
+  } catch (cause) {
+    debug("requesting VoiceOver start failed", cause);
+
+    throw new Error(ERR_VOICE_OVER_CANNOT_BE_STARTED, {
+      cause,
+    });
+  }
 }
 
 export async function start(options?: CommandOptions): Promise<void> {
-  const darwinMajorVersion = platformMajorVersion();
+  await requestStart(options);
 
-  if (darwinMajorVersion >= 27) {
-    debug("opening VoiceOver app");
-
-    try {
-      execFileSync("/usr/bin/open", ["-a", VOICE_OVER_APP], {
-        stdio: "ignore",
-        timeout: DEFAULT_TIMEOUT,
-      });
-    } catch (cause) {
-      debug("opening VoiceOver app failed", cause);
-
-      throw new Error(ERR_VOICE_OVER_CANNOT_BE_STARTED, {
-        cause,
-      });
-    }
-  } else {
-    debug("executing VoiceOver Starter");
-
-    await new Promise<void>((resolve, reject) => {
-      exec(VOICE_OVER_STARTER, (cause) => {
-        if (cause) {
-          debug("VoiceOver Starter failed", cause);
-
-          reject(new Error(ERR_VOICE_OVER_CANNOT_BE_STARTED, { cause }));
-        } else {
-          debug("VoiceOver Starter succeeded");
-
-          resolve();
-        }
-      });
-    });
-  }
+  // VoiceOver can take 10s or more before it answers AppleEvents. Wait for
+  // that here, within the running timeout, rather than in `activate()`'s
+  // retries.
+  await waitForReady(options);
 
   await delay(500);
 
