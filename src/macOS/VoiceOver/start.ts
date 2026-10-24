@@ -2,34 +2,27 @@ import { activate } from "../activate";
 import { Applications } from "../Applications";
 import { base } from "../../debug";
 import type { CommandOptions } from "../../CommandOptions";
-import { DEFAULT_TIMEOUT } from "../../constants";
 import { delay } from "../../delay";
 import { ERR_VOICE_OVER_CANNOT_BE_STARTED } from "../errors";
-import { execFileSync } from "child_process";
+import { runAppleScript } from "../runAppleScript";
 import { waitForReady } from "./waitForReady";
 
 const debug = base.extend("start");
 
 // Asks VoiceOver to start with libScreenReader's private `_ScreenReaderStart`,
 // which the Command-F5 shortcut also uses. Launched any other way, VoiceOver
-// waits ~9s for this request before it starts.
-const START_SCRIPT = `ObjC.bindFunction("dlopen", ["void *", ["char *", "int"]]);
-$.dlopen("/usr/lib/libScreenReader.dylib", 1);
-ObjC.bindFunction("_ScreenReaderStart", ["void", ["int"]]);
-$._ScreenReaderStart(0);`;
+// waits ~9s for this request before it starts. AppleScript can't call C
+// functions, so the request runs as JavaScript for Automation.
+const START_SCRIPT = `run script "ObjC.bindFunction('dlopen', ['void *', ['char *', 'int']]);
+$.dlopen('/usr/lib/libScreenReader.dylib', 1);
+ObjC.bindFunction('_ScreenReaderStart', ['void', ['int']]);
+$._ScreenReaderStart(0);" in "JavaScript"`;
 
-function requestStart(): void {
+async function requestStart(options?: CommandOptions): Promise<void> {
   debug("requesting VoiceOver start");
 
   try {
-    execFileSync(
-      "/usr/bin/osascript",
-      ["-l", "JavaScript", "-e", START_SCRIPT],
-      {
-        stdio: "ignore",
-        timeout: DEFAULT_TIMEOUT,
-      },
-    );
+    await runAppleScript(START_SCRIPT, options);
   } catch (cause) {
     debug("requesting VoiceOver start failed", cause);
 
@@ -40,7 +33,7 @@ function requestStart(): void {
 }
 
 export async function start(options?: CommandOptions): Promise<void> {
-  requestStart();
+  await requestStart(options);
 
   // VoiceOver can take 10s or more before it answers AppleEvents. Wait for
   // that here, within the running timeout, rather than in `activate()`'s

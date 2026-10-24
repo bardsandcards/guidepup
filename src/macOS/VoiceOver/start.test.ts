@@ -1,14 +1,13 @@
 import { activate } from "../activate";
 import { Applications } from "../Applications";
-import { DEFAULT_TIMEOUT } from "../../constants";
 import { delay } from "../../delay";
 import { ERR_VOICE_OVER_CANNOT_BE_STARTED } from "../errors";
-import { execFileSync } from "child_process";
+import { runAppleScript } from "../runAppleScript";
 import { start } from "./start";
 import { waitForReady } from "./waitForReady";
 
-jest.mock("child_process", () => ({
-  execFileSync: jest.fn(),
+jest.mock("../runAppleScript", () => ({
+  runAppleScript: jest.fn(),
 }));
 jest.mock("../activate", () => ({
   activate: jest.fn(),
@@ -25,7 +24,6 @@ const options = { timeout: 1234 };
 describe("when starting VoiceOver", () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    jest.mocked(execFileSync).mockReset();
   });
 
   describe("when asking VoiceOver to start succeeds", () => {
@@ -34,15 +32,9 @@ describe("when starting VoiceOver", () => {
     });
 
     test("should ask VoiceOver to start with libScreenReader", () => {
-      expect(execFileSync).toHaveBeenCalledWith(
-        "/usr/bin/osascript",
-        [
-          "-l",
-          "JavaScript",
-          "-e",
-          expect.stringContaining("_ScreenReaderStart(0)"),
-        ],
-        { stdio: "ignore", timeout: DEFAULT_TIMEOUT },
+      expect(runAppleScript).toHaveBeenCalledWith(
+        expect.stringContaining("_ScreenReaderStart(0)"),
+        options,
       );
     });
 
@@ -60,9 +52,7 @@ describe("when starting VoiceOver", () => {
     const error = new Error("osascript failed");
 
     test("should reject with a startup error caused by the failure", async () => {
-      jest.mocked(execFileSync).mockImplementationOnce(() => {
-        throw error;
-      });
+      jest.mocked(runAppleScript).mockRejectedValueOnce(error);
 
       await expect(start(options)).rejects.toMatchObject({
         message: ERR_VOICE_OVER_CANNOT_BE_STARTED,
