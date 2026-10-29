@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-15, macos-26, xcode-27]
-        mode: [plain, umount]
+        mode: [plain, umount, diskutil]
     steps:
       - run: sw_vers
       - name: Create a small APFS image
@@ -32,7 +32,11 @@ jobs:
           for i in 1 2 3; do
             dev=$(hdiutil attach "$RUNNER_TEMP/cold.dmg" -mountpoint $MP -shadow "$RUNNER_TEMP/cold.dmg.shadow" | head -1 | awk '{print $1}')
             t0=$(python3 -c 'import time;print(time.time())')
-            if [ "${{ matrix.mode }}" = umount ]; then
+            if [ "${{ matrix.mode }}" = diskutil ]; then
+              diskutil unmount $MP > /dev/null
+              tu=$(python3 -c 'import time;print(time.time())')
+              hdiutil detach "$dev" > /dev/null
+            elif [ "${{ matrix.mode }}" = umount ]; then
               /sbin/umount $MP
               tu=$(python3 -c 'import time;print(time.time())')
               hdiutil detach "$dev" > /dev/null
@@ -40,7 +44,7 @@ jobs:
               hdiutil detach $MP > /dev/null
             fi
             t1=$(python3 -c 'import time;print(time.time())')
-            [ -n "$tu" ] && python3 -c "print('RESULT umount $i: umount %.2fs' % ($tu-$t0))"
+            [ -n "$tu" ] && python3 -c "print('RESULT ${{ matrix.mode }} $i: unmount %.2fs' % ($tu-$t0))"
             python3 -c "print('RESULT ${{ matrix.mode }} detach $i: %.2fs' % ($t1-$t0))"
             rm -f "$RUNNER_TEMP/cold.dmg.shadow"
           done
