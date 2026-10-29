@@ -1,7 +1,7 @@
 name: VoiceOver start timing
 
-# Fork-only experiment: times guidepup's start() and stop() on the PR branch
-# (first, while the runner is fresh) and then on main, on the same runner.
+# Fork-only experiment: times guidepup's start() and stop() on main and on the
+# PR branch, each on its own fresh runner.
 
 on:
   push:
@@ -18,7 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-14, macos-15, macos-26, xcode-27]
+        os: [macos-15, macos-26, xcode-27]
+        lib: [main, pr]
     steps:
       - uses: actions/checkout@v7
       - uses: actions/checkout@v7
@@ -27,7 +28,7 @@ jobs:
           path: main
       - uses: actions/checkout@v7
         with:
-          ref: perf/voiceover-stop-detach
+          ref: perf/voiceover-umount-before-detach
           path: pr
       - uses: actions/setup-node@v7
         with:
@@ -42,10 +43,8 @@ jobs:
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: pr
       - run: sw_vers
-      - name: start() and stop() on the PR branch (fresh runner)
-        run: node .github/voiceover-timing/start-cycles.js pr/lib pr 10
-      - name: start() and stop() on main
-        run: node .github/voiceover-timing/start-cycles.js main/lib main 10
+      - name: start() and stop() on a fresh runner
+        run: node .github/voiceover-timing/start-cycles.js ${{ matrix.lib }}/lib ${{ matrix.lib }} 5
       - if: failure()
         continue-on-error: true
         run: screencapture -x screen.png
