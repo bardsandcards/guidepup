@@ -1,7 +1,7 @@
 name: Cold detach timing
 
 # Fork-only experiment: times the first hdiutil detach on a fresh runner,
-# with and without -force, and keeps DiskArbitration's log of it.
+# with hdiutil alone and with a BSD umount first, and keeps DiskArbitration's log of it.
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-15, macos-26, xcode-27]
-        mode: [plain, force]
+        mode: [plain, umount]
     steps:
       - run: sw_vers
       - name: Create a small APFS image
@@ -30,11 +30,17 @@ jobs:
           LP=$!; sleep 2
           MP=/Volumes/ColdDetach
           for i in 1 2 3; do
-            hdiutil attach "$RUNNER_TEMP/cold.dmg" -mountpoint $MP -shadow "$RUNNER_TEMP/cold.dmg.shadow" > /dev/null
-            flag=""; [ "${{ matrix.mode }}" = force ] && flag="-force"
+            dev=$(hdiutil attach "$RUNNER_TEMP/cold.dmg" -mountpoint $MP -shadow "$RUNNER_TEMP/cold.dmg.shadow" | head -1 | awk '{print $1}')
             t0=$(python3 -c 'import time;print(time.time())')
-            hdiutil detach $MP $flag > /dev/null
+            if [ "${{ matrix.mode }}" = umount ]; then
+              /sbin/umount $MP
+              tu=$(python3 -c 'import time;print(time.time())')
+              hdiutil detach "$dev" > /dev/null
+            else
+              hdiutil detach $MP > /dev/null
+            fi
             t1=$(python3 -c 'import time;print(time.time())')
+            [ -n "$tu" ] && python3 -c "print('RESULT umount $i: umount %.2fs' % ($tu-$t0))"
             python3 -c "print('RESULT ${{ matrix.mode }} detach $i: %.2fs' % ($t1-$t0))"
             rm -f "$RUNNER_TEMP/cold.dmg.shadow"
           done
