@@ -18,8 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-15, macos-26, xcode-27]
-        lib: [main, pr]
+        os: [macos-15]
+        lib: [main]
     steps:
       - uses: actions/checkout@v7
       - uses: actions/checkout@v7
@@ -43,9 +43,12 @@ jobs:
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: pr
       - run: sw_vers
+      - name: Images attached before any cycle
+        run: hdiutil info | grep -E 'image-path|/dev/disk|/Volumes' || echo none
       - name: start() and stop() on a fresh runner
         run: |
           node .github/voiceover-timing/start-cycles.js ${{ matrix.lib }}/lib ${{ matrix.lib }} 5
+          hdiutil info | grep -E 'image-path|/dev/disk|/Volumes' || echo none
           echo "LEAK images still attached: $(hdiutil info | grep -c guidepup-voiceover-preferences) mounted: $(mount | grep -c GuidepupVoiceOverPreferences)"
       - if: failure()
         continue-on-error: true
