@@ -1,11 +1,11 @@
 name: VoiceOver start timing
 
-# Fork-only experiment: times VoiceOver launch paths, then guidepup's start()
-# and stop() on main and on the PR branch, on the same runner.
+# Fork-only experiment: times guidepup's start() and stop() on the PR branch
+# (first, while the runner is fresh) and then on main, on the same runner.
 
 on:
   push:
-    branches: [exp/voiceover-cmdf5-start]
+    branches: [exp/cfprefsd-timing]
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
           path: main
       - uses: actions/checkout@v7
         with:
-          ref: perf/voiceover-start-all
+          ref: perf/voiceover-stop-detach
           path: pr
       - uses: actions/setup-node@v7
         with:
@@ -42,24 +42,10 @@ jobs:
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: pr
       - run: sw_vers
-      - name: Launch paths
-        run: |
-          if [ "$(uname -r | cut -d. -f1)" -ge 27 ]; then
-            node .github/voiceover-timing/launch-paths.js 3 open cmdf5 jxa
-          else
-            node .github/voiceover-timing/launch-paths.js 3 starter open cmdf5 jxa
-          fi
+      - name: start() and stop() on the PR branch (fresh runner)
+        run: node .github/voiceover-timing/start-cycles.js pr/lib pr 10
       - name: start() and stop() on main
-        run: |
-          echo "voiceOverOnOffKey before: $(defaults read com.apple.universalaccess voiceOverOnOffKey 2>&1)"
-          node .github/voiceover-timing/start-cycles.js main/lib main 10
-          echo "voiceOverOnOffKey after main: $(defaults read com.apple.universalaccess voiceOverOnOffKey 2>&1)"
-      - name: start() and stop() on the PR branch
-        run: |
-          defaults write com.apple.universalaccess voiceOverOnOffKey -bool false || true
-          echo "voiceOverOnOffKey before: $(defaults read com.apple.universalaccess voiceOverOnOffKey 2>&1)"
-          node .github/voiceover-timing/start-cycles.js pr/lib pr 10
-          echo "voiceOverOnOffKey after pr: $(defaults read com.apple.universalaccess voiceOverOnOffKey 2>&1)"
+        run: node .github/voiceover-timing/start-cycles.js main/lib main 10
       - if: failure()
         continue-on-error: true
         run: screencapture -x screen.png
