@@ -44,7 +44,9 @@ jobs:
         working-directory: pr
       - run: sw_vers
       - name: start() and stop() on a fresh runner
-        run: node .github/voiceover-timing/start-cycles.js ${{ matrix.lib }}/lib ${{ matrix.lib }} 5
+        run: |
+          node .github/voiceover-timing/start-cycles.js ${{ matrix.lib }}/lib ${{ matrix.lib }} 5
+          echo "LEAK images still attached: $(hdiutil info | grep -c guidepup-voiceover-preferences) mounted: $(mount | grep -c GuidepupVoiceOverPreferences)"
       - if: failure()
         continue-on-error: true
         run: screencapture -x screen.png
