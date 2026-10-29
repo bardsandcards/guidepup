@@ -2,7 +2,6 @@ import { deepMerge } from "../../../deepMerge";
 import { DEFAULT_PREFERENCES } from "./constants";
 import { ERR_VOICE_OVER_FAILED_TO_SET_SETTING } from "../../errors";
 import { getPreferences } from "./getPreferences";
-import { restartPreferencesDaemon } from "./restartPreferencesDaemon";
 import { writeFileSync } from "node:fs";
 
 let plist;
@@ -22,6 +21,4 @@ export function setPreferences(
   } catch (cause) {
     throw new Error(ERR_VOICE_OVER_FAILED_TO_SET_SETTING, { cause });
   }
-
-  restartPreferencesDaemon();
 }

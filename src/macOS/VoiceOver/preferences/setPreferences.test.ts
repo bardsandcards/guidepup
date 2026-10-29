@@ -1,7 +1,6 @@
 import { DEFAULT_PREFERENCES } from "./constants";
 import { ERR_VOICE_OVER_FAILED_TO_SET_SETTING } from "../../errors";
 import { getPreferences } from "./getPreferences";
-import { restartPreferencesDaemon } from "./restartPreferencesDaemon";
 import { setPreferences } from "./setPreferences";
 import { writeFileSync } from "node:fs";
 
@@ -10,10 +9,6 @@ const { build } = require("plist");
 
 jest.mock("./getPreferences", () => ({
   getPreferences: jest.fn(),
-}));
-
-jest.mock("./restartPreferencesDaemon", () => ({
-  restartPreferencesDaemon: jest.fn(),
 }));
 
 jest.mock("node:fs", () => ({
@@ -64,10 +59,6 @@ describe("setPreferences", () => {
         plistDummy,
       );
     });
-
-    it("should restart the preferences daemon", () => {
-      expect(restartPreferencesDaemon).toHaveBeenCalled();
-    });
   });
 
   describe("when getting preferences fails", () => {
@@ -93,16 +84,6 @@ describe("setPreferences", () => {
       }
 
       expect(writeFileSync).not.toHaveBeenCalled();
-    });
-
-    it("should not restart the preferences daemon", () => {
-      try {
-        setPreferences(desiredPreferencesDummy);
-      } catch {
-        // Swallow
-      }
-
-      expect(restartPreferencesDaemon).not.toHaveBeenCalled();
     });
   });
 
@@ -130,16 +111,6 @@ describe("setPreferences", () => {
 
       expect(writeFileSync).not.toHaveBeenCalled();
     });
-
-    it("should not restart the preferences daemon", () => {
-      try {
-        setPreferences(desiredPreferencesDummy);
-      } catch {
-        // Swallow
-      }
-
-      expect(restartPreferencesDaemon).not.toHaveBeenCalled();
-    });
   });
 
   describe("when writing preferences fails", () => {
@@ -155,16 +126,6 @@ describe("setPreferences", () => {
           cause: errorDummy,
         }),
       );
-    });
-
-    it("should not restart the preferences daemon", () => {
-      try {
-        setPreferences(desiredPreferencesDummy);
-      } catch {
-        // Swallow
-      }
-
-      expect(restartPreferencesDaemon).not.toHaveBeenCalled();
     });
   });
 });

@@ -6,7 +6,6 @@ import { getPreferencesDirectory } from "./getPreferencesDirectory";
 import { mountGuidepupPreferences } from "./mountGuidepupPreferences";
 import { resolveCachePath } from "../../../resolveCachePath";
 import { resolveDmgPath } from "./resolveDmgPath";
-import { restartPreferencesDaemon } from "./restartPreferencesDaemon";
 import { trustPortableIdentifier } from "./trustPortableIdentifier";
 
 jest.mock("./attachPortablePreferences", () => ({
@@ -35,10 +34,6 @@ jest.mock("../../../resolveCachePath", () => ({
 
 jest.mock("./resolveDmgPath", () => ({
   resolveDmgPath: jest.fn(),
-}));
-
-jest.mock("./restartPreferencesDaemon", () => ({
-  restartPreferencesDaemon: jest.fn(),
 }));
 
 jest.mock("./trustPortableIdentifier", () => ({
@@ -101,10 +96,6 @@ describe("mountGuidepupPreferences", () => {
       expect(createPortableSymlinks).toHaveBeenCalledWith(
         preferencesDirectoryDummy,
       );
-    });
-
-    it("should restart the preferences daemon", () => {
-      expect(restartPreferencesDaemon).toHaveBeenCalled();
     });
   });
 });

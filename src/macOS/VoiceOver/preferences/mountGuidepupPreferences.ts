@@ -6,7 +6,6 @@ import { ensureLocalPreferencesExist } from "./ensureLocalPreferencesExist";
 import { getPreferencesDirectory } from "./getPreferencesDirectory";
 import { resolveCachePath } from "../../../resolveCachePath";
 import { resolveDmgPath } from "./resolveDmgPath";
-import { restartPreferencesDaemon } from "./restartPreferencesDaemon";
 import { trustPortableIdentifier } from "./trustPortableIdentifier";
 
 const debug = base.extend("mountGuidepupPreferences");
@@ -38,15 +37,7 @@ export function mountGuidepupPreferences(): void {
   trustPortableIdentifier(preferencesDirectory);
   debug("Portable identifier trusted");
 
-  debug("Restarting preferences daemon");
-  restartPreferencesDaemon();
-  debug("Preferences daemon restarted");
-
   debug("Creating portable preference symlinks");
   createPortableSymlinks(preferencesDirectory);
   debug("Portable preference symlinks created");
-
-  debug("Restarting preferences daemon after symlink creation");
-  restartPreferencesDaemon();
-  debug("Preferences daemon restarted");
 }
