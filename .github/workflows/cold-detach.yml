@@ -1,0 +1,48 @@
+name: Cold detach timing
+
+# Fork-only experiment: times the first hdiutil detach on a fresh runner,
+# with and without -force, and keeps DiskArbitration's log of it.
+
+on:
+  push:
+    branches: [exp/cold-detach]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  detach:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-26, xcode-27]
+        mode: [plain, force]
+    steps:
+      - run: sw_vers
+      - name: Create a small APFS image
+        run: hdiutil create -size 20m -fs APFS -volname ColdDetach "$RUNNER_TEMP/cold.dmg"
+      - name: Attach and detach three times
+        run: |
+          /usr/bin/log stream --style compact --level debug --predicate 'process == "diskarbitrationd" OR process == "hdiutil"' > "$RUNNER_TEMP/da.log" 2>&1 &
+          LP=$!; sleep 2
+          MP=/Volumes/ColdDetach
+          for i in 1 2 3; do
+            hdiutil attach "$RUNNER_TEMP/cold.dmg" -mountpoint $MP -shadow "$RUNNER_TEMP/cold.dmg.shadow" > /dev/null
+            flag=""; [ "${{ matrix.mode }}" = force ] && flag="-force"
+            t0=$(python3 -c 'import time;print(time.time())')
+            hdiutil detach $MP $flag > /dev/null
+            t1=$(python3 -c 'import time;print(time.time())')
+            python3 -c "print('RESULT ${{ matrix.mode }} detach $i: %.2fs' % ($t1-$t0))"
+            rm -f "$RUNNER_TEMP/cold.dmg.shadow"
+          done
+          sleep 2; kill $LP
+          echo "not responding: $(grep -c 'not responding' "$RUNNER_TEMP/da.log")"
+          grep -E 'timed out session|not responding|unmounted disk' "$RUNNER_TEMP/da.log" || true
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: da-${{ matrix.os }}-${{ matrix.mode }}
+          path: ${{ runner.temp }}/da.log
