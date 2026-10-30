@@ -18,8 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-15]
-        lib: [main]
+        os: [macos-15, macos-26, xcode-27]
+        lib: [main, pr, img]
     steps:
       - uses: actions/checkout@v7
       - uses: actions/checkout@v7
@@ -30,6 +30,10 @@ jobs:
         with:
           ref: perf/voiceover-umount-before-detach
           path: pr
+      - uses: actions/checkout@v7
+        with:
+          ref: perf/voiceover-detach-by-image
+          path: img
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
@@ -38,10 +42,14 @@ jobs:
         working-directory: main
       - run: npm ci --no-audit --no-fund --no-progress && npm run build
         working-directory: pr
+      - run: npm ci --no-audit --no-fund --no-progress && npm run build
+        working-directory: img
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: main
       - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
         working-directory: pr
+      - run: npx -y --min-release-age=0 --ignore-scripts=false @guidepup/setup@0.29.2 install
+        working-directory: img
       - run: sw_vers
       - name: Images attached before any cycle
         run: hdiutil info | grep -E 'image-path|/dev/disk|/Volumes' || echo none
