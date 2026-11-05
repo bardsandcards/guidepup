@@ -1,0 +1,17 @@
+fw run_fw.py Systran/faster-whisper-tiny.en timing fw-tiny.en
+fw run_fw.py Systran/faster-whisper-base.en timing fw-base.en
+fw run_fw.py Systran/faster-distil-whisper-small.en timing fw-distil-small.en
+fw run_fw.py Systran/faster-whisper-small.en timing fw-small.en
+fw run_fw.py dropbox-dash/faster-whisper-large-v3-turbo timing fw-large-v3-turbo
+wcpp run_wcpp.py tiny.en-q5_1 timing wcpp-tiny.en-q5_1
+wcpp run_wcpp.py base.en-q5_1 timing wcpp-base.en-q5_1
+moon run_moon.py tiny timing moonshine-tiny
+moon run_moon.py base timing moonshine-base
+moonv run_moonv.py tiny-streaming timing moonv-tiny-streaming
+moonv run_moonv.py small-streaming timing moonv-small-streaming
+onnxasr run_onnxasr.py parakeet-tdt-0.6b-v2 timing parakeet-tdt-0.6b-v2
+onnxasr run_onnxasr.py parakeet-tdt-0.6b-v3 timing parakeet-tdt-0.6b-v3
+onnxasr run_onnxasr.py canary-180m-flash timing canary-180m-flash
+sherpa run_sherpa.py zipformer-en-2023-06-26 timing zipformer-en-2023-06-26
+vosk run_vosk.py vosk-model-small-en-us-0.15 timing vosk-small-en-us-0.15
+vosk run_vosk.py vosk-model-en-us-0.22-lgraph timing vosk-en-us-0.22-lgraph

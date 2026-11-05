@@ -1,0 +1,5537 @@
+[
+{
+"clip": "espeak175__p000__trunc1",
+"voice": "espeak175",
+"cut": 0.644,
+"align_next": 0.644,
+"ev_next": 0.729,
+"cut_minus_ev": -0.08499999999999996,
+"align_minus_ev": -0.08499999999999996
+},
+{
+"clip": "espeak175__p001__trunc1",
+"voice": "espeak175",
+"cut": 0.722,
+"align_next": 0.743,
+"ev_next": 0.706,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.03700000000000003
+},
+{
+"clip": "espeak175__p001__trunc2",
+"voice": "espeak175",
+"cut": 1.194,
+"align_next": 1.244,
+"ev_next": 1.147,
+"cut_minus_ev": 0.04699999999999993,
+"align_minus_ev": 0.09699999999999998
+},
+{
+"clip": "espeak175__p002__trunc1",
+"voice": "espeak175",
+"cut": 0.585,
+"align_next": 0.605,
+"ev_next": 0.494,
+"cut_minus_ev": 0.09099999999999997,
+"align_minus_ev": 0.11099999999999999
+},
+{
+"clip": "espeak175__p002__trunc2",
+"voice": "espeak175",
+"cut": 1.129,
+"align_next": 1.311,
+"ev_next": 1.274,
+"cut_minus_ev": -0.14500000000000002,
+"align_minus_ev": 0.03699999999999992
+},
+{
+"clip": "espeak175__p002__trunc3",
+"voice": "espeak175",
+"cut": 1.724,
+"align_next": 1.755,
+"ev_next": 1.704,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.050999999999999934
+},
+{
+"clip": "espeak175__p003__trunc1",
+"voice": "espeak175",
+"cut": 0.653,
+"align_next": 0.663,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.01100000000000012
+},
+{
+"clip": "espeak175__p003__trunc2",
+"voice": "espeak175",
+"cut": 0.954,
+"align_next": 0.984,
+"ev_next": 0.9450000000000001,
+"cut_minus_ev": 0.008999999999999897,
+"align_minus_ev": 0.038999999999999924
+},
+{
+"clip": "espeak175__p003__trunc3",
+"voice": "espeak175",
+"cut": 1.125,
+"align_next": 1.185,
+"ev_next": 1.153,
+"cut_minus_ev": -0.028000000000000025,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak175__p003__trunc4",
+"voice": "espeak175",
+"cut": 1.356,
+"align_next": 1.406,
+"ev_next": 1.364,
+"cut_minus_ev": -0.008000000000000007,
+"align_minus_ev": 0.041999999999999815
+},
+{
+"clip": "espeak175__p004__trunc1",
+"voice": "espeak175",
+"cut": 0.623,
+"align_next": 0.683,
+"ev_next": 0.637,
+"cut_minus_ev": -0.014000000000000012,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak175__p004__trunc2",
+"voice": "espeak175",
+"cut": 0.783,
+"align_next": 0.804,
+"ev_next": 0.7809999999999999,
+"cut_minus_ev": 0.002000000000000113,
+"align_minus_ev": 0.02300000000000013
+},
+{
+"clip": "espeak175__p004__trunc3",
+"voice": "espeak175",
+"cut": 1.055,
+"align_next": 1.085,
+"ev_next": 1.05,
+"cut_minus_ev": 0.004999999999999893,
+"align_minus_ev": 0.03499999999999992
+},
+{
+"clip": "espeak175__p004__trunc4",
+"voice": "espeak175",
+"cut": 1.597,
+"align_next": 1.627,
+"ev_next": 1.606,
+"cut_minus_ev": -0.009000000000000119,
+"align_minus_ev": 0.020999999999999908
+},
+{
+"clip": "espeak175__p005__trunc1",
+"voice": "espeak175",
+"cut": 0.913,
+"align_next": 0.943,
+"ev_next": 0.925,
+"cut_minus_ev": -0.01200000000000001,
+"align_minus_ev": 0.017999999999999905
+},
+{
+"clip": "espeak175__p005__trunc2",
+"voice": "espeak175",
+"cut": 1.415,
+"align_next": 1.445,
+"ev_next": 1.4200000000000002,
+"cut_minus_ev": -0.0050000000000001155,
+"align_minus_ev": 0.02499999999999991
+},
+{
+"clip": "espeak175__p005__trunc3",
+"voice": "espeak175",
+"cut": 1.696,
+"align_next": 1.726,
+"ev_next": 1.684,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.04200000000000004
+},
+{
+"clip": "espeak175__p005__trunc4",
+"voice": "espeak175",
+"cut": 1.886,
+"align_next": 1.906,
+"ev_next": 1.867,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.038999999999999924
+},
+{
+"clip": "espeak175__p005__trunc5",
+"voice": "espeak175",
+"cut": 2.257,
+"align_next": 2.348,
+"ev_next": 2.1959999999999997,
+"cut_minus_ev": 0.06100000000000039,
+"align_minus_ev": 0.15200000000000014
+},
+{
+"clip": "espeak175__p006__trunc1",
+"voice": "espeak175",
+"cut": 0.769,
+"align_next": 0.809,
+"ev_next": 0.7909999999999999,
+"cut_minus_ev": -0.02199999999999991,
+"align_minus_ev": 0.018000000000000127
+},
+{
+"clip": "espeak175__p006__trunc2",
+"voice": "espeak175",
+"cut": 1.113,
+"align_next": 1.153,
+"ev_next": 1.081,
+"cut_minus_ev": 0.03200000000000003,
+"align_minus_ev": 0.07200000000000006
+},
+{
+"clip": "espeak175__p007__trunc1",
+"voice": "espeak175",
+"cut": 0.572,
+"align_next": 0.602,
+"ev_next": 0.567,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak175__p007__trunc2",
+"voice": "espeak175",
+"cut": 0.852,
+"align_next": 0.883,
+"ev_next": 0.9159999999999999,
+"cut_minus_ev": -0.06399999999999995,
+"align_minus_ev": -0.03299999999999992
+},
+{
+"clip": "espeak175__p007__trunc3",
+"voice": "espeak175",
+"cut": 1.163,
+"align_next": 1.203,
+"ev_next": 1.141,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.062000000000000055
+},
+{
+"clip": "espeak175__p007__trunc4",
+"voice": "espeak175",
+"cut": 1.745,
+"align_next": 1.925,
+"ev_next": 1.886,
+"cut_minus_ev": -0.1409999999999998,
+"align_minus_ev": 0.039000000000000146
+},
+{
+"clip": "espeak175__p007__trunc5",
+"voice": "espeak175",
+"cut": 2.517,
+"align_next": 2.547,
+"ev_next": 2.5029999999999997,
+"cut_minus_ev": 0.014000000000000234,
+"align_minus_ev": 0.04400000000000048
+},
+{
+"clip": "espeak175__p007__trunc6",
+"voice": "espeak175",
+"cut": 2.627,
+"align_next": 2.647,
+"ev_next": 2.6369999999999996,
+"cut_minus_ev": -0.009999999999999787,
+"align_minus_ev": 0.010000000000000231
+},
+{
+"clip": "espeak175__p010__trunc1",
+"voice": "espeak175",
+"cut": 0.718,
+"align_next": 0.748,
+"ev_next": 0.719,
+"cut_minus_ev": -0.0010000000000000009,
+"align_minus_ev": 0.029000000000000026
+},
+{
+"clip": "espeak175__p010__trunc2",
+"voice": "espeak175",
+"cut": 1.062,
+"align_next": 1.092,
+"ev_next": 1.049,
+"cut_minus_ev": 0.013000000000000123,
+"align_minus_ev": 0.04300000000000015
+},
+{
+"clip": "espeak175__p011__trunc1",
+"voice": "espeak175",
+"cut": 0.482,
+"align_next": 0.502,
+"ev_next": 0.46099999999999997,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.041000000000000036
+},
+{
+"clip": "espeak175__p011__trunc2",
+"voice": "espeak175",
+"cut": 0.793,
+"align_next": 0.823,
+"ev_next": 0.796,
+"cut_minus_ev": -0.0030000000000000027,
+"align_minus_ev": 0.026999999999999913
+},
+{
+"clip": "espeak175__p011__trunc3",
+"voice": "espeak175",
+"cut": 1.024,
+"align_next": 1.024,
+"ev_next": 1.005,
+"cut_minus_ev": 0.019000000000000128,
+"align_minus_ev": 0.019000000000000128
+},
+{
+"clip": "espeak175__p011__trunc5",
+"voice": "espeak175",
+"cut": 1.898,
+"align_next": 2.089,
+"ev_next": 2.049,
+"cut_minus_ev": -0.15100000000000002,
+"align_minus_ev": 0.040000000000000036
+},
+{
+"clip": "espeak175__p011__trunc6",
+"voice": "espeak175",
+"cut": 2.621,
+"align_next": 2.631,
+"ev_next": 2.5869999999999997,
+"cut_minus_ev": 0.03400000000000025,
+"align_minus_ev": 0.04400000000000004
+},
+{
+"clip": "espeak175__p011__trunc7",
+"voice": "espeak175",
+"cut": 2.902,
+"align_next": 2.912,
+"ev_next": 2.8729999999999998,
+"cut_minus_ev": 0.02900000000000036,
+"align_minus_ev": 0.039000000000000146
+},
+{
+"clip": "espeak175__p012__trunc1",
+"voice": "espeak175",
+"cut": 0.523,
+"align_next": 0.563,
+"ev_next": 0.517,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.04599999999999993
+},
+{
+"clip": "espeak175__p012__trunc2",
+"voice": "espeak175",
+"cut": 0.664,
+"align_next": 0.704,
+"ev_next": 0.651,
+"cut_minus_ev": 0.013000000000000012,
+"align_minus_ev": 0.052999999999999936
+},
+{
+"clip": "espeak175__p012__trunc3",
+"voice": "espeak175",
+"cut": 1.147,
+"align_next": 1.247,
+"ev_next": 1.221,
+"cut_minus_ev": -0.07400000000000007,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak175__p012__trunc5",
+"voice": "espeak175",
+"cut": 2.173,
+"align_next": 2.273,
+"ev_next": 2.246,
+"cut_minus_ev": -0.07299999999999995,
+"align_minus_ev": 0.027000000000000135
+},
+{
+"clip": "espeak175__p012__trunc6",
+"voice": "espeak175",
+"cut": 2.434,
+"align_next": 2.454,
+"ev_next": 2.417,
+"cut_minus_ev": 0.017000000000000348,
+"align_minus_ev": 0.037000000000000366
+},
+{
+"clip": "espeak175__p012__trunc7",
+"voice": "espeak175",
+"cut": 2.726,
+"align_next": 2.756,
+"ev_next": 2.711,
+"cut_minus_ev": 0.015000000000000124,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak175__p013__trunc1",
+"voice": "espeak175",
+"cut": 0.643,
+"align_next": 0.683,
+"ev_next": 0.633,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.050000000000000044
+},
+{
+"clip": "espeak175__p013__trunc2",
+"voice": "espeak175",
+"cut": 1.045,
+"align_next": 1.085,
+"ev_next": 1.062,
+"cut_minus_ev": -0.017000000000000126,
+"align_minus_ev": 0.02299999999999991
+},
+{
+"clip": "espeak175__p013__trunc3",
+"voice": "espeak175",
+"cut": 1.376,
+"align_next": 1.446,
+"ev_next": 1.425,
+"cut_minus_ev": -0.049000000000000155,
+"align_minus_ev": 0.020999999999999908
+},
+{
+"clip": "espeak175__p014__trunc1",
+"voice": "espeak175",
+"cut": 0.646,
+"align_next": 0.667,
+"ev_next": 0.645,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak175__p014__trunc2",
+"voice": "espeak175",
+"cut": 0.919,
+"align_next": 0.949,
+"ev_next": 0.907,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.041999999999999926
+},
+{
+"clip": "espeak175__p014__trunc3",
+"voice": "espeak175",
+"cut": 1.161,
+"align_next": 1.192,
+"ev_next": 1.16,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak175__p015__trunc1",
+"voice": "espeak175",
+"cut": 0.737,
+"align_next": 0.768,
+"ev_next": 0.724,
+"cut_minus_ev": 0.013000000000000012,
+"align_minus_ev": 0.04400000000000004
+},
+{
+"clip": "espeak175__p015__trunc2",
+"voice": "espeak175",
+"cut": 1.07,
+"align_next": 1.091,
+"ev_next": 1.054,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.03699999999999992
+},
+{
+"clip": "espeak175__p016__trunc1",
+"voice": "espeak175",
+"cut": 0.602,
+"align_next": 0.622,
+"ev_next": 0.5720000000000001,
+"cut_minus_ev": 0.029999999999999916,
+"align_minus_ev": 0.04999999999999993
+},
+{
+"clip": "espeak175__p016__trunc2",
+"voice": "espeak175",
+"cut": 0.873,
+"align_next": 0.923,
+"ev_next": 0.885,
+"cut_minus_ev": -0.01200000000000001,
+"align_minus_ev": 0.038000000000000034
+},
+{
+"clip": "espeak175__p016__trunc3",
+"voice": "espeak175",
+"cut": 1.254,
+"align_next": 1.264,
+"ev_next": 1.277,
+"cut_minus_ev": -0.02299999999999991,
+"align_minus_ev": -0.0129999999999999
+},
+{
+"clip": "espeak175__p016__trunc4",
+"voice": "espeak175",
+"cut": 1.796,
+"align_next": 1.806,
+"ev_next": 1.776,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak175__p016__trunc5",
+"voice": "espeak175",
+"cut": 2.248,
+"align_next": 2.288,
+"ev_next": 2.2199999999999998,
+"cut_minus_ev": 0.02800000000000047,
+"align_minus_ev": 0.06800000000000006
+},
+{
+"clip": "espeak175__p017__trunc1",
+"voice": "espeak175",
+"cut": 0.652,
+"align_next": 0.662,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 1.1102230246251565e-16,
+"align_minus_ev": 0.01000000000000012
+},
+{
+"clip": "espeak175__p017__trunc2",
+"voice": "espeak175",
+"cut": 0.994,
+"align_next": 1.064,
+"ev_next": 0.948,
+"cut_minus_ev": 0.04600000000000004,
+"align_minus_ev": 0.1160000000000001
+},
+{
+"clip": "espeak175__p017__trunc3",
+"voice": "espeak175",
+"cut": 1.214,
+"align_next": 1.244,
+"ev_next": 1.223,
+"cut_minus_ev": -0.009000000000000119,
+"align_minus_ev": 0.020999999999999908
+},
+{
+"clip": "espeak175__p017__trunc4",
+"voice": "espeak175",
+"cut": 1.716,
+"align_next": 1.806,
+"ev_next": 1.784,
+"cut_minus_ev": -0.06800000000000006,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak175__p017__trunc5",
+"voice": "espeak175",
+"cut": 1.977,
+"align_next": 2.027,
+"ev_next": 1.975,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.052000000000000046
+},
+{
+"clip": "espeak175__p018__trunc1",
+"voice": "espeak175",
+"cut": 0.554,
+"align_next": 0.564,
+"ev_next": 0.542,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.02199999999999991
+},
+{
+"clip": "espeak175__p019__trunc1",
+"voice": "espeak175",
+"cut": 1.074,
+"align_next": 1.104,
+"ev_next": 1.068,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak175__p019__trunc2",
+"voice": "espeak175",
+"cut": 1.806,
+"align_next": 1.987,
+"ev_next": 1.956,
+"cut_minus_ev": -0.1499999999999999,
+"align_minus_ev": 0.03100000000000014
+},
+{
+"clip": "espeak175__p020__trunc1",
+"voice": "espeak175",
+"cut": 0.594,
+"align_next": 0.604,
+"ev_next": 0.583,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.02100000000000002
+},
+{
+"clip": "espeak175__p021__trunc1",
+"voice": "espeak175",
+"cut": 0.743,
+"align_next": 0.763,
+"ev_next": 0.73,
+"cut_minus_ev": 0.013000000000000012,
+"align_minus_ev": 0.03300000000000003
+},
+{
+"clip": "espeak175__p021__trunc2",
+"voice": "espeak175",
+"cut": 0.864,
+"align_next": 0.904,
+"ev_next": 0.8520000000000001,
+"cut_minus_ev": 0.0119999999999999,
+"align_minus_ev": 0.051999999999999935
+},
+{
+"clip": "espeak175__p021__trunc3",
+"voice": "espeak175",
+"cut": 1.165,
+"align_next": 1.185,
+"ev_next": 1.167,
+"cut_minus_ev": -0.0020000000000000018,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak175__p021__trunc4",
+"voice": "espeak175",
+"cut": 1.487,
+"align_next": 1.567,
+"ev_next": 1.526,
+"cut_minus_ev": -0.038999999999999924,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak175__p022__trunc1",
+"voice": "espeak175",
+"cut": 0.575,
+"align_next": 0.605,
+"ev_next": 0.5700000000000001,
+"cut_minus_ev": 0.004999999999999893,
+"align_minus_ev": 0.03499999999999992
+},
+{
+"clip": "espeak175__p022__trunc2",
+"voice": "espeak175",
+"cut": 0.888,
+"align_next": 0.908,
+"ev_next": 0.835,
+"cut_minus_ev": 0.05300000000000005,
+"align_minus_ev": 0.07300000000000006
+},
+{
+"clip": "espeak175__p022__trunc3",
+"voice": "espeak175",
+"cut": 1.211,
+"align_next": 1.211,
+"ev_next": 1.179,
+"cut_minus_ev": 0.03200000000000003,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak175__p022__trunc4",
+"voice": "espeak175",
+"cut": 1.554,
+"align_next": 1.574,
+"ev_next": 1.5230000000000001,
+"cut_minus_ev": 0.030999999999999917,
+"align_minus_ev": 0.050999999999999934
+},
+{
+"clip": "espeak175__p023__trunc1",
+"voice": "espeak175",
+"cut": 0.603,
+"align_next": 0.623,
+"ev_next": 0.615,
+"cut_minus_ev": -0.01200000000000001,
+"align_minus_ev": 0.008000000000000007
+},
+{
+"clip": "espeak175__p023__trunc2",
+"voice": "espeak175",
+"cut": 0.784,
+"align_next": 0.804,
+"ev_next": 0.758,
+"cut_minus_ev": 0.026000000000000023,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak175__p023__trunc4",
+"voice": "espeak175",
+"cut": 1.759,
+"align_next": 1.99,
+"ev_next": 1.96,
+"cut_minus_ev": -0.20100000000000007,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak175__p023__trunc5",
+"voice": "espeak175",
+"cut": 2.492,
+"align_next": 2.593,
+"ev_next": 2.555,
+"cut_minus_ev": -0.06300000000000017,
+"align_minus_ev": 0.03799999999999981
+},
+{
+"clip": "espeak175__p023__trunc7",
+"voice": "espeak175",
+"cut": 2.884,
+"align_next": 2.914,
+"ev_next": 2.872,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.04200000000000026
+},
+{
+"clip": "espeak175__p023__trunc8",
+"voice": "espeak175",
+"cut": 3.125,
+"align_next": 3.135,
+"ev_next": 3.082,
+"cut_minus_ev": 0.04300000000000015,
+"align_minus_ev": 0.052999999999999936
+},
+{
+"clip": "espeak175__p024__trunc1",
+"voice": "espeak175",
+"cut": 0.676,
+"align_next": 0.706,
+"ev_next": 0.6739999999999999,
+"cut_minus_ev": 0.002000000000000113,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak175__p024__trunc2",
+"voice": "espeak175",
+"cut": 1.029,
+"align_next": 1.05,
+"ev_next": 1.022,
+"cut_minus_ev": 0.006999999999999895,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak175__p024__trunc3",
+"voice": "espeak175",
+"cut": 1.342,
+"align_next": 1.393,
+"ev_next": 1.317,
+"cut_minus_ev": 0.025000000000000133,
+"align_minus_ev": 0.07600000000000007
+},
+{
+"clip": "espeak175__p025__trunc1",
+"voice": "espeak175",
+"cut": 0.645,
+"align_next": 0.665,
+"ev_next": 0.6159999999999999,
+"cut_minus_ev": 0.029000000000000137,
+"align_minus_ev": 0.049000000000000155
+},
+{
+"clip": "espeak175__p025__trunc2",
+"voice": "espeak175",
+"cut": 0.836,
+"align_next": 0.866,
+"ev_next": 0.806,
+"cut_minus_ev": 0.029999999999999916,
+"align_minus_ev": 0.05999999999999994
+},
+{
+"clip": "espeak175__p025__trunc3",
+"voice": "espeak175",
+"cut": 1.068,
+"align_next": 1.108,
+"ev_next": 1.057,
+"cut_minus_ev": 0.01100000000000012,
+"align_minus_ev": 0.051000000000000156
+},
+{
+"clip": "espeak175__p025__trunc4",
+"voice": "espeak175",
+"cut": 1.42,
+"align_next": 1.511,
+"ev_next": 1.47,
+"cut_minus_ev": -0.050000000000000044,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak175__p025__trunc5",
+"voice": "espeak175",
+"cut": 1.672,
+"align_next": 1.712,
+"ev_next": 1.671,
+"cut_minus_ev": 0.0009999999999998899,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak175__p025__trunc6",
+"voice": "espeak175",
+"cut": 1.934,
+"align_next": 1.954,
+"ev_next": 1.895,
+"cut_minus_ev": 0.038999999999999924,
+"align_minus_ev": 0.05899999999999994
+},
+{
+"clip": "espeak175__p026__trunc1",
+"voice": "espeak175",
+"cut": 0.482,
+"align_next": 0.502,
+"ev_next": 0.46499999999999997,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.03700000000000003
+},
+{
+"clip": "espeak175__p026__trunc2",
+"voice": "espeak175",
+"cut": 0.673,
+"align_next": 0.703,
+"ev_next": 0.6659999999999999,
+"cut_minus_ev": 0.007000000000000117,
+"align_minus_ev": 0.03700000000000003
+},
+{
+"clip": "espeak175__p026__trunc3",
+"voice": "espeak175",
+"cut": 1.084,
+"align_next": 1.084,
+"ev_next": 1.049,
+"cut_minus_ev": 0.03500000000000014,
+"align_minus_ev": 0.03500000000000014
+},
+{
+"clip": "espeak175__p026__trunc4",
+"voice": "espeak175",
+"cut": 1.516,
+"align_next": 1.707,
+"ev_next": 1.683,
+"cut_minus_ev": -0.16700000000000004,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak175__p027__trunc1",
+"voice": "espeak175",
+"cut": 0.616,
+"align_next": 0.687,
+"ev_next": 0.573,
+"cut_minus_ev": 0.04300000000000004,
+"align_minus_ev": 0.1140000000000001
+},
+{
+"clip": "espeak175__p027__trunc2",
+"voice": "espeak175",
+"cut": 0.879,
+"align_next": 0.909,
+"ev_next": 0.8699999999999999,
+"cut_minus_ev": 0.009000000000000119,
+"align_minus_ev": 0.039000000000000146
+},
+{
+"clip": "espeak175__p027__trunc3",
+"voice": "espeak175",
+"cut": 1.041,
+"align_next": 1.091,
+"ev_next": 1.06,
+"cut_minus_ev": -0.019000000000000128,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak175__p027__trunc4",
+"voice": "espeak175",
+"cut": 1.212,
+"align_next": 1.253,
+"ev_next": 1.196,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.05699999999999994
+},
+{
+"clip": "espeak175__p028__trunc1",
+"voice": "espeak175",
+"cut": 0.918,
+"align_next": 1.109,
+"ev_next": 1.074,
+"cut_minus_ev": -0.15600000000000003,
+"align_minus_ev": 0.03499999999999992
+},
+{
+"clip": "espeak175__p028__trunc2",
+"voice": "espeak175",
+"cut": 1.573,
+"align_next": 1.613,
+"ev_next": 1.582,
+"cut_minus_ev": -0.009000000000000119,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak175__p029__trunc1",
+"voice": "espeak175",
+"cut": 0.822,
+"align_next": 1.003,
+"ev_next": 0.9830000000000001,
+"cut_minus_ev": -0.16100000000000014,
+"align_minus_ev": 0.019999999999999796
+},
+{
+"clip": "espeak175__p029__trunc2",
+"voice": "espeak175",
+"cut": 1.173,
+"align_next": 1.204,
+"ev_next": 1.145,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.05899999999999994
+},
+{
+"clip": "espeak175__p029__trunc3",
+"voice": "espeak175",
+"cut": 1.545,
+"align_next": 1.565,
+"ev_next": 1.551,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak175__p029__trunc5",
+"voice": "espeak175",
+"cut": 2.207,
+"align_next": 2.227,
+"ev_next": 2.168,
+"cut_minus_ev": 0.0389999999999997,
+"align_minus_ev": 0.05899999999999972
+},
+{
+"clip": "espeak175__p029__trunc6",
+"voice": "espeak175",
+"cut": 2.317,
+"align_next": 2.347,
+"ev_next": 2.299,
+"cut_minus_ev": 0.018000000000000238,
+"align_minus_ev": 0.04800000000000004
+},
+{
+"clip": "espeak175__p029__trunc7",
+"voice": "espeak175",
+"cut": 2.628,
+"align_next": 2.648,
+"ev_next": 2.61,
+"cut_minus_ev": 0.018000000000000238,
+"align_minus_ev": 0.038000000000000256
+},
+{
+"clip": "espeak175__p030__trunc1",
+"voice": "espeak175",
+"cut": 0.887,
+"align_next": 1.089,
+"ev_next": 1.051,
+"cut_minus_ev": -0.16399999999999992,
+"align_minus_ev": 0.038000000000000034
+},
+{
+"clip": "espeak175__p030__trunc2",
+"voice": "espeak175",
+"cut": 1.401,
+"align_next": 1.411,
+"ev_next": 1.374,
+"cut_minus_ev": 0.026999999999999913,
+"align_minus_ev": 0.03699999999999992
+},
+{
+"clip": "espeak175__p030__trunc3",
+"voice": "espeak175",
+"cut": 1.804,
+"align_next": 1.895,
+"ev_next": 1.725,
+"cut_minus_ev": 0.07899999999999996,
+"align_minus_ev": 0.16999999999999993
+},
+{
+"clip": "espeak175__p031__trunc1",
+"voice": "espeak175",
+"cut": 0.612,
+"align_next": 0.642,
+"ev_next": 0.612,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak175__p031__trunc2",
+"voice": "espeak175",
+"cut": 0.994,
+"align_next": 1.084,
+"ev_next": 0.9279999999999999,
+"cut_minus_ev": 0.06600000000000006,
+"align_minus_ev": 0.15600000000000014
+},
+{
+"clip": "espeak175__p031__trunc3",
+"voice": "espeak175",
+"cut": 1.475,
+"align_next": 1.666,
+"ev_next": 1.6280000000000001,
+"cut_minus_ev": -0.15300000000000002,
+"align_minus_ev": 0.03799999999999981
+},
+{
+"clip": "espeak175__p031__trunc4",
+"voice": "espeak175",
+"cut": 2.168,
+"align_next": 2.228,
+"ev_next": 2.148,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.08000000000000007
+},
+{
+"clip": "espeak175__p032__trunc1",
+"voice": "espeak175",
+"cut": 0.746,
+"align_next": 0.806,
+"ev_next": 0.752,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.05400000000000005
+},
+{
+"clip": "espeak175__p032__trunc2",
+"voice": "espeak175",
+"cut": 1.068,
+"align_next": 1.108,
+"ev_next": 1.059,
+"cut_minus_ev": 0.009000000000000119,
+"align_minus_ev": 0.049000000000000155
+},
+{
+"clip": "espeak175__p032__trunc3",
+"voice": "espeak175",
+"cut": 1.31,
+"align_next": 1.33,
+"ev_next": 1.272,
+"cut_minus_ev": 0.038000000000000034,
+"align_minus_ev": 0.05800000000000005
+},
+{
+"clip": "espeak175__p032__trunc4",
+"voice": "espeak175",
+"cut": 1.441,
+"align_next": 1.471,
+"ev_next": 1.426,
+"cut_minus_ev": 0.015000000000000124,
+"align_minus_ev": 0.04500000000000015
+},
+{
+"clip": "espeak175__p032__trunc5",
+"voice": "espeak175",
+"cut": 1.703,
+"align_next": 1.733,
+"ev_next": 1.674,
+"cut_minus_ev": 0.029000000000000137,
+"align_minus_ev": 0.05900000000000016
+},
+{
+"clip": "espeak175__p033__trunc1",
+"voice": "espeak175",
+"cut": 0.753,
+"align_next": 0.763,
+"ev_next": 0.727,
+"cut_minus_ev": 0.026000000000000023,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak175__p033__trunc2",
+"voice": "espeak175",
+"cut": 1.125,
+"align_next": 1.145,
+"ev_next": 1.105,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.040000000000000036
+},
+{
+"clip": "espeak175__p034__trunc1",
+"voice": "espeak175",
+"cut": 0.733,
+"align_next": 0.763,
+"ev_next": 0.732,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.031000000000000028
+},
+{
+"clip": "espeak175__p034__trunc2",
+"voice": "espeak175",
+"cut": 0.984,
+"align_next": 1.024,
+"ev_next": 0.964,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.06000000000000005
+},
+{
+"clip": "espeak175__p035__trunc1",
+"voice": "espeak175",
+"cut": 0.612,
+"align_next": 0.642,
+"ev_next": 0.623,
+"cut_minus_ev": -0.01100000000000001,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak175__p035__trunc2",
+"voice": "espeak175",
+"cut": 1.123,
+"align_next": 1.143,
+"ev_next": 1.1,
+"cut_minus_ev": 0.02299999999999991,
+"align_minus_ev": 0.04299999999999993
+},
+{
+"clip": "espeak175__p035__trunc3",
+"voice": "espeak175",
+"cut": 1.484,
+"align_next": 1.504,
+"ev_next": 1.462,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.04200000000000004
+},
+{
+"clip": "espeak175__p035__trunc4",
+"voice": "espeak175",
+"cut": 1.785,
+"align_next": 1.805,
+"ev_next": 1.7570000000000001,
+"cut_minus_ev": 0.027999999999999803,
+"align_minus_ev": 0.04799999999999982
+},
+{
+"clip": "espeak175__p035__trunc5",
+"voice": "espeak175",
+"cut": 1.955,
+"align_next": 2.006,
+"ev_next": 1.957,
+"cut_minus_ev": -0.0020000000000000018,
+"align_minus_ev": 0.04899999999999971
+},
+{
+"clip": "espeak175__p035__trunc6",
+"voice": "espeak175",
+"cut": 2.667,
+"align_next": 2.708,
+"ev_next": 2.654,
+"cut_minus_ev": 0.0129999999999999,
+"align_minus_ev": 0.05400000000000027
+},
+{
+"clip": "espeak175__p036__trunc1",
+"voice": "espeak175",
+"cut": 0.919,
+"align_next": 1.111,
+"ev_next": 1.058,
+"cut_minus_ev": -0.139,
+"align_minus_ev": 0.052999999999999936
+},
+{
+"clip": "espeak175__p036__trunc2",
+"voice": "espeak175",
+"cut": 1.434,
+"align_next": 1.454,
+"ev_next": 1.415,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.038999999999999924
+},
+{
+"clip": "espeak175__p037__trunc1",
+"voice": "espeak175",
+"cut": 0.457,
+"align_next": 0.468,
+"ev_next": 0.5609999999999999,
+"cut_minus_ev": -0.10399999999999993,
+"align_minus_ev": -0.09299999999999992
+},
+{
+"clip": "espeak175__p037__trunc2",
+"voice": "espeak175",
+"cut": 0.569,
+"align_next": 0.59,
+"ev_next": 0.5609999999999999,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.029000000000000026
+},
+{
+"clip": "espeak175__p041__trunc1",
+"voice": "espeak175",
+"cut": 0.619,
+"align_next": 0.649,
+"ev_next": 0.606,
+"cut_minus_ev": 0.013000000000000012,
+"align_minus_ev": 0.04300000000000004
+},
+{
+"clip": "espeak175__p042__trunc1",
+"voice": "espeak175",
+"cut": 0.545,
+"align_next": 0.565,
+"ev_next": 0.534,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak175__p043__trunc1",
+"voice": "espeak175",
+"cut": 0.645,
+"align_next": 0.685,
+"ev_next": 0.639,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak175__p047__trunc1",
+"voice": "espeak175",
+"cut": 0.479,
+"align_next": 0.53,
+"ev_next": 0.424,
+"cut_minus_ev": 0.05499999999999999,
+"align_minus_ev": 0.10600000000000004
+},
+{
+"clip": "espeak175__p049__trunc1",
+"voice": "espeak175",
+"cut": 0.907,
+"align_next": 1.028,
+"ev_next": 1.016,
+"cut_minus_ev": -0.10899999999999999,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak175__p049__trunc2",
+"voice": "espeak175",
+"cut": 1.572,
+"align_next": 1.673,
+"ev_next": 1.6280000000000001,
+"cut_minus_ev": -0.05600000000000005,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak175__p049__trunc3",
+"voice": "espeak175",
+"cut": 2.097,
+"align_next": 2.117,
+"ev_next": 2.0020000000000002,
+"cut_minus_ev": 0.09499999999999975,
+"align_minus_ev": 0.11499999999999977
+},
+{
+"clip": "espeak175__p050__trunc1",
+"voice": "espeak175",
+"cut": 0.785,
+"align_next": 0.785,
+"ev_next": 0.749,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak175__p051__trunc1",
+"voice": "espeak175",
+"cut": 0.554,
+"align_next": 0.584,
+"ev_next": 0.5429999999999999,
+"cut_minus_ev": 0.01100000000000012,
+"align_minus_ev": 0.041000000000000036
+},
+{
+"clip": "espeak175__p051__trunc2",
+"voice": "espeak175",
+"cut": 1.229,
+"align_next": 1.37,
+"ev_next": 1.33,
+"cut_minus_ev": -0.10099999999999998,
+"align_minus_ev": 0.040000000000000036
+},
+{
+"clip": "espeak175__p051__trunc3",
+"voice": "espeak175",
+"cut": 1.873,
+"align_next": 1.974,
+"ev_next": 1.941,
+"cut_minus_ev": -0.06800000000000006,
+"align_minus_ev": 0.03299999999999992
+},
+{
+"clip": "espeak175__p051__trunc4",
+"voice": "espeak175",
+"cut": 2.276,
+"align_next": 2.296,
+"ev_next": 2.2430000000000003,
+"cut_minus_ev": 0.032999999999999474,
+"align_minus_ev": 0.05299999999999949
+},
+{
+"clip": "espeak175__p052__trunc1",
+"voice": "espeak175",
+"cut": 0.622,
+"align_next": 0.642,
+"ev_next": 0.627,
+"cut_minus_ev": -0.0050000000000000044,
+"align_minus_ev": 0.015000000000000013
+},
+{
+"clip": "espeak175__p052__trunc2",
+"voice": "espeak175",
+"cut": 0.892,
+"align_next": 0.923,
+"ev_next": 0.8600000000000001,
+"cut_minus_ev": 0.03199999999999992,
+"align_minus_ev": 0.06299999999999994
+},
+{
+"clip": "espeak175__p052__trunc3",
+"voice": "espeak175",
+"cut": 1.183,
+"align_next": 1.203,
+"ev_next": 1.156,
+"cut_minus_ev": 0.027000000000000135,
+"align_minus_ev": 0.04700000000000015
+},
+{
+"clip": "espeak175__p052__trunc4",
+"voice": "espeak175",
+"cut": 2.006,
+"align_next": 2.106,
+"ev_next": 2.0709999999999997,
+"cut_minus_ev": -0.06499999999999995,
+"align_minus_ev": 0.03500000000000014
+},
+{
+"clip": "espeak175__p052__trunc5",
+"voice": "espeak175",
+"cut": 2.617,
+"align_next": 2.707,
+"ev_next": 2.683,
+"cut_minus_ev": -0.06599999999999984,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak175__p052__trunc6",
+"voice": "espeak175",
+"cut": 3.008,
+"align_next": 3.028,
+"ev_next": 2.985,
+"cut_minus_ev": 0.02300000000000013,
+"align_minus_ev": 0.04300000000000015
+},
+{
+"clip": "espeak175__p053__trunc1",
+"voice": "espeak175",
+"cut": 0.805,
+"align_next": 0.825,
+"ev_next": 0.8069999999999999,
+"cut_minus_ev": -0.0019999999999998908,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak175__p053__trunc2",
+"voice": "espeak175",
+"cut": 1.55,
+"align_next": 1.671,
+"ev_next": 1.621,
+"cut_minus_ev": -0.07099999999999995,
+"align_minus_ev": 0.050000000000000044
+},
+{
+"clip": "espeak175__p053__trunc3",
+"voice": "espeak175",
+"cut": 2.174,
+"align_next": 2.274,
+"ev_next": 2.232,
+"cut_minus_ev": -0.058000000000000274,
+"align_minus_ev": 0.041999999999999815
+},
+{
+"clip": "espeak175__p053__trunc4",
+"voice": "espeak175",
+"cut": 2.566,
+"align_next": 2.596,
+"ev_next": 2.5340000000000003,
+"cut_minus_ev": 0.031999999999999584,
+"align_minus_ev": 0.06199999999999983
+},
+{
+"clip": "espeak175__p054__trunc1",
+"voice": "espeak175",
+"cut": 0.511,
+"align_next": 0.541,
+"ev_next": 0.526,
+"cut_minus_ev": -0.015000000000000013,
+"align_minus_ev": 0.015000000000000013
+},
+{
+"clip": "espeak175__p054__trunc3",
+"voice": "espeak175",
+"cut": 1.162,
+"align_next": 1.262,
+"ev_next": 1.242,
+"cut_minus_ev": -0.08000000000000007,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak175__p054__trunc5",
+"voice": "espeak175",
+"cut": 1.994,
+"align_next": 2.084,
+"ev_next": 2.0709999999999997,
+"cut_minus_ev": -0.07699999999999974,
+"align_minus_ev": 0.013000000000000345
+},
+{
+"clip": "espeak175__p054__trunc7",
+"voice": "espeak175",
+"cut": 2.305,
+"align_next": 2.325,
+"ev_next": 2.256,
+"cut_minus_ev": 0.04900000000000038,
+"align_minus_ev": 0.0690000000000004
+},
+{
+"clip": "espeak175__p054__trunc9",
+"voice": "espeak175",
+"cut": 3.577,
+"align_next": 3.687,
+"ev_next": 3.659,
+"cut_minus_ev": -0.08199999999999985,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak175__p054__trunc11",
+"voice": "espeak175",
+"cut": 4.238,
+"align_next": 4.268,
+"ev_next": 4.22,
+"cut_minus_ev": 0.018000000000000682,
+"align_minus_ev": 0.04800000000000004
+},
+{
+"clip": "espeak175__p055__trunc1",
+"voice": "espeak175",
+"cut": 0.768,
+"align_next": 0.869,
+"ev_next": 0.8600000000000001,
+"cut_minus_ev": -0.09200000000000008,
+"align_minus_ev": 0.008999999999999897
+},
+{
+"clip": "espeak175__p055__trunc2",
+"voice": "espeak175",
+"cut": 1.061,
+"align_next": 1.112,
+"ev_next": 1.051,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.061000000000000165
+},
+{
+"clip": "espeak175__p056__trunc1",
+"voice": "espeak175",
+"cut": 0.769,
+"align_next": 0.87,
+"ev_next": 0.8600000000000001,
+"cut_minus_ev": -0.09100000000000008,
+"align_minus_ev": 0.009999999999999898
+},
+{
+"clip": "espeak175__p060__trunc1",
+"voice": "espeak175",
+"cut": 0.708,
+"align_next": 0.81,
+"ev_next": 0.758,
+"cut_minus_ev": -0.050000000000000044,
+"align_minus_ev": 0.052000000000000046
+},
+{
+"clip": "espeak175__p065__trunc1",
+"voice": "espeak175",
+"cut": 0.754,
+"align_next": 0.805,
+"ev_next": 0.7909999999999999,
+"cut_minus_ev": -0.03699999999999992,
+"align_minus_ev": 0.014000000000000123
+},
+{
+"clip": "espeak175__p065__trunc2",
+"voice": "espeak175",
+"cut": 1.247,
+"align_next": 1.287,
+"ev_next": 1.202,
+"cut_minus_ev": 0.04500000000000015,
+"align_minus_ev": 0.08499999999999996
+},
+{
+"clip": "espeak175__p066__trunc1",
+"voice": "espeak175",
+"cut": 0.783,
+"align_next": 0.783,
+"ev_next": 0.749,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.03400000000000003
+},
+{
+"clip": "espeak175__p066__trunc3",
+"voice": "espeak175",
+"cut": 1.506,
+"align_next": 1.526,
+"ev_next": 1.494,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak175__p066__trunc4",
+"voice": "espeak175",
+"cut": 1.667,
+"align_next": 1.687,
+"ev_next": 1.6360000000000001,
+"cut_minus_ev": 0.030999999999999917,
+"align_minus_ev": 0.050999999999999934
+},
+{
+"clip": "espeak175__p066__trunc6",
+"voice": "espeak175",
+"cut": 2.3,
+"align_next": 2.33,
+"ev_next": 2.272,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.058000000000000274
+},
+{
+"clip": "espeak175__p066__trunc7",
+"voice": "espeak175",
+"cut": 2.932,
+"align_next": 2.972,
+"ev_next": 2.905,
+"cut_minus_ev": 0.027000000000000135,
+"align_minus_ev": 0.06700000000000017
+},
+{
+"clip": "espeak175__p066__trunc9",
+"voice": "espeak175",
+"cut": 3.665,
+"align_next": 3.675,
+"ev_next": 3.6159999999999997,
+"cut_minus_ev": 0.04900000000000038,
+"align_minus_ev": 0.05900000000000016
+},
+{
+"clip": "espeak175__p067__trunc1",
+"voice": "espeak175",
+"cut": 0.558,
+"align_next": 0.588,
+"ev_next": 0.542,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.04599999999999993
+},
+{
+"clip": "espeak175__p068__trunc1",
+"voice": "espeak175",
+"cut": 0.623,
+"align_next": 0.643,
+"ev_next": 0.627,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak175__p068__trunc2",
+"voice": "espeak175",
+"cut": 0.914,
+"align_next": 0.924,
+"ev_next": 0.8580000000000001,
+"cut_minus_ev": 0.05599999999999994,
+"align_minus_ev": 0.06599999999999995
+},
+{
+"clip": "espeak175__p068__trunc3",
+"voice": "espeak175",
+"cut": 1.185,
+"align_next": 1.205,
+"ev_next": 1.154,
+"cut_minus_ev": 0.03100000000000014,
+"align_minus_ev": 0.051000000000000156
+},
+{
+"clip": "espeak175__p069__trunc1",
+"voice": "espeak175",
+"cut": 0.809,
+"align_next": 0.829,
+"ev_next": 0.8069999999999999,
+"cut_minus_ev": 0.002000000000000113,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak175__p070__trunc1",
+"voice": "espeak175",
+"cut": 0.522,
+"align_next": 0.562,
+"ev_next": 0.526,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak175__p070__trunc2",
+"voice": "espeak175",
+"cut": 0.722,
+"align_next": 0.742,
+"ev_next": 0.708,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.03400000000000003
+},
+{
+"clip": "espeak175__p070__trunc3",
+"voice": "espeak175",
+"cut": 1.164,
+"align_next": 1.264,
+"ev_next": 1.242,
+"cut_minus_ev": -0.07800000000000007,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak175__p070__trunc5",
+"voice": "espeak175",
+"cut": 1.996,
+"align_next": 2.086,
+"ev_next": 2.0709999999999997,
+"cut_minus_ev": -0.07499999999999973,
+"align_minus_ev": 0.015000000000000124
+},
+{
+"clip": "espeak175__p070__trunc6",
+"voice": "espeak175",
+"cut": 2.207,
+"align_next": 2.227,
+"ev_next": 2.199,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak175__p070__trunc7",
+"voice": "espeak175",
+"cut": 2.357,
+"align_next": 2.387,
+"ev_next": 2.339,
+"cut_minus_ev": 0.018000000000000238,
+"align_minus_ev": 0.04800000000000004
+},
+{
+"clip": "espeak175__p071__trunc1",
+"voice": "espeak175",
+"cut": 0.486,
+"align_next": 0.526,
+"ev_next": 0.481,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.04500000000000004
+},
+{
+"clip": "espeak175__p071__trunc2",
+"voice": "espeak175",
+"cut": 0.941,
+"align_next": 0.972,
+"ev_next": 0.9410000000000001,
+"cut_minus_ev": -1.1102230246251565e-16,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak175__p072__trunc1",
+"voice": "espeak175",
+"cut": 0.775,
+"align_next": 0.805,
+"ev_next": 0.772,
+"cut_minus_ev": 0.0030000000000000027,
+"align_minus_ev": 0.03300000000000003
+},
+{
+"clip": "espeak175__p077__trunc1",
+"voice": "espeak175",
+"cut": 0.656,
+"align_next": 0.666,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 0.004000000000000115,
+"align_minus_ev": 0.014000000000000123
+},
+{
+"clip": "espeak175__p077__trunc2",
+"voice": "espeak175",
+"cut": 0.989,
+"align_next": 1.05,
+"ev_next": 0.9450000000000001,
+"cut_minus_ev": 0.04399999999999993,
+"align_minus_ev": 0.10499999999999998
+},
+{
+"clip": "espeak175__p077__trunc3",
+"voice": "espeak175",
+"cut": 1.222,
+"align_next": 1.272,
+"ev_next": 1.223,
+"cut_minus_ev": -0.001000000000000112,
+"align_minus_ev": 0.04899999999999993
+},
+{
+"clip": "espeak175__p078__trunc1",
+"voice": "espeak175",
+"cut": 0.643,
+"align_next": 0.663,
+"ev_next": 0.6439999999999999,
+"cut_minus_ev": -0.0009999999999998899,
+"align_minus_ev": 0.019000000000000128
+},
+{
+"clip": "espeak175__p078__trunc2",
+"voice": "espeak175",
+"cut": 0.924,
+"align_next": 0.944,
+"ev_next": 0.909,
+"cut_minus_ev": 0.015000000000000013,
+"align_minus_ev": 0.03499999999999992
+},
+{
+"clip": "espeak175__p078__trunc3",
+"voice": "espeak175",
+"cut": 1.566,
+"align_next": 1.606,
+"ev_next": 1.544,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.062000000000000055
+},
+{
+"clip": "espeak175__p079__trunc1",
+"voice": "espeak175",
+"cut": 0.653,
+"align_next": 0.663,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.01100000000000012
+},
+{
+"clip": "espeak175__p079__trunc2",
+"voice": "espeak175",
+"cut": 0.954,
+"align_next": 0.984,
+"ev_next": 0.938,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak175__p079__trunc3",
+"voice": "espeak175",
+"cut": 1.185,
+"align_next": 1.205,
+"ev_next": 1.176,
+"cut_minus_ev": 0.009000000000000119,
+"align_minus_ev": 0.029000000000000137
+},
+{
+"clip": "espeak175__p079__trunc4",
+"voice": "espeak175",
+"cut": 1.436,
+"align_next": 1.466,
+"ev_next": 1.423,
+"cut_minus_ev": 0.0129999999999999,
+"align_minus_ev": 0.04299999999999993
+},
+{
+"clip": "espeak175__p080__trunc1",
+"voice": "espeak175",
+"cut": 0.654,
+"align_next": 0.664,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 0.002000000000000113,
+"align_minus_ev": 0.012000000000000122
+},
+{
+"clip": "espeak175__p080__trunc2",
+"voice": "espeak175",
+"cut": 0.966,
+"align_next": 0.986,
+"ev_next": 0.938,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.04800000000000004
+},
+{
+"clip": "espeak175__p080__trunc3",
+"voice": "espeak175",
+"cut": 1.188,
+"align_next": 1.208,
+"ev_next": 1.175,
+"cut_minus_ev": 0.0129999999999999,
+"align_minus_ev": 0.03299999999999992
+},
+{
+"clip": "espeak175__p080__trunc4",
+"voice": "espeak175",
+"cut": 1.5,
+"align_next": 1.51,
+"ev_next": 1.498,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak175__p080__trunc5",
+"voice": "espeak175",
+"cut": 1.771,
+"align_next": 1.812,
+"ev_next": 1.735,
+"cut_minus_ev": 0.03599999999999981,
+"align_minus_ev": 0.07699999999999996
+},
+{
+"clip": "espeak175__p080__trunc6",
+"voice": "espeak175",
+"cut": 2.063,
+"align_next": 2.094,
+"ev_next": 2.031,
+"cut_minus_ev": 0.03200000000000003,
+"align_minus_ev": 0.06299999999999972
+},
+{
+"clip": "espeak175__p081__trunc1",
+"voice": "espeak175",
+"cut": 0.652,
+"align_next": 0.662,
+"ev_next": 0.6519999999999999,
+"cut_minus_ev": 1.1102230246251565e-16,
+"align_minus_ev": 0.01000000000000012
+},
+{
+"clip": "espeak175__p081__trunc2",
+"voice": "espeak175",
+"cut": 0.954,
+"align_next": 0.984,
+"ev_next": 0.9390000000000001,
+"cut_minus_ev": 0.014999999999999902,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak175__p081__trunc3",
+"voice": "espeak175",
+"cut": 1.184,
+"align_next": 1.205,
+"ev_next": 1.176,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.029000000000000137
+},
+{
+"clip": "espeak175__p081__trunc4",
+"voice": "espeak175",
+"cut": 1.686,
+"align_next": 1.706,
+"ev_next": 1.693,
+"cut_minus_ev": -0.007000000000000117,
+"align_minus_ev": 0.0129999999999999
+},
+{
+"clip": "espeak175__p082__trunc1",
+"voice": "espeak175",
+"cut": 0.597,
+"align_next": 0.628,
+"ev_next": 0.593,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak175__p082__trunc2",
+"voice": "espeak175",
+"cut": 0.83,
+"align_next": 0.87,
+"ev_next": 0.802,
+"cut_minus_ev": 0.027999999999999914,
+"align_minus_ev": 0.06799999999999995
+},
+{
+"clip": "espeak175__p083__trunc1",
+"voice": "espeak175",
+"cut": 0.608,
+"align_next": 0.628,
+"ev_next": 0.611,
+"cut_minus_ev": -0.0030000000000000027,
+"align_minus_ev": 0.017000000000000015
+},
+{
+"clip": "espeak300__p000__trunc1",
+"voice": "espeak300",
+"cut": 0.444,
+"align_next": 0.444,
+"ev_next": 0.5660000000000001,
+"cut_minus_ev": -0.12200000000000005,
+"align_minus_ev": -0.12200000000000005
+},
+{
+"clip": "espeak300__p001__trunc1",
+"voice": "espeak300",
+"cut": 0.555,
+"align_next": 0.566,
+"ev_next": 0.544,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.02199999999999991
+},
+{
+"clip": "espeak300__p001__trunc2",
+"voice": "espeak300",
+"cut": 0.848,
+"align_next": 0.869,
+"ev_next": 0.8160000000000001,
+"cut_minus_ev": 0.03199999999999992,
+"align_minus_ev": 0.052999999999999936
+},
+{
+"clip": "espeak300__p002__trunc1",
+"voice": "espeak300",
+"cut": 0.473,
+"align_next": 0.483,
+"ev_next": 0.401,
+"cut_minus_ev": 0.07199999999999995,
+"align_minus_ev": 0.08199999999999996
+},
+{
+"clip": "espeak300__p002__trunc2",
+"voice": "espeak300",
+"cut": 0.765,
+"align_next": 0.825,
+"ev_next": 0.8,
+"cut_minus_ev": -0.03500000000000003,
+"align_minus_ev": 0.02499999999999991
+},
+{
+"clip": "espeak300__p002__trunc3",
+"voice": "espeak300",
+"cut": 1.067,
+"align_next": 1.087,
+"ev_next": 1.048,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.038999999999999924
+},
+{
+"clip": "espeak300__p003__trunc1",
+"voice": "espeak300",
+"cut": 0.517,
+"align_next": 0.527,
+"ev_next": 0.517,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak300__p003__trunc2",
+"voice": "espeak300",
+"cut": 0.709,
+"align_next": 0.729,
+"ev_next": 0.6910000000000001,
+"cut_minus_ev": 0.017999999999999905,
+"align_minus_ev": 0.03799999999999992
+},
+{
+"clip": "espeak300__p003__trunc3",
+"voice": "espeak300",
+"cut": 0.81,
+"align_next": 0.831,
+"ev_next": 0.7949999999999999,
+"cut_minus_ev": 0.015000000000000124,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak300__p003__trunc4",
+"voice": "espeak300",
+"cut": 0.952,
+"align_next": 0.972,
+"ev_next": 0.9450000000000001,
+"cut_minus_ev": 0.006999999999999895,
+"align_minus_ev": 0.026999999999999913
+},
+{
+"clip": "espeak300__p004__trunc1",
+"voice": "espeak300",
+"cut": 0.506,
+"align_next": 0.526,
+"ev_next": 0.498,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p004__trunc2",
+"voice": "espeak300",
+"cut": 0.608,
+"align_next": 0.628,
+"ev_next": 0.593,
+"cut_minus_ev": 0.015000000000000013,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak300__p004__trunc3",
+"voice": "espeak300",
+"cut": 0.759,
+"align_next": 0.77,
+"ev_next": 0.738,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p004__trunc4",
+"voice": "espeak300",
+"cut": 1.104,
+"align_next": 1.114,
+"ev_next": 1.109,
+"cut_minus_ev": -0.004999999999999893,
+"align_minus_ev": 0.0050000000000001155
+},
+{
+"clip": "espeak300__p005__trunc1",
+"voice": "espeak300",
+"cut": 0.693,
+"align_next": 0.703,
+"ev_next": 0.696,
+"cut_minus_ev": -0.0030000000000000027,
+"align_minus_ev": 0.007000000000000006
+},
+{
+"clip": "espeak300__p005__trunc2",
+"voice": "espeak300",
+"cut": 1.015,
+"align_next": 1.025,
+"ev_next": 1.02,
+"cut_minus_ev": -0.0050000000000001155,
+"align_minus_ev": 0.004999999999999893
+},
+{
+"clip": "espeak300__p005__trunc3",
+"voice": "espeak300",
+"cut": 1.176,
+"align_next": 1.186,
+"ev_next": 1.172,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak300__p005__trunc4",
+"voice": "espeak300",
+"cut": 1.336,
+"align_next": 1.346,
+"ev_next": 1.315,
+"cut_minus_ev": 0.02100000000000013,
+"align_minus_ev": 0.03100000000000014
+},
+{
+"clip": "espeak300__p005__trunc5",
+"voice": "espeak300",
+"cut": 1.557,
+"align_next": 1.567,
+"ev_next": 1.48,
+"cut_minus_ev": 0.07699999999999996,
+"align_minus_ev": 0.08699999999999997
+},
+{
+"clip": "espeak300__p006__trunc1",
+"voice": "espeak300",
+"cut": 0.619,
+"align_next": 0.65,
+"ev_next": 0.612,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.038000000000000034
+},
+{
+"clip": "espeak300__p006__trunc2",
+"voice": "espeak300",
+"cut": 0.812,
+"align_next": 0.832,
+"ev_next": 0.778,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.05399999999999994
+},
+{
+"clip": "espeak300__p007__trunc1",
+"voice": "espeak300",
+"cut": 0.442,
+"align_next": 0.462,
+"ev_next": 0.45399999999999996,
+"cut_minus_ev": -0.011999999999999955,
+"align_minus_ev": 0.008000000000000063
+},
+{
+"clip": "espeak300__p007__trunc2",
+"voice": "espeak300",
+"cut": 0.603,
+"align_next": 0.623,
+"ev_next": 0.647,
+"cut_minus_ev": -0.04400000000000004,
+"align_minus_ev": -0.02400000000000002
+},
+{
+"clip": "espeak300__p007__trunc3",
+"voice": "espeak300",
+"cut": 0.803,
+"align_next": 0.824,
+"ev_next": 0.8,
+"cut_minus_ev": 0.0030000000000000027,
+"align_minus_ev": 0.02399999999999991
+},
+{
+"clip": "espeak300__p007__trunc4",
+"voice": "espeak300",
+"cut": 1.105,
+"align_next": 1.165,
+"ev_next": 1.147,
+"cut_minus_ev": -0.04200000000000004,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak300__p007__trunc5",
+"voice": "espeak300",
+"cut": 1.577,
+"align_next": 1.587,
+"ev_next": 1.571,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak300__p007__trunc6",
+"voice": "espeak300",
+"cut": 1.647,
+"align_next": 1.647,
+"ev_next": 1.659,
+"cut_minus_ev": -0.01200000000000001,
+"align_minus_ev": -0.01200000000000001
+},
+{
+"clip": "espeak300__p010__trunc1",
+"voice": "espeak300",
+"cut": 0.574,
+"align_next": 0.584,
+"ev_next": 0.581,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": 0.0030000000000000027
+},
+{
+"clip": "espeak300__p010__trunc2",
+"voice": "espeak300",
+"cut": 0.957,
+"align_next": 0.967,
+"ev_next": 0.762,
+"cut_minus_ev": 0.19499999999999995,
+"align_minus_ev": 0.20499999999999996
+},
+{
+"clip": "espeak300__p011__trunc1",
+"voice": "espeak300",
+"cut": 0.443,
+"align_next": 0.443,
+"ev_next": 0.419,
+"cut_minus_ev": 0.02400000000000002,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p011__trunc2",
+"voice": "espeak300",
+"cut": 0.614,
+"align_next": 0.624,
+"ev_next": 0.614,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak300__p011__trunc3",
+"voice": "espeak300",
+"cut": 0.755,
+"align_next": 0.765,
+"ev_next": 0.765,
+"cut_minus_ev": -0.010000000000000009,
+"align_minus_ev": 0.0
+},
+{
+"clip": "espeak300__p011__trunc5",
+"voice": "espeak300",
+"cut": 1.268,
+"align_next": 1.349,
+"ev_next": 1.333,
+"cut_minus_ev": -0.06499999999999995,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak300__p011__trunc6",
+"voice": "espeak300",
+"cut": 1.701,
+"align_next": 1.711,
+"ev_next": 1.683,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p011__trunc7",
+"voice": "espeak300",
+"cut": 1.872,
+"align_next": 1.872,
+"ev_next": 1.847,
+"cut_minus_ev": 0.025000000000000133,
+"align_minus_ev": 0.025000000000000133
+},
+{
+"clip": "espeak300__p012__trunc1",
+"voice": "espeak300",
+"cut": 0.434,
+"align_next": 0.444,
+"ev_next": 0.43,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak300__p012__trunc2",
+"voice": "espeak300",
+"cut": 0.525,
+"align_next": 0.545,
+"ev_next": 0.518,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p012__trunc3",
+"voice": "espeak300",
+"cut": 0.797,
+"align_next": 0.827,
+"ev_next": 0.8049999999999999,
+"cut_minus_ev": -0.007999999999999896,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p012__trunc5",
+"voice": "espeak300",
+"cut": 1.332,
+"align_next": 1.332,
+"ev_next": 1.366,
+"cut_minus_ev": -0.03400000000000003,
+"align_minus_ev": -0.03400000000000003
+},
+{
+"clip": "espeak300__p012__trunc6",
+"voice": "espeak300",
+"cut": 1.413,
+"align_next": 1.413,
+"ev_next": 1.464,
+"cut_minus_ev": -0.050999999999999934,
+"align_minus_ev": -0.050999999999999934
+},
+{
+"clip": "espeak300__p012__trunc7",
+"voice": "espeak300",
+"cut": 1.514,
+"align_next": 1.514,
+"ev_next": 1.645,
+"cut_minus_ev": -0.131,
+"align_minus_ev": -0.131
+},
+{
+"clip": "espeak300__p013__trunc1",
+"voice": "espeak300",
+"cut": 0.516,
+"align_next": 0.527,
+"ev_next": 0.506,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.02100000000000002
+},
+{
+"clip": "espeak300__p013__trunc2",
+"voice": "espeak300",
+"cut": 0.749,
+"align_next": 0.77,
+"ev_next": 0.743,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p013__trunc3",
+"voice": "espeak300",
+"cut": 0.942,
+"align_next": 0.972,
+"ev_next": 0.9530000000000001,
+"cut_minus_ev": -0.01100000000000012,
+"align_minus_ev": 0.018999999999999906
+},
+{
+"clip": "espeak300__p014__trunc1",
+"voice": "espeak300",
+"cut": 0.493,
+"align_next": 0.503,
+"ev_next": 0.488,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.015000000000000013
+},
+{
+"clip": "espeak300__p014__trunc2",
+"voice": "espeak300",
+"cut": 0.644,
+"align_next": 0.665,
+"ev_next": 0.638,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p014__trunc3",
+"voice": "espeak300",
+"cut": 0.785,
+"align_next": 0.806,
+"ev_next": 0.774,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p015__trunc1",
+"voice": "espeak300",
+"cut": 0.618,
+"align_next": 0.628,
+"ev_next": 0.6,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p015__trunc2",
+"voice": "espeak300",
+"cut": 0.851,
+"align_next": 0.851,
+"ev_next": 0.796,
+"cut_minus_ev": 0.05499999999999994,
+"align_minus_ev": 0.05499999999999994
+},
+{
+"clip": "espeak300__p016__trunc1",
+"voice": "espeak300",
+"cut": 0.465,
+"align_next": 0.465,
+"ev_next": 0.44999999999999996,
+"cut_minus_ev": 0.015000000000000069,
+"align_minus_ev": 0.015000000000000069
+},
+{
+"clip": "espeak300__p016__trunc2",
+"voice": "espeak300",
+"cut": 0.657,
+"align_next": 0.667,
+"ev_next": 0.635,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p016__trunc3",
+"voice": "espeak300",
+"cut": 0.869,
+"align_next": 0.909,
+"ev_next": 0.869,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.040000000000000036
+},
+{
+"clip": "espeak300__p016__trunc4",
+"voice": "espeak300",
+"cut": 1.192,
+"align_next": 1.192,
+"ev_next": 1.174,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak300__p016__trunc5",
+"voice": "espeak300",
+"cut": 1.465,
+"align_next": 1.475,
+"ev_next": 1.429,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak300__p017__trunc1",
+"voice": "espeak300",
+"cut": 0.513,
+"align_next": 0.523,
+"ev_next": 0.517,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak300__p017__trunc2",
+"voice": "espeak300",
+"cut": 0.724,
+"align_next": 0.764,
+"ev_next": 0.696,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.06800000000000006
+},
+{
+"clip": "espeak300__p017__trunc3",
+"voice": "espeak300",
+"cut": 0.844,
+"align_next": 0.844,
+"ev_next": 0.845,
+"cut_minus_ev": -0.0010000000000000009,
+"align_minus_ev": -0.0010000000000000009
+},
+{
+"clip": "espeak300__p017__trunc4",
+"voice": "espeak300",
+"cut": 1.156,
+"align_next": 1.206,
+"ev_next": 1.186,
+"cut_minus_ev": -0.030000000000000027,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak300__p017__trunc5",
+"voice": "espeak300",
+"cut": 1.317,
+"align_next": 1.347,
+"ev_next": 1.313,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.03400000000000003
+},
+{
+"clip": "espeak300__p018__trunc1",
+"voice": "espeak300",
+"cut": 0.464,
+"align_next": 0.464,
+"ev_next": 0.44999999999999996,
+"cut_minus_ev": 0.014000000000000068,
+"align_minus_ev": 0.014000000000000068
+},
+{
+"clip": "espeak300__p019__trunc1",
+"voice": "espeak300",
+"cut": 0.859,
+"align_next": 0.869,
+"ev_next": 0.841,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p019__trunc2",
+"voice": "espeak300",
+"cut": 1.273,
+"align_next": 1.334,
+"ev_next": 1.302,
+"cut_minus_ev": -0.029000000000000137,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p020__trunc1",
+"voice": "espeak300",
+"cut": 0.499,
+"align_next": 0.509,
+"ev_next": 0.474,
+"cut_minus_ev": 0.025000000000000022,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak300__p021__trunc1",
+"voice": "espeak300",
+"cut": 0.614,
+"align_next": 0.624,
+"ev_next": 0.593,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.031000000000000028
+},
+{
+"clip": "espeak300__p021__trunc2",
+"voice": "espeak300",
+"cut": 0.684,
+"align_next": 0.704,
+"ev_next": 0.677,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.026999999999999913
+},
+{
+"clip": "espeak300__p021__trunc3",
+"voice": "espeak300",
+"cut": 0.855,
+"align_next": 0.865,
+"ev_next": 0.8560000000000001,
+"cut_minus_ev": -0.001000000000000112,
+"align_minus_ev": 0.008999999999999897
+},
+{
+"clip": "espeak300__p021__trunc4",
+"voice": "espeak300",
+"cut": 1.046,
+"align_next": 1.087,
+"ev_next": 1.056,
+"cut_minus_ev": -0.010000000000000009,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak300__p022__trunc1",
+"voice": "espeak300",
+"cut": 0.463,
+"align_next": 0.483,
+"ev_next": 0.46499999999999997,
+"cut_minus_ev": -0.0019999999999999463,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak300__p022__trunc2",
+"voice": "espeak300",
+"cut": 0.644,
+"align_next": 0.664,
+"ev_next": 0.629,
+"cut_minus_ev": 0.015000000000000013,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak300__p022__trunc3",
+"voice": "espeak300",
+"cut": 0.835,
+"align_next": 0.845,
+"ev_next": 0.8260000000000001,
+"cut_minus_ev": 0.008999999999999897,
+"align_minus_ev": 0.018999999999999906
+},
+{
+"clip": "espeak300__p022__trunc4",
+"voice": "espeak300",
+"cut": 1.016,
+"align_next": 1.027,
+"ev_next": 1.013,
+"cut_minus_ev": 0.0030000000000001137,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak300__p023__trunc1",
+"voice": "espeak300",
+"cut": 0.522,
+"align_next": 0.562,
+"ev_next": 0.479,
+"cut_minus_ev": 0.04300000000000004,
+"align_minus_ev": 0.08300000000000007
+},
+{
+"clip": "espeak300__p023__trunc2",
+"voice": "espeak300",
+"cut": 0.602,
+"align_next": 0.602,
+"ev_next": 0.5740000000000001,
+"cut_minus_ev": 0.027999999999999914,
+"align_minus_ev": 0.027999999999999914
+},
+{
+"clip": "espeak300__p023__trunc4",
+"voice": "espeak300",
+"cut": 1.104,
+"align_next": 1.185,
+"ev_next": 1.171,
+"cut_minus_ev": -0.06699999999999995,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak300__p023__trunc5",
+"voice": "espeak300",
+"cut": 1.456,
+"align_next": 1.486,
+"ev_next": 1.462,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p023__trunc7",
+"voice": "espeak300",
+"cut": 1.667,
+"align_next": 1.687,
+"ev_next": 1.6460000000000001,
+"cut_minus_ev": 0.020999999999999908,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak300__p023__trunc8",
+"voice": "espeak300",
+"cut": 1.807,
+"align_next": 1.807,
+"ev_next": 1.744,
+"cut_minus_ev": 0.06299999999999994,
+"align_minus_ev": 0.06299999999999994
+},
+{
+"clip": "espeak300__p024__trunc1",
+"voice": "espeak300",
+"cut": 0.553,
+"align_next": 0.564,
+"ev_next": 0.5409999999999999,
+"cut_minus_ev": 0.012000000000000122,
+"align_minus_ev": 0.02300000000000002
+},
+{
+"clip": "espeak300__p024__trunc2",
+"voice": "espeak300",
+"cut": 0.775,
+"align_next": 0.785,
+"ev_next": 0.768,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.017000000000000015
+},
+{
+"clip": "espeak300__p024__trunc3",
+"voice": "espeak300",
+"cut": 0.956,
+"align_next": 0.986,
+"ev_next": 0.9410000000000001,
+"cut_minus_ev": 0.014999999999999902,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak300__p025__trunc1",
+"voice": "espeak300",
+"cut": 0.515,
+"align_next": 0.525,
+"ev_next": 0.48,
+"cut_minus_ev": 0.03500000000000003,
+"align_minus_ev": 0.04500000000000004
+},
+{
+"clip": "espeak300__p025__trunc2",
+"voice": "espeak300",
+"cut": 0.647,
+"align_next": 0.667,
+"ev_next": 0.631,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak300__p025__trunc3",
+"voice": "espeak300",
+"cut": 0.778,
+"align_next": 0.788,
+"ev_next": 0.762,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak300__p025__trunc4",
+"voice": "espeak300",
+"cut": 0.96,
+"align_next": 0.97,
+"ev_next": 0.9589999999999999,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.01100000000000012
+},
+{
+"clip": "espeak300__p025__trunc5",
+"voice": "espeak300",
+"cut": 1.091,
+"align_next": 1.112,
+"ev_next": 1.095,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.017000000000000126
+},
+{
+"clip": "espeak300__p025__trunc6",
+"voice": "espeak300",
+"cut": 1.283,
+"align_next": 1.293,
+"ev_next": 1.2369999999999999,
+"cut_minus_ev": 0.04600000000000004,
+"align_minus_ev": 0.05600000000000005
+},
+{
+"clip": "espeak300__p026__trunc1",
+"voice": "espeak300",
+"cut": 0.395,
+"align_next": 0.405,
+"ev_next": 0.378,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p026__trunc2",
+"voice": "espeak300",
+"cut": 0.486,
+"align_next": 0.507,
+"ev_next": 0.483,
+"cut_minus_ev": 0.0030000000000000027,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p026__trunc3",
+"voice": "espeak300",
+"cut": 0.73,
+"align_next": 0.73,
+"ev_next": 0.711,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak300__p026__trunc4",
+"voice": "espeak300",
+"cut": 0.932,
+"align_next": 0.973,
+"ev_next": 0.9630000000000001,
+"cut_minus_ev": -0.031000000000000028,
+"align_minus_ev": 0.009999999999999898
+},
+{
+"clip": "espeak300__p027__trunc1",
+"voice": "espeak300",
+"cut": 0.467,
+"align_next": 0.487,
+"ev_next": 0.45099999999999996,
+"cut_minus_ev": 0.01600000000000007,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak300__p027__trunc2",
+"voice": "espeak300",
+"cut": 0.629,
+"align_next": 0.649,
+"ev_next": 0.625,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p027__trunc3",
+"voice": "espeak300",
+"cut": 0.781,
+"align_next": 0.791,
+"ev_next": 0.726,
+"cut_minus_ev": 0.05500000000000005,
+"align_minus_ev": 0.06500000000000006
+},
+{
+"clip": "espeak300__p027__trunc4",
+"voice": "espeak300",
+"cut": 0.852,
+"align_next": 0.852,
+"ev_next": 0.8180000000000001,
+"cut_minus_ev": 0.03399999999999992,
+"align_minus_ev": 0.03399999999999992
+},
+{
+"clip": "espeak300__p028__trunc1",
+"voice": "espeak300",
+"cut": 0.638,
+"align_next": 0.689,
+"ev_next": 0.681,
+"cut_minus_ev": -0.04300000000000004,
+"align_minus_ev": 0.007999999999999896
+},
+{
+"clip": "espeak300__p028__trunc2",
+"voice": "espeak300",
+"cut": 0.992,
+"align_next": 1.013,
+"ev_next": 0.9810000000000001,
+"cut_minus_ev": 0.010999999999999899,
+"align_minus_ev": 0.031999999999999806
+},
+{
+"clip": "espeak300__p029__trunc1",
+"voice": "espeak300",
+"cut": 0.565,
+"align_next": 0.626,
+"ev_next": 0.596,
+"cut_minus_ev": -0.031000000000000028,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak300__p029__trunc2",
+"voice": "espeak300",
+"cut": 0.737,
+"align_next": 0.747,
+"ev_next": 0.716,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.031000000000000028
+},
+{
+"clip": "espeak300__p029__trunc3",
+"voice": "espeak300",
+"cut": 0.969,
+"align_next": 0.989,
+"ev_next": 0.962,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p029__trunc5",
+"voice": "espeak300",
+"cut": 1.393,
+"align_next": 1.393,
+"ev_next": 1.35,
+"cut_minus_ev": 0.04299999999999993,
+"align_minus_ev": 0.04299999999999993
+},
+{
+"clip": "espeak300__p029__trunc6",
+"voice": "espeak300",
+"cut": 1.463,
+"align_next": 1.473,
+"ev_next": 1.441,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p029__trunc7",
+"voice": "espeak300",
+"cut": 1.645,
+"align_next": 1.655,
+"ev_next": 1.609,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.04600000000000004
+},
+{
+"clip": "espeak300__p030__trunc1",
+"voice": "espeak300",
+"cut": 0.604,
+"align_next": 0.664,
+"ev_next": 0.6439999999999999,
+"cut_minus_ev": -0.039999999999999925,
+"align_minus_ev": 0.02000000000000013
+},
+{
+"clip": "espeak300__p030__trunc2",
+"voice": "espeak300",
+"cut": 0.815,
+"align_next": 0.825,
+"ev_next": 0.806,
+"cut_minus_ev": 0.008999999999999897,
+"align_minus_ev": 0.018999999999999906
+},
+{
+"clip": "espeak300__p030__trunc3",
+"voice": "espeak300",
+"cut": 1.046,
+"align_next": 1.087,
+"ev_next": 1.01,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.07699999999999996
+},
+{
+"clip": "espeak300__p031__trunc1",
+"voice": "espeak300",
+"cut": 0.483,
+"align_next": 0.503,
+"ev_next": 0.473,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak300__p031__trunc2",
+"voice": "espeak300",
+"cut": 0.724,
+"align_next": 0.764,
+"ev_next": 0.688,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.07600000000000007
+},
+{
+"clip": "espeak300__p031__trunc3",
+"voice": "espeak300",
+"cut": 0.956,
+"align_next": 1.006,
+"ev_next": 0.9969999999999999,
+"cut_minus_ev": -0.040999999999999925,
+"align_minus_ev": 0.009000000000000119
+},
+{
+"clip": "espeak300__p031__trunc4",
+"voice": "espeak300",
+"cut": 1.338,
+"align_next": 1.368,
+"ev_next": 1.325,
+"cut_minus_ev": 0.013000000000000123,
+"align_minus_ev": 0.04300000000000015
+},
+{
+"clip": "espeak300__p032__trunc1",
+"voice": "espeak300",
+"cut": 0.606,
+"align_next": 0.647,
+"ev_next": 0.618,
+"cut_minus_ev": -0.01200000000000001,
+"align_minus_ev": 0.029000000000000026
+},
+{
+"clip": "espeak300__p032__trunc2",
+"voice": "espeak300",
+"cut": 0.788,
+"align_next": 0.809,
+"ev_next": 0.808,
+"cut_minus_ev": -0.020000000000000018,
+"align_minus_ev": 0.0010000000000000009
+},
+{
+"clip": "espeak300__p032__trunc3",
+"voice": "espeak300",
+"cut": 0.97,
+"align_next": 0.97,
+"ev_next": 0.9390000000000001,
+"cut_minus_ev": 0.030999999999999917,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak300__p032__trunc4",
+"voice": "espeak300",
+"cut": 1.071,
+"align_next": 1.091,
+"ev_next": 1.055,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak300__p032__trunc5",
+"voice": "espeak300",
+"cut": 1.203,
+"align_next": 1.213,
+"ev_next": 1.182,
+"cut_minus_ev": 0.02100000000000013,
+"align_minus_ev": 0.03100000000000014
+},
+{
+"clip": "espeak300__p033__trunc1",
+"voice": "espeak300",
+"cut": 0.573,
+"align_next": 0.584,
+"ev_next": 0.565,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak300__p033__trunc2",
+"voice": "espeak300",
+"cut": 0.825,
+"align_next": 0.845,
+"ev_next": 0.7909999999999999,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.05400000000000005
+},
+{
+"clip": "espeak300__p034__trunc1",
+"voice": "espeak300",
+"cut": 0.603,
+"align_next": 0.603,
+"ev_next": 0.599,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.0040000000000000036
+},
+{
+"clip": "espeak300__p034__trunc2",
+"voice": "espeak300",
+"cut": 0.734,
+"align_next": 0.744,
+"ev_next": 0.72,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p035__trunc1",
+"voice": "espeak300",
+"cut": 0.502,
+"align_next": 0.522,
+"ev_next": 0.49,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p035__trunc2",
+"voice": "espeak300",
+"cut": 0.813,
+"align_next": 0.823,
+"ev_next": 0.8009999999999999,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p035__trunc3",
+"voice": "espeak300",
+"cut": 1.034,
+"align_next": 1.044,
+"ev_next": 1.018,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak300__p035__trunc4",
+"voice": "espeak300",
+"cut": 1.215,
+"align_next": 1.225,
+"ev_next": 1.192,
+"cut_minus_ev": 0.02300000000000013,
+"align_minus_ev": 0.03300000000000014
+},
+{
+"clip": "espeak300__p035__trunc5",
+"voice": "espeak300",
+"cut": 1.315,
+"align_next": 1.346,
+"ev_next": 1.301,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.04500000000000015
+},
+{
+"clip": "espeak300__p035__trunc6",
+"voice": "espeak300",
+"cut": 1.747,
+"align_next": 1.767,
+"ev_next": 1.729,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.03799999999999981
+},
+{
+"clip": "espeak300__p036__trunc1",
+"voice": "espeak300",
+"cut": 0.614,
+"align_next": 0.665,
+"ev_next": 0.665,
+"cut_minus_ev": -0.051000000000000045,
+"align_minus_ev": 0.0
+},
+{
+"clip": "espeak300__p036__trunc2",
+"voice": "espeak300",
+"cut": 0.876,
+"align_next": 0.886,
+"ev_next": 0.8839999999999999,
+"cut_minus_ev": -0.007999999999999896,
+"align_minus_ev": 0.002000000000000113
+},
+{
+"clip": "espeak300__p037__trunc1",
+"voice": "espeak300",
+"cut": 0.398,
+"align_next": 0.409,
+"ev_next": 0.471,
+"cut_minus_ev": -0.07299999999999995,
+"align_minus_ev": -0.062
+},
+{
+"clip": "espeak300__p037__trunc2",
+"voice": "espeak300",
+"cut": 0.48,
+"align_next": 0.49,
+"ev_next": 0.471,
+"cut_minus_ev": 0.009000000000000008,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak300__p041__trunc1",
+"voice": "espeak300",
+"cut": 0.495,
+"align_next": 0.505,
+"ev_next": 0.479,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak300__p042__trunc1",
+"voice": "espeak300",
+"cut": 0.47,
+"align_next": 0.491,
+"ev_next": 0.429,
+"cut_minus_ev": 0.04099999999999998,
+"align_minus_ev": 0.062
+},
+{
+"clip": "espeak300__p043__trunc1",
+"voice": "espeak300",
+"cut": 0.52,
+"align_next": 0.53,
+"ev_next": 0.504,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak300__p047__trunc1",
+"voice": "espeak300",
+"cut": 0.42,
+"align_next": 0.43,
+"ev_next": 0.368,
+"cut_minus_ev": 0.05199999999999999,
+"align_minus_ev": 0.062
+},
+{
+"clip": "espeak300__p049__trunc1",
+"voice": "espeak300",
+"cut": 0.658,
+"align_next": 0.688,
+"ev_next": 0.692,
+"cut_minus_ev": -0.03399999999999992,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak300__p049__trunc2",
+"voice": "espeak300",
+"cut": 0.992,
+"align_next": 1.012,
+"ev_next": 0.9909999999999999,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.02100000000000013
+},
+{
+"clip": "espeak300__p049__trunc3",
+"voice": "espeak300",
+"cut": 1.285,
+"align_next": 1.296,
+"ev_next": 1.213,
+"cut_minus_ev": 0.07199999999999984,
+"align_minus_ev": 0.08299999999999996
+},
+{
+"clip": "espeak300__p050__trunc1",
+"voice": "espeak300",
+"cut": 0.575,
+"align_next": 0.605,
+"ev_next": 0.593,
+"cut_minus_ev": -0.018000000000000016,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak300__p051__trunc1",
+"voice": "espeak300",
+"cut": 0.453,
+"align_next": 0.463,
+"ev_next": 0.44399999999999995,
+"cut_minus_ev": 0.009000000000000064,
+"align_minus_ev": 0.019000000000000072
+},
+{
+"clip": "espeak300__p051__trunc2",
+"voice": "espeak300",
+"cut": 0.845,
+"align_next": 0.885,
+"ev_next": 0.863,
+"cut_minus_ev": -0.018000000000000016,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p051__trunc3",
+"voice": "espeak300",
+"cut": 1.146,
+"align_next": 1.166,
+"ev_next": 1.163,
+"cut_minus_ev": -0.017000000000000126,
+"align_minus_ev": 0.0029999999999998916
+},
+{
+"clip": "espeak300__p051__trunc4",
+"voice": "espeak300",
+"cut": 1.357,
+"align_next": 1.368,
+"ev_next": 1.342,
+"cut_minus_ev": 0.014999999999999902,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak300__p052__trunc1",
+"voice": "espeak300",
+"cut": 0.522,
+"align_next": 0.542,
+"ev_next": 0.532,
+"cut_minus_ev": -0.010000000000000009,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak300__p052__trunc2",
+"voice": "espeak300",
+"cut": 0.703,
+"align_next": 0.723,
+"ev_next": 0.6859999999999999,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.03700000000000003
+},
+{
+"clip": "espeak300__p052__trunc3",
+"voice": "espeak300",
+"cut": 0.914,
+"align_next": 0.924,
+"ev_next": 0.8819999999999999,
+"cut_minus_ev": 0.03200000000000014,
+"align_minus_ev": 0.04200000000000015
+},
+{
+"clip": "espeak300__p052__trunc4",
+"voice": "espeak300",
+"cut": 1.446,
+"align_next": 1.466,
+"ev_next": 1.444,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p052__trunc5",
+"voice": "espeak300",
+"cut": 1.737,
+"align_next": 1.767,
+"ev_next": 1.745,
+"cut_minus_ev": -0.008000000000000007,
+"align_minus_ev": 0.021999999999999797
+},
+{
+"clip": "espeak300__p052__trunc6",
+"voice": "espeak300",
+"cut": 1.948,
+"align_next": 1.948,
+"ev_next": 1.923,
+"cut_minus_ev": 0.02499999999999991,
+"align_minus_ev": 0.02499999999999991
+},
+{
+"clip": "espeak300__p053__trunc1",
+"voice": "espeak300",
+"cut": 0.653,
+"align_next": 0.663,
+"ev_next": 0.642,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.02100000000000002
+},
+{
+"clip": "espeak300__p053__trunc2",
+"voice": "espeak300",
+"cut": 1.085,
+"align_next": 1.105,
+"ev_next": 1.102,
+"cut_minus_ev": -0.017000000000000126,
+"align_minus_ev": 0.0029999999999998916
+},
+{
+"clip": "espeak300__p053__trunc3",
+"voice": "espeak300",
+"cut": 1.387,
+"align_next": 1.407,
+"ev_next": 1.4020000000000001,
+"cut_minus_ev": -0.015000000000000124,
+"align_minus_ev": 0.004999999999999893
+},
+{
+"clip": "espeak300__p053__trunc4",
+"voice": "espeak300",
+"cut": 1.598,
+"align_next": 1.608,
+"ev_next": 1.58,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p054__trunc1",
+"voice": "espeak300",
+"cut": 0.423,
+"align_next": 0.443,
+"ev_next": 0.419,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p054__trunc3",
+"voice": "espeak300",
+"cut": 0.795,
+"align_next": 0.825,
+"ev_next": 0.8089999999999999,
+"cut_minus_ev": -0.013999999999999901,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak300__p054__trunc5",
+"voice": "espeak300",
+"cut": 1.278,
+"align_next": 1.308,
+"ev_next": 1.296,
+"cut_minus_ev": -0.018000000000000016,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak300__p054__trunc7",
+"voice": "espeak300",
+"cut": 1.459,
+"align_next": 1.469,
+"ev_next": 1.415,
+"cut_minus_ev": 0.04400000000000004,
+"align_minus_ev": 0.05400000000000005
+},
+{
+"clip": "espeak300__p054__trunc9",
+"voice": "espeak300",
+"cut": 2.234,
+"align_next": 2.295,
+"ev_next": 2.256,
+"cut_minus_ev": -0.021999999999999797,
+"align_minus_ev": 0.039000000000000146
+},
+{
+"clip": "espeak300__p054__trunc11",
+"voice": "espeak300",
+"cut": 2.596,
+"align_next": 2.617,
+"ev_next": 2.574,
+"cut_minus_ev": 0.02200000000000024,
+"align_minus_ev": 0.04300000000000015
+},
+{
+"clip": "espeak300__p055__trunc1",
+"voice": "espeak300",
+"cut": 0.548,
+"align_next": 0.568,
+"ev_next": 0.5740000000000001,
+"cut_minus_ev": -0.026000000000000023,
+"align_minus_ev": -0.006000000000000116
+},
+{
+"clip": "espeak300__p055__trunc2",
+"voice": "espeak300",
+"cut": 0.711,
+"align_next": 0.731,
+"ev_next": 0.706,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.025000000000000022
+},
+{
+"clip": "espeak300__p056__trunc1",
+"voice": "espeak300",
+"cut": 0.549,
+"align_next": 0.569,
+"ev_next": 0.5740000000000001,
+"cut_minus_ev": -0.025000000000000022,
+"align_minus_ev": -0.0050000000000001155
+},
+{
+"clip": "espeak300__p060__trunc1",
+"voice": "espeak300",
+"cut": 0.504,
+"align_next": 0.544,
+"ev_next": 0.514,
+"cut_minus_ev": -0.010000000000000009,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak300__p065__trunc1",
+"voice": "espeak300",
+"cut": 0.605,
+"align_next": 0.625,
+"ev_next": 0.612,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": 0.013000000000000012
+},
+{
+"clip": "espeak300__p065__trunc2",
+"voice": "espeak300",
+"cut": 0.887,
+"align_next": 0.887,
+"ev_next": 0.859,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p066__trunc1",
+"voice": "espeak300",
+"cut": 0.604,
+"align_next": 0.604,
+"ev_next": 0.593,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak300__p066__trunc3",
+"voice": "espeak300",
+"cut": 1.077,
+"align_next": 1.087,
+"ev_next": 1.059,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p066__trunc4",
+"voice": "espeak300",
+"cut": 1.197,
+"align_next": 1.207,
+"ev_next": 1.17,
+"cut_minus_ev": 0.027000000000000135,
+"align_minus_ev": 0.037000000000000144
+},
+{
+"clip": "espeak300__p066__trunc6",
+"voice": "espeak300",
+"cut": 1.57,
+"align_next": 1.57,
+"ev_next": 1.565,
+"cut_minus_ev": 0.0050000000000001155,
+"align_minus_ev": 0.0050000000000001155
+},
+{
+"clip": "espeak300__p066__trunc7",
+"voice": "espeak300",
+"cut": 1.952,
+"align_next": 1.972,
+"ev_next": 1.932,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.040000000000000036
+},
+{
+"clip": "espeak300__p066__trunc9",
+"voice": "espeak300",
+"cut": 2.475,
+"align_next": 2.475,
+"ev_next": 2.4309999999999996,
+"cut_minus_ev": 0.04400000000000048,
+"align_minus_ev": 0.04400000000000048
+},
+{
+"clip": "espeak300__p067__trunc1",
+"voice": "espeak300",
+"cut": 0.458,
+"align_next": 0.468,
+"ev_next": 0.44399999999999995,
+"cut_minus_ev": 0.014000000000000068,
+"align_minus_ev": 0.024000000000000077
+},
+{
+"clip": "espeak300__p068__trunc1",
+"voice": "espeak300",
+"cut": 0.526,
+"align_next": 0.546,
+"ev_next": 0.532,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak300__p068__trunc2",
+"voice": "espeak300",
+"cut": 0.718,
+"align_next": 0.749,
+"ev_next": 0.6839999999999999,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.06500000000000006
+},
+{
+"clip": "espeak300__p068__trunc3",
+"voice": "espeak300",
+"cut": 0.921,
+"align_next": 0.931,
+"ev_next": 0.8799999999999999,
+"cut_minus_ev": 0.04100000000000015,
+"align_minus_ev": 0.051000000000000156
+},
+{
+"clip": "espeak300__p069__trunc1",
+"voice": "espeak300",
+"cut": 0.645,
+"align_next": 0.665,
+"ev_next": 0.643,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p070__trunc1",
+"voice": "espeak300",
+"cut": 0.424,
+"align_next": 0.444,
+"ev_next": 0.419,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.025000000000000022
+},
+{
+"clip": "espeak300__p070__trunc2",
+"voice": "espeak300",
+"cut": 0.575,
+"align_next": 0.585,
+"ev_next": 0.558,
+"cut_minus_ev": 0.016999999999999904,
+"align_minus_ev": 0.026999999999999913
+},
+{
+"clip": "espeak300__p070__trunc3",
+"voice": "espeak300",
+"cut": 0.797,
+"align_next": 0.828,
+"ev_next": 0.81,
+"cut_minus_ev": -0.013000000000000012,
+"align_minus_ev": 0.017999999999999905
+},
+{
+"clip": "espeak300__p070__trunc5",
+"voice": "espeak300",
+"cut": 1.292,
+"align_next": 1.312,
+"ev_next": 1.297,
+"cut_minus_ev": -0.004999999999999893,
+"align_minus_ev": 0.015000000000000124
+},
+{
+"clip": "espeak300__p070__trunc6",
+"voice": "espeak300",
+"cut": 1.403,
+"align_next": 1.413,
+"ev_next": 1.3840000000000001,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.028999999999999915
+},
+{
+"clip": "espeak300__p070__trunc7",
+"voice": "espeak300",
+"cut": 1.494,
+"align_next": 1.514,
+"ev_next": 1.482,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.03200000000000003
+},
+{
+"clip": "espeak300__p071__trunc1",
+"voice": "espeak300",
+"cut": 0.437,
+"align_next": 0.447,
+"ev_next": 0.432,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.015000000000000013
+},
+{
+"clip": "espeak300__p071__trunc2",
+"voice": "espeak300",
+"cut": 0.732,
+"align_next": 0.752,
+"ev_next": 0.725,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p072__trunc1",
+"voice": "espeak300",
+"cut": 0.585,
+"align_next": 0.605,
+"ev_next": 0.586,
+"cut_minus_ev": -0.0010000000000000009,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak300__p077__trunc1",
+"voice": "espeak300",
+"cut": 0.523,
+"align_next": 0.523,
+"ev_next": 0.517,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak300__p077__trunc2",
+"voice": "espeak300",
+"cut": 0.745,
+"align_next": 0.765,
+"ev_next": 0.69,
+"cut_minus_ev": 0.05500000000000005,
+"align_minus_ev": 0.07500000000000007
+},
+{
+"clip": "espeak300__p077__trunc3",
+"voice": "espeak300",
+"cut": 0.866,
+"align_next": 0.866,
+"ev_next": 0.835,
+"cut_minus_ev": 0.031000000000000028,
+"align_minus_ev": 0.031000000000000028
+},
+{
+"clip": "espeak300__p078__trunc1",
+"voice": "espeak300",
+"cut": 0.513,
+"align_next": 0.523,
+"ev_next": 0.513,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak300__p078__trunc2",
+"voice": "espeak300",
+"cut": 0.704,
+"align_next": 0.704,
+"ev_next": 0.6839999999999999,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak300__p078__trunc3",
+"voice": "espeak300",
+"cut": 1.086,
+"align_next": 1.106,
+"ev_next": 1.053,
+"cut_minus_ev": 0.03300000000000014,
+"align_minus_ev": 0.05300000000000016
+},
+{
+"clip": "espeak300__p079__trunc1",
+"voice": "espeak300",
+"cut": 0.526,
+"align_next": 0.526,
+"ev_next": 0.517,
+"cut_minus_ev": 0.009000000000000008,
+"align_minus_ev": 0.009000000000000008
+},
+{
+"clip": "espeak300__p079__trunc2",
+"voice": "espeak300",
+"cut": 0.709,
+"align_next": 0.729,
+"ev_next": 0.687,
+"cut_minus_ev": 0.02199999999999991,
+"align_minus_ev": 0.041999999999999926
+},
+{
+"clip": "espeak300__p079__trunc3",
+"voice": "espeak300",
+"cut": 0.86,
+"align_next": 0.871,
+"ev_next": 0.8240000000000001,
+"cut_minus_ev": 0.03599999999999992,
+"align_minus_ev": 0.04699999999999993
+},
+{
+"clip": "espeak300__p079__trunc4",
+"voice": "espeak300",
+"cut": 0.992,
+"align_next": 0.992,
+"ev_next": 0.962,
+"cut_minus_ev": 0.030000000000000027,
+"align_minus_ev": 0.030000000000000027
+},
+{
+"clip": "espeak300__p080__trunc1",
+"voice": "espeak300",
+"cut": 0.535,
+"align_next": 0.545,
+"ev_next": 0.517,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak300__p080__trunc2",
+"voice": "espeak300",
+"cut": 0.706,
+"align_next": 0.726,
+"ev_next": 0.687,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.038999999999999924
+},
+{
+"clip": "espeak300__p080__trunc3",
+"voice": "espeak300",
+"cut": 0.858,
+"align_next": 0.868,
+"ev_next": 0.825,
+"cut_minus_ev": 0.03300000000000003,
+"align_minus_ev": 0.04300000000000004
+},
+{
+"clip": "espeak300__p080__trunc4",
+"voice": "espeak300",
+"cut": 1.059,
+"align_next": 1.07,
+"ev_next": 1.048,
+"cut_minus_ev": 0.010999999999999899,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p080__trunc5",
+"voice": "espeak300",
+"cut": 1.231,
+"align_next": 1.251,
+"ev_next": 1.208,
+"cut_minus_ev": 0.02300000000000013,
+"align_minus_ev": 0.04299999999999993
+},
+{
+"clip": "espeak300__p080__trunc6",
+"voice": "espeak300",
+"cut": 1.443,
+"align_next": 1.453,
+"ev_next": 1.4040000000000001,
+"cut_minus_ev": 0.038999999999999924,
+"align_minus_ev": 0.04899999999999993
+},
+{
+"clip": "espeak300__p081__trunc1",
+"voice": "espeak300",
+"cut": 0.536,
+"align_next": 0.546,
+"ev_next": 0.517,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.029000000000000026
+},
+{
+"clip": "espeak300__p081__trunc2",
+"voice": "espeak300",
+"cut": 0.718,
+"align_next": 0.728,
+"ev_next": 0.687,
+"cut_minus_ev": 0.030999999999999917,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak300__p081__trunc3",
+"voice": "espeak300",
+"cut": 0.849,
+"align_next": 0.849,
+"ev_next": 0.825,
+"cut_minus_ev": 0.02400000000000002,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak300__p081__trunc4",
+"voice": "espeak300",
+"cut": 1.182,
+"align_next": 1.193,
+"ev_next": 1.171,
+"cut_minus_ev": 0.010999999999999899,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak300__p082__trunc1",
+"voice": "espeak300",
+"cut": 0.467,
+"align_next": 0.467,
+"ev_next": 0.476,
+"cut_minus_ev": -0.008999999999999952,
+"align_minus_ev": -0.008999999999999952
+},
+{
+"clip": "espeak300__p082__trunc2",
+"voice": "espeak300",
+"cut": 0.63,
+"align_next": 0.65,
+"ev_next": 0.623,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak300__p083__trunc1",
+"voice": "espeak300",
+"cut": 0.479,
+"align_next": 0.489,
+"ev_next": 0.483,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak450__p000__trunc1",
+"voice": "espeak450",
+"cut": 0.344,
+"align_next": 0.364,
+"ev_next": 0.489,
+"cut_minus_ev": -0.14500000000000002,
+"align_minus_ev": -0.125
+},
+{
+"clip": "espeak450__p001__trunc1",
+"voice": "espeak450",
+"cut": 0.486,
+"align_next": 0.486,
+"ev_next": 0.49,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p001__trunc2",
+"voice": "espeak450",
+"cut": 0.689,
+"align_next": 0.709,
+"ev_next": 0.667,
+"cut_minus_ev": 0.02199999999999991,
+"align_minus_ev": 0.041999999999999926
+},
+{
+"clip": "espeak450__p002__trunc1",
+"voice": "espeak450",
+"cut": 0.403,
+"align_next": 0.423,
+"ev_next": 0.388,
+"cut_minus_ev": 0.015000000000000013,
+"align_minus_ev": 0.034999999999999976
+},
+{
+"clip": "espeak450__p002__trunc2",
+"voice": "espeak450",
+"cut": 0.595,
+"align_next": 0.625,
+"ev_next": 0.614,
+"cut_minus_ev": -0.019000000000000017,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p002__trunc3",
+"voice": "espeak450",
+"cut": 0.796,
+"align_next": 0.807,
+"ev_next": 0.7949999999999999,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.012000000000000122
+},
+{
+"clip": "espeak450__p003__trunc1",
+"voice": "espeak450",
+"cut": 0.488,
+"align_next": 0.488,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": 0.02400000000000002,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak450__p003__trunc2",
+"voice": "espeak450",
+"cut": 0.61,
+"align_next": 0.61,
+"ev_next": 0.59,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak450__p003__trunc3",
+"voice": "espeak450",
+"cut": 0.691,
+"align_next": 0.691,
+"ev_next": 0.6679999999999999,
+"cut_minus_ev": 0.02300000000000002,
+"align_minus_ev": 0.02300000000000002
+},
+{
+"clip": "espeak450__p003__trunc4",
+"voice": "espeak450",
+"cut": 0.752,
+"align_next": 0.752,
+"ev_next": 0.758,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": -0.006000000000000005
+},
+{
+"clip": "espeak450__p004__trunc1",
+"voice": "espeak450",
+"cut": 0.433,
+"align_next": 0.443,
+"ev_next": 0.44499999999999995,
+"cut_minus_ev": -0.011999999999999955,
+"align_minus_ev": -0.0019999999999999463
+},
+{
+"clip": "espeak450__p004__trunc2",
+"voice": "espeak450",
+"cut": 0.494,
+"align_next": 0.504,
+"ev_next": 0.493,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p004__trunc3",
+"voice": "espeak450",
+"cut": 0.615,
+"align_next": 0.625,
+"ev_next": 0.598,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak450__p004__trunc4",
+"voice": "espeak450",
+"cut": 0.847,
+"align_next": 0.847,
+"ev_next": 0.835,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak450__p005__trunc1",
+"voice": "espeak450",
+"cut": 0.584,
+"align_next": 0.584,
+"ev_next": 0.5760000000000001,
+"cut_minus_ev": 0.007999999999999896,
+"align_minus_ev": 0.007999999999999896
+},
+{
+"clip": "espeak450__p005__trunc2",
+"voice": "espeak450",
+"cut": 0.775,
+"align_next": 0.785,
+"ev_next": 0.7929999999999999,
+"cut_minus_ev": -0.017999999999999905,
+"align_minus_ev": -0.007999999999999896
+},
+{
+"clip": "espeak450__p005__trunc3",
+"voice": "espeak450",
+"cut": 0.896,
+"align_next": 0.906,
+"ev_next": 0.8999999999999999,
+"cut_minus_ev": -0.0039999999999998925,
+"align_minus_ev": 0.006000000000000116
+},
+{
+"clip": "espeak450__p005__trunc4",
+"voice": "espeak450",
+"cut": 1.006,
+"align_next": 1.006,
+"ev_next": 0.9770000000000001,
+"cut_minus_ev": 0.028999999999999915,
+"align_minus_ev": 0.028999999999999915
+},
+{
+"clip": "espeak450__p005__trunc5",
+"voice": "espeak450",
+"cut": 1.157,
+"align_next": 1.167,
+"ev_next": 1.096,
+"cut_minus_ev": 0.06099999999999994,
+"align_minus_ev": 0.07099999999999995
+},
+{
+"clip": "espeak450__p006__trunc1",
+"voice": "espeak450",
+"cut": 0.495,
+"align_next": 0.505,
+"ev_next": 0.525,
+"cut_minus_ev": -0.030000000000000027,
+"align_minus_ev": -0.020000000000000018
+},
+{
+"clip": "espeak450__p006__trunc2",
+"voice": "espeak450",
+"cut": 0.636,
+"align_next": 0.646,
+"ev_next": 0.636,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak450__p007__trunc1",
+"voice": "espeak450",
+"cut": 0.425,
+"align_next": 0.425,
+"ev_next": 0.40499999999999997,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak450__p007__trunc2",
+"voice": "espeak450",
+"cut": 0.536,
+"align_next": 0.546,
+"ev_next": 0.536,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak450__p007__trunc3",
+"voice": "espeak450",
+"cut": 0.637,
+"align_next": 0.648,
+"ev_next": 0.651,
+"cut_minus_ev": -0.014000000000000012,
+"align_minus_ev": -0.0030000000000000027
+},
+{
+"clip": "espeak450__p007__trunc4",
+"voice": "espeak450",
+"cut": 0.86,
+"align_next": 0.87,
+"ev_next": 0.8480000000000001,
+"cut_minus_ev": 0.0119999999999999,
+"align_minus_ev": 0.02199999999999991
+},
+{
+"clip": "espeak450__p007__trunc5",
+"voice": "espeak450",
+"cut": 1.103,
+"align_next": 1.113,
+"ev_next": 1.105,
+"cut_minus_ev": -0.0020000000000000018,
+"align_minus_ev": 0.008000000000000007
+},
+{
+"clip": "espeak450__p007__trunc6",
+"voice": "espeak450",
+"cut": 1.184,
+"align_next": 1.194,
+"ev_next": 1.149,
+"cut_minus_ev": 0.03499999999999992,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak450__p010__trunc1",
+"voice": "espeak450",
+"cut": 0.484,
+"align_next": 0.484,
+"ev_next": 0.488,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p010__trunc2",
+"voice": "espeak450",
+"cut": 0.787,
+"align_next": 0.787,
+"ev_next": 0.614,
+"cut_minus_ev": 0.17300000000000004,
+"align_minus_ev": 0.17300000000000004
+},
+{
+"clip": "espeak450__p011__trunc1",
+"voice": "espeak450",
+"cut": 0.383,
+"align_next": 0.383,
+"ev_next": 0.378,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p011__trunc2",
+"voice": "espeak450",
+"cut": 0.494,
+"align_next": 0.504,
+"ev_next": 0.508,
+"cut_minus_ev": -0.014000000000000012,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p011__trunc3",
+"voice": "espeak450",
+"cut": 0.565,
+"align_next": 0.565,
+"ev_next": 0.596,
+"cut_minus_ev": -0.031000000000000028,
+"align_minus_ev": -0.031000000000000028
+},
+{
+"clip": "espeak450__p011__trunc5",
+"voice": "espeak450",
+"cut": 0.958,
+"align_next": 0.968,
+"ev_next": 0.9490000000000001,
+"cut_minus_ev": 0.008999999999999897,
+"align_minus_ev": 0.018999999999999906
+},
+{
+"clip": "espeak450__p011__trunc6",
+"voice": "espeak450",
+"cut": 1.211,
+"align_next": 1.211,
+"ev_next": 1.183,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak450__p011__trunc7",
+"voice": "espeak450",
+"cut": 1.352,
+"align_next": 1.352,
+"ev_next": 1.318,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.03400000000000003
+},
+{
+"clip": "espeak450__p012__trunc1",
+"voice": "espeak450",
+"cut": 0.402,
+"align_next": 0.402,
+"ev_next": 0.387,
+"cut_minus_ev": 0.015000000000000013,
+"align_minus_ev": 0.015000000000000013
+},
+{
+"clip": "espeak450__p012__trunc2",
+"voice": "espeak450",
+"cut": 0.453,
+"align_next": 0.463,
+"ev_next": 0.435,
+"cut_minus_ev": 0.018000000000000016,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak450__p012__trunc3",
+"voice": "espeak450",
+"cut": 0.614,
+"align_next": 0.624,
+"ev_next": 0.619,
+"cut_minus_ev": -0.0050000000000000044,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p012__trunc5",
+"voice": "espeak450",
+"cut": 0.986,
+"align_next": 1.006,
+"ev_next": 0.9949999999999999,
+"cut_minus_ev": -0.008999999999999897,
+"align_minus_ev": 0.01100000000000012
+},
+{
+"clip": "espeak450__p012__trunc6",
+"voice": "espeak450",
+"cut": 1.087,
+"align_next": 1.087,
+"ev_next": 1.071,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak450__p012__trunc7",
+"voice": "espeak450",
+"cut": 1.197,
+"align_next": 1.207,
+"ev_next": 1.183,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak450__p013__trunc1",
+"voice": "espeak450",
+"cut": 0.443,
+"align_next": 0.443,
+"ev_next": 0.439,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.0040000000000000036
+},
+{
+"clip": "espeak450__p013__trunc2",
+"voice": "espeak450",
+"cut": 0.605,
+"align_next": 0.625,
+"ev_next": 0.611,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p013__trunc3",
+"voice": "espeak450",
+"cut": 0.736,
+"align_next": 0.746,
+"ev_next": 0.75,
+"cut_minus_ev": -0.014000000000000012,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p014__trunc1",
+"voice": "espeak450",
+"cut": 0.468,
+"align_next": 0.468,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": 0.004000000000000059,
+"align_minus_ev": 0.004000000000000059
+},
+{
+"clip": "espeak450__p014__trunc2",
+"voice": "espeak450",
+"cut": 0.549,
+"align_next": 0.549,
+"ev_next": 0.5369999999999999,
+"cut_minus_ev": 0.012000000000000122,
+"align_minus_ev": 0.012000000000000122
+},
+{
+"clip": "espeak450__p014__trunc3",
+"voice": "espeak450",
+"cut": 0.651,
+"align_next": 0.651,
+"ev_next": 0.6479999999999999,
+"cut_minus_ev": 0.0030000000000001137,
+"align_minus_ev": 0.0030000000000001137
+},
+{
+"clip": "espeak450__p015__trunc1",
+"voice": "espeak450",
+"cut": 0.484,
+"align_next": 0.484,
+"ev_next": 0.484,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.0
+},
+{
+"clip": "espeak450__p015__trunc2",
+"voice": "espeak450",
+"cut": 0.645,
+"align_next": 0.645,
+"ev_next": 0.639,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak450__p016__trunc1",
+"voice": "espeak450",
+"cut": 0.425,
+"align_next": 0.425,
+"ev_next": 0.418,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.007000000000000006
+},
+{
+"clip": "espeak450__p016__trunc2",
+"voice": "espeak450",
+"cut": 0.557,
+"align_next": 0.567,
+"ev_next": 0.5389999999999999,
+"cut_minus_ev": 0.018000000000000127,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak450__p016__trunc3",
+"voice": "espeak450",
+"cut": 0.709,
+"align_next": 0.709,
+"ev_next": 0.6970000000000001,
+"cut_minus_ev": 0.0119999999999999,
+"align_minus_ev": 0.0119999999999999
+},
+{
+"clip": "espeak450__p016__trunc4",
+"voice": "espeak450",
+"cut": 0.932,
+"align_next": 0.932,
+"ev_next": 0.8999999999999999,
+"cut_minus_ev": 0.03200000000000014,
+"align_minus_ev": 0.03200000000000014
+},
+{
+"clip": "espeak450__p016__trunc5",
+"voice": "espeak450",
+"cut": 1.134,
+"align_next": 1.134,
+"ev_next": 1.096,
+"cut_minus_ev": 0.03799999999999981,
+"align_minus_ev": 0.03799999999999981
+},
+{
+"clip": "espeak450__p017__trunc1",
+"voice": "espeak450",
+"cut": 0.463,
+"align_next": 0.463,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": -0.0009999999999999454,
+"align_minus_ev": -0.0009999999999999454
+},
+{
+"clip": "espeak450__p017__trunc2",
+"voice": "espeak450",
+"cut": 0.634,
+"align_next": 0.644,
+"ev_next": 0.6,
+"cut_minus_ev": 0.03400000000000003,
+"align_minus_ev": 0.04400000000000004
+},
+{
+"clip": "espeak450__p017__trunc3",
+"voice": "espeak450",
+"cut": 0.705,
+"align_next": 0.705,
+"ev_next": 0.721,
+"cut_minus_ev": -0.016000000000000014,
+"align_minus_ev": -0.016000000000000014
+},
+{
+"clip": "espeak450__p017__trunc4",
+"voice": "espeak450",
+"cut": 0.896,
+"align_next": 0.906,
+"ev_next": 0.9079999999999999,
+"cut_minus_ev": -0.0119999999999999,
+"align_minus_ev": -0.0019999999999998908
+},
+{
+"clip": "espeak450__p017__trunc5",
+"voice": "espeak450",
+"cut": 0.987,
+"align_next": 0.987,
+"ev_next": 0.986,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.0010000000000000009
+},
+{
+"clip": "espeak450__p018__trunc1",
+"voice": "espeak450",
+"cut": 0.404,
+"align_next": 0.424,
+"ev_next": 0.413,
+"cut_minus_ev": -0.008999999999999952,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p019__trunc1",
+"voice": "espeak450",
+"cut": 0.644,
+"align_next": 0.644,
+"ev_next": 0.651,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": -0.007000000000000006
+},
+{
+"clip": "espeak450__p019__trunc2",
+"voice": "espeak450",
+"cut": 0.906,
+"align_next": 0.926,
+"ev_next": 0.9179999999999999,
+"cut_minus_ev": -0.0119999999999999,
+"align_minus_ev": 0.008000000000000118
+},
+{
+"clip": "espeak450__p020__trunc1",
+"voice": "espeak450",
+"cut": 0.449,
+"align_next": 0.449,
+"ev_next": 0.421,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.028000000000000025
+},
+{
+"clip": "espeak450__p021__trunc1",
+"voice": "espeak450",
+"cut": 0.508,
+"align_next": 0.508,
+"ev_next": 0.501,
+"cut_minus_ev": 0.007000000000000006,
+"align_minus_ev": 0.007000000000000006
+},
+{
+"clip": "espeak450__p021__trunc2",
+"voice": "espeak450",
+"cut": 0.549,
+"align_next": 0.549,
+"ev_next": 0.5569999999999999,
+"cut_minus_ev": -0.007999999999999896,
+"align_minus_ev": -0.007999999999999896
+},
+{
+"clip": "espeak450__p021__trunc3",
+"voice": "espeak450",
+"cut": 0.671,
+"align_next": 0.671,
+"ev_next": 0.6539999999999999,
+"cut_minus_ev": 0.017000000000000126,
+"align_minus_ev": 0.017000000000000126
+},
+{
+"clip": "espeak450__p021__trunc4",
+"voice": "espeak450",
+"cut": 0.752,
+"align_next": 0.752,
+"ev_next": 0.788,
+"cut_minus_ev": -0.03600000000000003,
+"align_minus_ev": -0.03600000000000003
+},
+{
+"clip": "espeak450__p022__trunc1",
+"voice": "espeak450",
+"cut": 0.383,
+"align_next": 0.383,
+"ev_next": 0.416,
+"cut_minus_ev": -0.032999999999999974,
+"align_minus_ev": -0.032999999999999974
+},
+{
+"clip": "espeak450__p022__trunc2",
+"voice": "espeak450",
+"cut": 0.464,
+"align_next": 0.464,
+"ev_next": 0.53,
+"cut_minus_ev": -0.066,
+"align_minus_ev": -0.066
+},
+{
+"clip": "espeak450__p022__trunc3",
+"voice": "espeak450",
+"cut": 0.625,
+"align_next": 0.625,
+"ev_next": 0.6779999999999999,
+"cut_minus_ev": -0.052999999999999936,
+"align_minus_ev": -0.052999999999999936
+},
+{
+"clip": "espeak450__p022__trunc4",
+"voice": "espeak450",
+"cut": 0.806,
+"align_next": 0.826,
+"ev_next": 0.823,
+"cut_minus_ev": -0.016999999999999904,
+"align_minus_ev": 0.0030000000000000027
+},
+{
+"clip": "espeak450__p023__trunc1",
+"voice": "espeak450",
+"cut": 0.442,
+"align_next": 0.442,
+"ev_next": 0.422,
+"cut_minus_ev": 0.020000000000000018,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak450__p023__trunc2",
+"voice": "espeak450",
+"cut": 0.493,
+"align_next": 0.503,
+"ev_next": 0.485,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak450__p023__trunc4",
+"voice": "espeak450",
+"cut": 0.865,
+"align_next": 0.885,
+"ev_next": 0.8899999999999999,
+"cut_minus_ev": -0.02499999999999991,
+"align_minus_ev": -0.004999999999999893
+},
+{
+"clip": "espeak450__p023__trunc5",
+"voice": "espeak450",
+"cut": 1.086,
+"align_next": 1.086,
+"ev_next": 1.075,
+"cut_minus_ev": 0.01100000000000012,
+"align_minus_ev": 0.01100000000000012
+},
+{
+"clip": "espeak450__p023__trunc7",
+"voice": "espeak450",
+"cut": 1.217,
+"align_next": 1.227,
+"ev_next": 1.212,
+"cut_minus_ev": 0.0050000000000001155,
+"align_minus_ev": 0.015000000000000124
+},
+{
+"clip": "espeak450__p023__trunc8",
+"voice": "espeak450",
+"cut": 1.307,
+"align_next": 1.307,
+"ev_next": 1.307,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.0
+},
+{
+"clip": "espeak450__p024__trunc1",
+"voice": "espeak450",
+"cut": 0.454,
+"align_next": 0.464,
+"ev_next": 0.45699999999999996,
+"cut_minus_ev": -0.002999999999999947,
+"align_minus_ev": 0.007000000000000062
+},
+{
+"clip": "espeak450__p024__trunc2",
+"voice": "espeak450",
+"cut": 0.605,
+"align_next": 0.605,
+"ev_next": 0.591,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p024__trunc3",
+"voice": "espeak450",
+"cut": 0.726,
+"align_next": 0.746,
+"ev_next": 0.713,
+"cut_minus_ev": 0.013000000000000012,
+"align_minus_ev": 0.03300000000000003
+},
+{
+"clip": "espeak450__p025__trunc1",
+"voice": "espeak450",
+"cut": 0.456,
+"align_next": 0.466,
+"ev_next": 0.44099999999999995,
+"cut_minus_ev": 0.015000000000000069,
+"align_minus_ev": 0.025000000000000078
+},
+{
+"clip": "espeak450__p025__trunc2",
+"voice": "espeak450",
+"cut": 0.547,
+"align_next": 0.547,
+"ev_next": 0.5329999999999999,
+"cut_minus_ev": 0.014000000000000123,
+"align_minus_ev": 0.014000000000000123
+},
+{
+"clip": "espeak450__p025__trunc3",
+"voice": "espeak450",
+"cut": 0.639,
+"align_next": 0.649,
+"ev_next": 0.6439999999999999,
+"cut_minus_ev": -0.004999999999999893,
+"align_minus_ev": 0.0050000000000001155
+},
+{
+"clip": "espeak450__p025__trunc4",
+"voice": "espeak450",
+"cut": 0.78,
+"align_next": 0.791,
+"ev_next": 0.7949999999999999,
+"cut_minus_ev": -0.014999999999999902,
+"align_minus_ev": -0.0039999999999998925
+},
+{
+"clip": "espeak450__p025__trunc5",
+"voice": "espeak450",
+"cut": 0.872,
+"align_next": 0.872,
+"ev_next": 0.863,
+"cut_minus_ev": 0.009000000000000008,
+"align_minus_ev": 0.009000000000000008
+},
+{
+"clip": "espeak450__p025__trunc6",
+"voice": "espeak450",
+"cut": 0.993,
+"align_next": 0.993,
+"ev_next": 0.958,
+"cut_minus_ev": 0.03500000000000003,
+"align_minus_ev": 0.03500000000000003
+},
+{
+"clip": "espeak450__p026__trunc1",
+"voice": "espeak450",
+"cut": 0.366,
+"align_next": 0.366,
+"ev_next": 0.35,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak450__p026__trunc2",
+"voice": "espeak450",
+"cut": 0.437,
+"align_next": 0.447,
+"ev_next": 0.44999999999999996,
+"cut_minus_ev": -0.012999999999999956,
+"align_minus_ev": -0.002999999999999947
+},
+{
+"clip": "espeak450__p026__trunc3",
+"voice": "espeak450",
+"cut": 0.61,
+"align_next": 0.61,
+"ev_next": 0.609,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.0010000000000000009
+},
+{
+"clip": "espeak450__p026__trunc4",
+"voice": "espeak450",
+"cut": 0.752,
+"align_next": 0.772,
+"ev_next": 0.7709999999999999,
+"cut_minus_ev": -0.018999999999999906,
+"align_minus_ev": 0.001000000000000112
+},
+{
+"clip": "espeak450__p027__trunc1",
+"voice": "espeak450",
+"cut": 0.434,
+"align_next": 0.444,
+"ev_next": 0.40499999999999997,
+"cut_minus_ev": 0.029000000000000026,
+"align_minus_ev": 0.039000000000000035
+},
+{
+"clip": "espeak450__p027__trunc2",
+"voice": "espeak450",
+"cut": 0.535,
+"align_next": 0.545,
+"ev_next": 0.531,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p027__trunc3",
+"voice": "espeak450",
+"cut": 0.615,
+"align_next": 0.625,
+"ev_next": 0.598,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.027000000000000024
+},
+{
+"clip": "espeak450__p027__trunc4",
+"voice": "espeak450",
+"cut": 0.666,
+"align_next": 0.666,
+"ev_next": 0.6659999999999999,
+"cut_minus_ev": 1.1102230246251565e-16,
+"align_minus_ev": 1.1102230246251565e-16
+},
+{
+"clip": "espeak450__p028__trunc1",
+"voice": "espeak450",
+"cut": 0.524,
+"align_next": 0.544,
+"ev_next": 0.5449999999999999,
+"cut_minus_ev": -0.020999999999999908,
+"align_minus_ev": -0.0009999999999998899
+},
+{
+"clip": "espeak450__p028__trunc2",
+"voice": "espeak450",
+"cut": 0.756,
+"align_next": 0.766,
+"ev_next": 0.748,
+"cut_minus_ev": 0.008000000000000007,
+"align_minus_ev": 0.018000000000000016
+},
+{
+"clip": "espeak450__p029__trunc1",
+"voice": "espeak450",
+"cut": 0.476,
+"align_next": 0.486,
+"ev_next": 0.492,
+"cut_minus_ev": -0.016000000000000014,
+"align_minus_ev": -0.006000000000000005
+},
+{
+"clip": "espeak450__p029__trunc2",
+"voice": "espeak450",
+"cut": 0.587,
+"align_next": 0.587,
+"ev_next": 0.5760000000000001,
+"cut_minus_ev": 0.010999999999999899,
+"align_minus_ev": 0.010999999999999899
+},
+{
+"clip": "espeak450__p029__trunc3",
+"voice": "espeak450",
+"cut": 0.749,
+"align_next": 0.749,
+"ev_next": 0.744,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p029__trunc5",
+"voice": "espeak450",
+"cut": 1.032,
+"align_next": 1.032,
+"ev_next": 1.016,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak450__p029__trunc6",
+"voice": "espeak450",
+"cut": 1.083,
+"align_next": 1.093,
+"ev_next": 1.064,
+"cut_minus_ev": 0.018999999999999906,
+"align_minus_ev": 0.028999999999999915
+},
+{
+"clip": "espeak450__p029__trunc7",
+"voice": "espeak450",
+"cut": 1.214,
+"align_next": 1.214,
+"ev_next": 1.197,
+"cut_minus_ev": 0.016999999999999904,
+"align_minus_ev": 0.016999999999999904
+},
+{
+"clip": "espeak450__p030__trunc1",
+"voice": "espeak450",
+"cut": 0.494,
+"align_next": 0.524,
+"ev_next": 0.519,
+"cut_minus_ev": -0.025000000000000022,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p030__trunc2",
+"voice": "espeak450",
+"cut": 0.645,
+"align_next": 0.665,
+"ev_next": 0.669,
+"cut_minus_ev": -0.02400000000000002,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p030__trunc3",
+"voice": "espeak450",
+"cut": 0.806,
+"align_next": 0.826,
+"ev_next": 0.79,
+"cut_minus_ev": 0.016000000000000014,
+"align_minus_ev": 0.03599999999999992
+},
+{
+"clip": "espeak450__p031__trunc1",
+"voice": "espeak450",
+"cut": 0.433,
+"align_next": 0.443,
+"ev_next": 0.45299999999999996,
+"cut_minus_ev": -0.019999999999999962,
+"align_minus_ev": -0.009999999999999953
+},
+{
+"clip": "espeak450__p031__trunc2",
+"voice": "espeak450",
+"cut": 0.604,
+"align_next": 0.604,
+"ev_next": 0.587,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.017000000000000015
+},
+{
+"clip": "espeak450__p031__trunc3",
+"voice": "espeak450",
+"cut": 0.745,
+"align_next": 0.766,
+"ev_next": 0.7749999999999999,
+"cut_minus_ev": -0.029999999999999916,
+"align_minus_ev": -0.008999999999999897
+},
+{
+"clip": "espeak450__p031__trunc4",
+"voice": "espeak450",
+"cut": 1.027,
+"align_next": 1.027,
+"ev_next": 0.996,
+"cut_minus_ev": 0.030999999999999917,
+"align_minus_ev": 0.030999999999999917
+},
+{
+"clip": "espeak450__p032__trunc1",
+"voice": "espeak450",
+"cut": 0.507,
+"align_next": 0.507,
+"ev_next": 0.512,
+"cut_minus_ev": -0.0050000000000000044,
+"align_minus_ev": -0.0050000000000000044
+},
+{
+"clip": "espeak450__p032__trunc2",
+"voice": "espeak450",
+"cut": 0.619,
+"align_next": 0.629,
+"ev_next": 0.621,
+"cut_minus_ev": -0.0020000000000000018,
+"align_minus_ev": 0.008000000000000007
+},
+{
+"clip": "espeak450__p032__trunc3",
+"voice": "espeak450",
+"cut": 0.75,
+"align_next": 0.75,
+"ev_next": 0.729,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.02100000000000002
+},
+{
+"clip": "espeak450__p032__trunc4",
+"voice": "espeak450",
+"cut": 0.801,
+"align_next": 0.811,
+"ev_next": 0.774,
+"cut_minus_ev": 0.027000000000000024,
+"align_minus_ev": 0.03700000000000003
+},
+{
+"clip": "espeak450__p032__trunc5",
+"voice": "espeak450",
+"cut": 0.903,
+"align_next": 0.913,
+"ev_next": 0.8939999999999999,
+"cut_minus_ev": 0.009000000000000119,
+"align_minus_ev": 0.019000000000000128
+},
+{
+"clip": "espeak450__p033__trunc1",
+"voice": "espeak450",
+"cut": 0.508,
+"align_next": 0.508,
+"ev_next": 0.489,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak450__p033__trunc2",
+"voice": "espeak450",
+"cut": 0.67,
+"align_next": 0.67,
+"ev_next": 0.659,
+"cut_minus_ev": 0.01100000000000001,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p034__trunc1",
+"voice": "espeak450",
+"cut": 0.527,
+"align_next": 0.527,
+"ev_next": 0.47,
+"cut_minus_ev": 0.05700000000000005,
+"align_minus_ev": 0.05700000000000005
+},
+{
+"clip": "espeak450__p034__trunc2",
+"voice": "espeak450",
+"cut": 0.588,
+"align_next": 0.588,
+"ev_next": 0.591,
+"cut_minus_ev": -0.0030000000000000027,
+"align_minus_ev": -0.0030000000000000027
+},
+{
+"clip": "espeak450__p035__trunc1",
+"voice": "espeak450",
+"cut": 0.432,
+"align_next": 0.442,
+"ev_next": 0.422,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak450__p035__trunc2",
+"voice": "espeak450",
+"cut": 0.643,
+"align_next": 0.643,
+"ev_next": 0.6459999999999999,
+"cut_minus_ev": -0.0029999999999998916,
+"align_minus_ev": -0.0029999999999998916
+},
+{
+"clip": "espeak450__p035__trunc3",
+"voice": "espeak450",
+"cut": 0.804,
+"align_next": 0.804,
+"ev_next": 0.8,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.0040000000000000036
+},
+{
+"clip": "espeak450__p035__trunc4",
+"voice": "espeak450",
+"cut": 0.945,
+"align_next": 0.945,
+"ev_next": 0.9279999999999999,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.017000000000000015
+},
+{
+"clip": "espeak450__p035__trunc5",
+"voice": "espeak450",
+"cut": 1.015,
+"align_next": 1.026,
+"ev_next": 1.01,
+"cut_minus_ev": 0.004999999999999893,
+"align_minus_ev": 0.016000000000000014
+},
+{
+"clip": "espeak450__p035__trunc6",
+"voice": "espeak450",
+"cut": 1.317,
+"align_next": 1.327,
+"ev_next": 1.314,
+"cut_minus_ev": 0.0029999999999998916,
+"align_minus_ev": 0.0129999999999999
+},
+{
+"clip": "espeak450__p036__trunc1",
+"voice": "espeak450",
+"cut": 0.479,
+"align_next": 0.489,
+"ev_next": 0.528,
+"cut_minus_ev": -0.049000000000000044,
+"align_minus_ev": -0.039000000000000035
+},
+{
+"clip": "espeak450__p036__trunc2",
+"voice": "espeak450",
+"cut": 0.672,
+"align_next": 0.672,
+"ev_next": 0.6659999999999999,
+"cut_minus_ev": 0.006000000000000116,
+"align_minus_ev": 0.006000000000000116
+},
+{
+"clip": "espeak450__p037__trunc1",
+"voice": "espeak450",
+"cut": 0.277,
+"align_next": 0.287,
+"ev_next": 0.427,
+"cut_minus_ev": -0.14999999999999997,
+"align_minus_ev": -0.14
+},
+{
+"clip": "espeak450__p037__trunc2",
+"voice": "espeak450",
+"cut": 0.389,
+"align_next": 0.41,
+"ev_next": 0.427,
+"cut_minus_ev": -0.03799999999999998,
+"align_minus_ev": -0.017000000000000015
+},
+{
+"clip": "espeak450__p041__trunc1",
+"voice": "espeak450",
+"cut": 0.409,
+"align_next": 0.409,
+"ev_next": 0.427,
+"cut_minus_ev": -0.018000000000000016,
+"align_minus_ev": -0.018000000000000016
+},
+{
+"clip": "espeak450__p042__trunc1",
+"voice": "espeak450",
+"cut": 0.425,
+"align_next": 0.425,
+"ev_next": 0.392,
+"cut_minus_ev": 0.032999999999999974,
+"align_minus_ev": 0.032999999999999974
+},
+{
+"clip": "espeak450__p043__trunc1",
+"voice": "espeak450",
+"cut": 0.435,
+"align_next": 0.445,
+"ev_next": 0.433,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak450__p047__trunc1",
+"voice": "espeak450",
+"cut": 0.328,
+"align_next": 0.328,
+"ev_next": 0.374,
+"cut_minus_ev": -0.045999999999999985,
+"align_minus_ev": -0.045999999999999985
+},
+{
+"clip": "espeak450__p049__trunc1",
+"voice": "espeak450",
+"cut": 0.564,
+"align_next": 0.564,
+"ev_next": 0.5449999999999999,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak450__p049__trunc2",
+"voice": "espeak450",
+"cut": 0.756,
+"align_next": 0.766,
+"ev_next": 0.757,
+"cut_minus_ev": -0.0010000000000000009,
+"align_minus_ev": 0.009000000000000008
+},
+{
+"clip": "espeak450__p049__trunc3",
+"voice": "espeak450",
+"cut": 0.967,
+"align_next": 0.967,
+"ev_next": 0.917,
+"cut_minus_ev": 0.04999999999999993,
+"align_minus_ev": 0.04999999999999993
+},
+{
+"clip": "espeak450__p050__trunc1",
+"voice": "espeak450",
+"cut": 0.505,
+"align_next": 0.505,
+"ev_next": 0.525,
+"cut_minus_ev": -0.020000000000000018,
+"align_minus_ev": -0.020000000000000018
+},
+{
+"clip": "espeak450__p051__trunc1",
+"voice": "espeak450",
+"cut": 0.403,
+"align_next": 0.403,
+"ev_next": 0.40299999999999997,
+"cut_minus_ev": 5.551115123125783e-17,
+"align_minus_ev": 5.551115123125783e-17
+},
+{
+"clip": "espeak450__p051__trunc2",
+"voice": "espeak450",
+"cut": 0.685,
+"align_next": 0.685,
+"ev_next": 0.6719999999999999,
+"cut_minus_ev": 0.013000000000000123,
+"align_minus_ev": 0.013000000000000123
+},
+{
+"clip": "espeak450__p051__trunc3",
+"voice": "espeak450",
+"cut": 0.876,
+"align_next": 0.886,
+"ev_next": 0.883,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": 0.0030000000000000027
+},
+{
+"clip": "espeak450__p051__trunc4",
+"voice": "espeak450",
+"cut": 1.037,
+"align_next": 1.047,
+"ev_next": 1.02,
+"cut_minus_ev": 0.016999999999999904,
+"align_minus_ev": 0.026999999999999913
+},
+{
+"clip": "espeak450__p052__trunc1",
+"voice": "espeak450",
+"cut": 0.463,
+"align_next": 0.463,
+"ev_next": 0.45199999999999996,
+"cut_minus_ev": 0.011000000000000065,
+"align_minus_ev": 0.011000000000000065
+},
+{
+"clip": "espeak450__p052__trunc2",
+"voice": "espeak450",
+"cut": 0.563,
+"align_next": 0.583,
+"ev_next": 0.548,
+"cut_minus_ev": 0.014999999999999902,
+"align_minus_ev": 0.03499999999999992
+},
+{
+"clip": "espeak450__p052__trunc3",
+"voice": "espeak450",
+"cut": 0.684,
+"align_next": 0.684,
+"ev_next": 0.665,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak450__p052__trunc4",
+"voice": "espeak450",
+"cut": 1.026,
+"align_next": 1.026,
+"ev_next": 1.013,
+"cut_minus_ev": 0.013000000000000123,
+"align_minus_ev": 0.013000000000000123
+},
+{
+"clip": "espeak450__p052__trunc5",
+"voice": "espeak450",
+"cut": 1.227,
+"align_next": 1.227,
+"ev_next": 1.225,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.0020000000000000018
+},
+{
+"clip": "espeak450__p052__trunc6",
+"voice": "espeak450",
+"cut": 1.368,
+"align_next": 1.368,
+"ev_next": 1.362,
+"cut_minus_ev": 0.006000000000000005,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak450__p053__trunc1",
+"voice": "espeak450",
+"cut": 0.513,
+"align_next": 0.523,
+"ev_next": 0.511,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak450__p053__trunc2",
+"voice": "espeak450",
+"cut": 0.795,
+"align_next": 0.805,
+"ev_next": 0.794,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p053__trunc3",
+"voice": "espeak450",
+"cut": 1.006,
+"align_next": 1.006,
+"ev_next": 1.005,
+"cut_minus_ev": 0.001000000000000112,
+"align_minus_ev": 0.001000000000000112
+},
+{
+"clip": "espeak450__p053__trunc4",
+"voice": "espeak450",
+"cut": 1.147,
+"align_next": 1.147,
+"ev_next": 1.145,
+"cut_minus_ev": 0.0020000000000000018,
+"align_minus_ev": 0.0020000000000000018
+},
+{
+"clip": "espeak450__p054__trunc1",
+"voice": "espeak450",
+"cut": 0.393,
+"align_next": 0.403,
+"ev_next": 0.401,
+"cut_minus_ev": -0.008000000000000007,
+"align_minus_ev": 0.0020000000000000018
+},
+{
+"clip": "espeak450__p054__trunc3",
+"voice": "espeak450",
+"cut": 0.635,
+"align_next": 0.646,
+"ev_next": 0.641,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p054__trunc5",
+"voice": "espeak450",
+"cut": 0.968,
+"align_next": 0.968,
+"ev_next": 0.946,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak450__p054__trunc7",
+"voice": "espeak450",
+"cut": 1.059,
+"align_next": 1.069,
+"ev_next": 1.031,
+"cut_minus_ev": 0.028000000000000025,
+"align_minus_ev": 0.038000000000000034
+},
+{
+"clip": "espeak450__p054__trunc9",
+"voice": "espeak450",
+"cut": 1.584,
+"align_next": 1.614,
+"ev_next": 1.588,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak450__p054__trunc11",
+"voice": "espeak450",
+"cut": 1.856,
+"align_next": 1.856,
+"ev_next": 1.82,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak450__p055__trunc1",
+"voice": "espeak450",
+"cut": 0.464,
+"align_next": 0.464,
+"ev_next": 0.479,
+"cut_minus_ev": -0.014999999999999958,
+"align_minus_ev": -0.014999999999999958
+},
+{
+"clip": "espeak450__p055__trunc2",
+"voice": "espeak450",
+"cut": 0.555,
+"align_next": 0.565,
+"ev_next": 0.5569999999999999,
+"cut_minus_ev": -0.0019999999999998908,
+"align_minus_ev": 0.008000000000000007
+},
+{
+"clip": "espeak450__p056__trunc1",
+"voice": "espeak450",
+"cut": 0.475,
+"align_next": 0.485,
+"ev_next": 0.479,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": 0.006000000000000005
+},
+{
+"clip": "espeak450__p060__trunc1",
+"voice": "espeak450",
+"cut": 0.475,
+"align_next": 0.505,
+"ev_next": 0.491,
+"cut_minus_ev": -0.016000000000000014,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p065__trunc1",
+"voice": "espeak450",
+"cut": 0.525,
+"align_next": 0.525,
+"ev_next": 0.52,
+"cut_minus_ev": 0.0050000000000000044,
+"align_minus_ev": 0.0050000000000000044
+},
+{
+"clip": "espeak450__p065__trunc2",
+"voice": "espeak450",
+"cut": 0.706,
+"align_next": 0.727,
+"ev_next": 0.6799999999999999,
+"cut_minus_ev": 0.026000000000000023,
+"align_minus_ev": 0.04700000000000004
+},
+{
+"clip": "espeak450__p066__trunc1",
+"voice": "espeak450",
+"cut": 0.502,
+"align_next": 0.502,
+"ev_next": 0.525,
+"cut_minus_ev": -0.02300000000000002,
+"align_minus_ev": -0.02300000000000002
+},
+{
+"clip": "espeak450__p066__trunc3",
+"voice": "espeak450",
+"cut": 0.823,
+"align_next": 0.823,
+"ev_next": 0.8240000000000001,
+"cut_minus_ev": -0.001000000000000112,
+"align_minus_ev": -0.001000000000000112
+},
+{
+"clip": "espeak450__p066__trunc4",
+"voice": "espeak450",
+"cut": 0.904,
+"align_next": 0.904,
+"ev_next": 0.9079999999999999,
+"cut_minus_ev": -0.0039999999999998925,
+"align_minus_ev": -0.0039999999999998925
+},
+{
+"clip": "espeak450__p066__trunc6",
+"voice": "espeak450",
+"cut": 1.165,
+"align_next": 1.165,
+"ev_next": 1.167,
+"cut_minus_ev": -0.0020000000000000018,
+"align_minus_ev": -0.0020000000000000018
+},
+{
+"clip": "espeak450__p066__trunc7",
+"voice": "espeak450",
+"cut": 1.356,
+"align_next": 1.366,
+"ev_next": 1.4240000000000002,
+"cut_minus_ev": -0.06800000000000006,
+"align_minus_ev": -0.05800000000000005
+},
+{
+"clip": "espeak450__p066__trunc9",
+"voice": "espeak450",
+"cut": 1.788,
+"align_next": 1.788,
+"ev_next": 1.729,
+"cut_minus_ev": 0.05899999999999994,
+"align_minus_ev": 0.05899999999999994
+},
+{
+"clip": "espeak450__p067__trunc1",
+"voice": "espeak450",
+"cut": 0.424,
+"align_next": 0.424,
+"ev_next": 0.40299999999999997,
+"cut_minus_ev": 0.02100000000000002,
+"align_minus_ev": 0.02100000000000002
+},
+{
+"clip": "espeak450__p068__trunc1",
+"voice": "espeak450",
+"cut": 0.443,
+"align_next": 0.443,
+"ev_next": 0.45199999999999996,
+"cut_minus_ev": -0.008999999999999952,
+"align_minus_ev": -0.008999999999999952
+},
+{
+"clip": "espeak450__p068__trunc2",
+"voice": "espeak450",
+"cut": 0.585,
+"align_next": 0.585,
+"ev_next": 0.544,
+"cut_minus_ev": 0.040999999999999925,
+"align_minus_ev": 0.040999999999999925
+},
+{
+"clip": "espeak450__p068__trunc3",
+"voice": "espeak450",
+"cut": 0.685,
+"align_next": 0.685,
+"ev_next": 0.6639999999999999,
+"cut_minus_ev": 0.02100000000000013,
+"align_minus_ev": 0.02100000000000013
+},
+{
+"clip": "espeak450__p069__trunc1",
+"voice": "espeak450",
+"cut": 0.52,
+"align_next": 0.53,
+"ev_next": 0.51,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.020000000000000018
+},
+{
+"clip": "espeak450__p070__trunc1",
+"voice": "espeak450",
+"cut": 0.395,
+"align_next": 0.405,
+"ev_next": 0.401,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": 0.0040000000000000036
+},
+{
+"clip": "espeak450__p070__trunc2",
+"voice": "espeak450",
+"cut": 0.486,
+"align_next": 0.486,
+"ev_next": 0.476,
+"cut_minus_ev": 0.010000000000000009,
+"align_minus_ev": 0.010000000000000009
+},
+{
+"clip": "espeak450__p070__trunc3",
+"voice": "espeak450",
+"cut": 0.638,
+"align_next": 0.648,
+"ev_next": 0.641,
+"cut_minus_ev": -0.0030000000000000027,
+"align_minus_ev": 0.007000000000000006
+},
+{
+"clip": "espeak450__p070__trunc5",
+"voice": "espeak450",
+"cut": 0.972,
+"align_next": 0.972,
+"ev_next": 0.946,
+"cut_minus_ev": 0.026000000000000023,
+"align_minus_ev": 0.026000000000000023
+},
+{
+"clip": "espeak450__p070__trunc6",
+"voice": "espeak450",
+"cut": 1.013,
+"align_next": 1.013,
+"ev_next": 0.9989999999999999,
+"cut_minus_ev": 0.014000000000000012,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p070__trunc7",
+"voice": "espeak450",
+"cut": 1.084,
+"align_next": 1.094,
+"ev_next": 1.08,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.014000000000000012
+},
+{
+"clip": "espeak450__p071__trunc1",
+"voice": "espeak450",
+"cut": 0.384,
+"align_next": 0.384,
+"ev_next": 0.38,
+"cut_minus_ev": 0.0040000000000000036,
+"align_minus_ev": 0.0040000000000000036
+},
+{
+"clip": "espeak450__p071__trunc2",
+"voice": "espeak450",
+"cut": 0.565,
+"align_next": 0.565,
+"ev_next": 0.583,
+"cut_minus_ev": -0.018000000000000016,
+"align_minus_ev": -0.018000000000000016
+},
+{
+"clip": "espeak450__p072__trunc1",
+"voice": "espeak450",
+"cut": 0.485,
+"align_next": 0.485,
+"ev_next": 0.491,
+"cut_minus_ev": -0.006000000000000005,
+"align_minus_ev": -0.006000000000000005
+},
+{
+"clip": "espeak450__p077__trunc1",
+"voice": "espeak450",
+"cut": 0.488,
+"align_next": 0.488,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": 0.02400000000000002,
+"align_minus_ev": 0.02400000000000002
+},
+{
+"clip": "espeak450__p077__trunc2",
+"voice": "espeak450",
+"cut": 0.64,
+"align_next": 0.65,
+"ev_next": 0.6,
+"cut_minus_ev": 0.040000000000000036,
+"align_minus_ev": 0.050000000000000044
+},
+{
+"clip": "espeak450__p077__trunc3",
+"voice": "espeak450",
+"cut": 0.711,
+"align_next": 0.711,
+"ev_next": 0.71,
+"cut_minus_ev": 0.0010000000000000009,
+"align_minus_ev": 0.0010000000000000009
+},
+{
+"clip": "espeak450__p078__trunc1",
+"voice": "espeak450",
+"cut": 0.443,
+"align_next": 0.443,
+"ev_next": 0.45899999999999996,
+"cut_minus_ev": -0.01599999999999996,
+"align_minus_ev": -0.01599999999999996
+},
+{
+"clip": "espeak450__p078__trunc2",
+"voice": "espeak450",
+"cut": 0.584,
+"align_next": 0.584,
+"ev_next": 0.565,
+"cut_minus_ev": 0.019000000000000017,
+"align_minus_ev": 0.019000000000000017
+},
+{
+"clip": "espeak450__p078__trunc3",
+"voice": "espeak450",
+"cut": 0.836,
+"align_next": 0.866,
+"ev_next": 0.855,
+"cut_minus_ev": -0.019000000000000017,
+"align_minus_ev": 0.01100000000000001
+},
+{
+"clip": "espeak450__p079__trunc1",
+"voice": "espeak450",
+"cut": 0.467,
+"align_next": 0.467,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": 0.003000000000000058,
+"align_minus_ev": 0.003000000000000058
+},
+{
+"clip": "espeak450__p079__trunc2",
+"voice": "espeak450",
+"cut": 0.589,
+"align_next": 0.589,
+"ev_next": 0.593,
+"cut_minus_ev": -0.0040000000000000036,
+"align_minus_ev": -0.0040000000000000036
+},
+{
+"clip": "espeak450__p079__trunc3",
+"voice": "espeak450",
+"cut": 0.711,
+"align_next": 0.711,
+"ev_next": 0.6910000000000001,
+"cut_minus_ev": 0.019999999999999907,
+"align_minus_ev": 0.019999999999999907
+},
+{
+"clip": "espeak450__p079__trunc4",
+"voice": "espeak450",
+"cut": 0.812,
+"align_next": 0.812,
+"ev_next": 0.776,
+"cut_minus_ev": 0.03600000000000003,
+"align_minus_ev": 0.03600000000000003
+},
+{
+"clip": "espeak450__p080__trunc1",
+"voice": "espeak450",
+"cut": 0.463,
+"align_next": 0.463,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": -0.0009999999999999454,
+"align_minus_ev": -0.0009999999999999454
+},
+{
+"clip": "espeak450__p080__trunc2",
+"voice": "espeak450",
+"cut": 0.583,
+"align_next": 0.583,
+"ev_next": 0.59,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": -0.007000000000000006
+},
+{
+"clip": "espeak450__p080__trunc3",
+"voice": "espeak450",
+"cut": 0.704,
+"align_next": 0.704,
+"ev_next": 0.692,
+"cut_minus_ev": 0.01200000000000001,
+"align_minus_ev": 0.01200000000000001
+},
+{
+"clip": "espeak450__p080__trunc4",
+"voice": "espeak450",
+"cut": 0.865,
+"align_next": 0.865,
+"ev_next": 0.8220000000000001,
+"cut_minus_ev": 0.04299999999999993,
+"align_minus_ev": 0.04299999999999993
+},
+{
+"clip": "espeak450__p080__trunc5",
+"voice": "espeak450",
+"cut": 0.966,
+"align_next": 0.966,
+"ev_next": 0.921,
+"cut_minus_ev": 0.04499999999999993,
+"align_minus_ev": 0.04499999999999993
+},
+{
+"clip": "espeak450__p080__trunc6",
+"voice": "espeak450",
+"cut": 1.066,
+"align_next": 1.066,
+"ev_next": 1.071,
+"cut_minus_ev": -0.004999999999999893,
+"align_minus_ev": -0.004999999999999893
+},
+{
+"clip": "espeak450__p081__trunc1",
+"voice": "espeak450",
+"cut": 0.463,
+"align_next": 0.463,
+"ev_next": 0.46399999999999997,
+"cut_minus_ev": -0.0009999999999999454,
+"align_minus_ev": -0.0009999999999999454
+},
+{
+"clip": "espeak450__p081__trunc2",
+"voice": "espeak450",
+"cut": 0.584,
+"align_next": 0.584,
+"ev_next": 0.591,
+"cut_minus_ev": -0.007000000000000006,
+"align_minus_ev": -0.007000000000000006
+},
+{
+"clip": "espeak450__p081__trunc3",
+"voice": "espeak450",
+"cut": 0.705,
+"align_next": 0.705,
+"ev_next": 0.688,
+"cut_minus_ev": 0.017000000000000015,
+"align_minus_ev": 0.017000000000000015
+},
+{
+"clip": "espeak450__p081__trunc4",
+"voice": "espeak450",
+"cut": 0.906,
+"align_next": 0.906,
+"ev_next": 0.919,
+"cut_minus_ev": -0.013000000000000012,
+"align_minus_ev": -0.013000000000000012
+},
+{
+"clip": "espeak450__p082__trunc1",
+"voice": "espeak450",
+"cut": 0.428,
+"align_next": 0.428,
+"ev_next": 0.428,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.0
+},
+{
+"clip": "espeak450__p082__trunc2",
+"voice": "espeak450",
+"cut": 0.53,
+"align_next": 0.53,
+"ev_next": 0.508,
+"cut_minus_ev": 0.02200000000000002,
+"align_minus_ev": 0.02200000000000002
+},
+{
+"clip": "espeak450__p083__trunc1",
+"voice": "espeak450",
+"cut": 0.429,
+"align_next": 0.429,
+"ev_next": 0.429,
+"cut_minus_ev": 0.0,
+"align_minus_ev": 0.0
+}
+]

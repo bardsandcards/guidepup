@@ -1,0 +1,8 @@
+fw run_fw.py Systran/faster-whisper-tiny.en all fw-tiny.en
+fw run_fw.py Systran/faster-whisper-base.en all fw-base.en
+fw run_fw.py Systran/faster-distil-whisper-small.en core fw-distil-small.en
+fw run_fw.py Systran/faster-whisper-small.en core fw-small.en
+fw run_fw.py dropbox-dash/faster-whisper-large-v3-turbo turbo fw-large-v3-turbo
+fw run_fw.py Systran/faster-distil-whisper-small.en real fw-distil-small.en
+fw run_fw.py Systran/faster-whisper-small.en real fw-small.en
+fw run_fw.py dropbox-dash/faster-whisper-large-v3-turbo turbo fw-large-v3-turbo

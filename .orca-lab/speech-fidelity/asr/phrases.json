@@ -1,0 +1,506 @@
+[
+ {
+  "id": "p000",
+  "source": "brief",
+  "text": "Update. button.",
+  "say": "Update. button."
+ },
+ {
+  "id": "p001",
+  "source": "brief",
+  "text": "testing testing 123",
+  "say": "testing testing one hundred twenty three"
+ },
+ {
+  "id": "p002",
+  "source": "brief",
+  "text": "Name. entry.. Focus mode",
+  "say": "Name. entry.. Focus mode"
+ },
+ {
+  "id": "p003",
+  "source": "brief",
+  "text": "heading level 2 Get Started",
+  "say": "heading level two Get Started"
+ },
+ {
+  "id": "p004",
+  "source": "brief",
+  "text": "Skip to main content. link.",
+  "say": "Skip to main content. link."
+ },
+ {
+  "id": "p005",
+  "source": "brief",
+  "text": "navigation landmark. list with 5 items",
+  "say": "navigation landmark. list with five items"
+ },
+ {
+  "id": "p006",
+  "source": "brief",
+  "text": "Guidepup Logo. image.",
+  "say": "Guidepup Logo. image."
+ },
+ {
+  "id": "p007",
+  "source": "brief",
+  "text": "check box not checked. Subscribe to newsletter",
+  "say": "check box not checked. Subscribe to newsletter"
+ },
+ {
+  "id": "p008",
+  "source": "brief",
+  "text": "tab",
+  "say": "tab"
+ },
+ {
+  "id": "p009",
+  "source": "brief",
+  "text": "link",
+  "say": "link"
+ },
+ {
+  "id": "p010",
+  "source": "brief",
+  "text": "Second button. button.",
+  "say": "Second button. button."
+ },
+ {
+  "id": "p011",
+  "source": "brief",
+  "text": "Your cart has 3 items. Subtotal $42.50",
+  "say": "Your cart has three items. Subtotal dollar forty two point five zero"
+ },
+ {
+  "id": "p012",
+  "source": "brief",
+  "text": "Add to cart, Lightning Bolt, Near Mint. button.",
+  "say": "Add to cart, Lightning Bolt, Near Mint. button."
+ },
+ {
+  "id": "p013",
+  "source": "brief",
+  "text": "Search. combo box. collapsed.",
+  "say": "Search. combo box. collapsed."
+ },
+ {
+  "id": "p014",
+  "source": "brief",
+  "text": "leaving list. main landmark.",
+  "say": "leaving list. main landmark."
+ },
+ {
+  "id": "p015",
+  "source": "extra",
+  "text": "Submit. button. unavailable.",
+  "say": "Submit. button. unavailable."
+ },
+ {
+  "id": "p016",
+  "source": "extra",
+  "text": "Email. edit text. required. invalid entry.",
+  "say": "Email. edit text. required. invalid entry."
+ },
+ {
+  "id": "p017",
+  "source": "extra",
+  "text": "heading level 1 Bards and Cards",
+  "say": "heading level one Bards and Cards"
+ },
+ {
+  "id": "p018",
+  "source": "extra",
+  "text": "banner landmark",
+  "say": "banner landmark"
+ },
+ {
+  "id": "p019",
+  "source": "extra",
+  "text": "complementary landmark. Filters",
+  "say": "complementary landmark. Filters"
+ },
+ {
+  "id": "p020",
+  "source": "extra",
+  "text": "footer landmark",
+  "say": "footer landmark"
+ },
+ {
+  "id": "p021",
+  "source": "extra",
+  "text": "Remember me. check box. checked.",
+  "say": "Remember me. check box. checked."
+ },
+ {
+  "id": "p022",
+  "source": "extra",
+  "text": "Dark mode. toggle button. pressed.",
+  "say": "Dark mode. toggle button. pressed."
+ },
+ {
+  "id": "p023",
+  "source": "extra",
+  "text": "Sort by. combo box. Price, low to high. expanded.",
+  "say": "Sort by. combo box. Price, low to high. expanded."
+ },
+ {
+  "id": "p024",
+  "source": "extra",
+  "text": "Next page. link. visited.",
+  "say": "Next page. link. visited."
+ },
+ {
+  "id": "p025",
+  "source": "extra",
+  "text": "table with 4 rows and 3 columns",
+  "say": "table with four rows and three columns"
+ },
+ {
+  "id": "p026",
+  "source": "extra",
+  "text": "row 2. column 3. Price",
+  "say": "row two. column three. Price"
+ },
+ {
+  "id": "p027",
+  "source": "extra",
+  "text": "list item. 2 of 7",
+  "say": "list item. two of seven"
+ },
+ {
+  "id": "p028",
+  "source": "extra",
+  "text": "dialog. Confirm deletion",
+  "say": "dialog. Confirm deletion"
+ },
+ {
+  "id": "p029",
+  "source": "extra",
+  "text": "alert. Your session will expire in 5 minutes",
+  "say": "alert. Your session will expire in five minutes"
+ },
+ {
+  "id": "p030",
+  "source": "extra",
+  "text": "menu. File. 6 items",
+  "say": "menu. File. six items"
+ },
+ {
+  "id": "p031",
+  "source": "extra",
+  "text": "Open. menu item. Control O",
+  "say": "Open. menu item. Control O"
+ },
+ {
+  "id": "p032",
+  "source": "extra",
+  "text": "Settings. tab. 3 of 4. selected.",
+  "say": "Settings. tab. three of four. selected."
+ },
+ {
+  "id": "p033",
+  "source": "extra",
+  "text": "Volume. slider. 50 percent",
+  "say": "Volume. slider. fifty percent"
+ },
+ {
+  "id": "p034",
+  "source": "extra",
+  "text": "progress bar. 75 percent",
+  "say": "progress bar. seventy five percent"
+ },
+ {
+  "id": "p035",
+  "source": "extra",
+  "text": "Search results. heading level 2. 24 results",
+  "say": "Search results. heading level two. twenty four results"
+ },
+ {
+  "id": "p036",
+  "source": "extra",
+  "text": "graphic. Card back",
+  "say": "graphic. Card back"
+ },
+ {
+  "id": "p037",
+  "source": "extra",
+  "text": "out of list",
+  "say": "out of list"
+ },
+ {
+  "id": "p038",
+  "source": "extra",
+  "text": "comma",
+  "say": "comma"
+ },
+ {
+  "id": "p039",
+  "source": "extra",
+  "text": "period",
+  "say": "period"
+ },
+ {
+  "id": "p040",
+  "source": "extra",
+  "text": "exclamation",
+  "say": "exclamation"
+ },
+ {
+  "id": "p041",
+  "source": "extra",
+  "text": "left paren",
+  "say": "left paren"
+ },
+ {
+  "id": "p042",
+  "source": "extra",
+  "text": "dash dash",
+  "say": "dash dash"
+ },
+ {
+  "id": "p043",
+  "source": "extra",
+  "text": "shift tab",
+  "say": "shift tab"
+ },
+ {
+  "id": "p044",
+  "source": "extra",
+  "text": "escape",
+  "say": "escape"
+ },
+ {
+  "id": "p045",
+  "source": "extra",
+  "text": "backspace",
+  "say": "backspace"
+ },
+ {
+  "id": "p046",
+  "source": "extra",
+  "text": "space",
+  "say": "space"
+ },
+ {
+  "id": "p047",
+  "source": "extra",
+  "text": "down arrow",
+  "say": "down arrow"
+ },
+ {
+  "id": "p048",
+  "source": "extra",
+  "text": "enter",
+  "say": "enter"
+ },
+ {
+  "id": "p049",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Guidepup, heading, level 1",
+  "say": "Guidepup, heading, level one"
+ },
+ {
+  "id": "p050",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Reliable Automation",
+  "say": "Reliable Automation"
+ },
+ {
+  "id": "p051",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Full Control, heading, level 3",
+  "say": "Full Control, heading, level three"
+ },
+ {
+  "id": "p052",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Mirrors Real User Experience, heading, level 3",
+  "say": "Mirrors Real User Experience, heading, level three"
+ },
+ {
+  "id": "p053",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Framework Agnostic, heading, level 3",
+  "say": "Framework Agnostic, heading, level three"
+ },
+ {
+  "id": "p054",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "Run with Jest, with Playwright, as an independent script, no vendor lock-in.",
+  "say": "Run with Jest, with Playwright, as an independent script, no vendor lock-in."
+ },
+ {
+  "id": "p055",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "link, Get Started",
+  "say": "link, Get Started"
+ },
+ {
+  "id": "p056",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.docs.snapshot.json",
+  "text": "link, Git Hub",
+  "say": "link, Git Hub"
+ },
+ {
+  "id": "p057",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "A",
+  "say": "A"
+ },
+ {
+  "id": "p058",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "b",
+  "say": "b"
+ },
+ {
+  "id": "p059",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "c",
+  "say": "c"
+ },
+ {
+  "id": "p060",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "Abc selected",
+  "say": "A B C selected"
+ },
+ {
+  "id": "p061",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "blank",
+  "say": "blank"
+ },
+ {
+  "id": "p062",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "1",
+  "say": "one"
+ },
+ {
+  "id": "p063",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "2",
+  "say": "two"
+ },
+ {
+  "id": "p064",
+  "source": "snapshot:examples/playwright-nvda/tests/chromium/chromium.spokenPhrase.textarea.snapshot.json",
+  "text": "3",
+  "say": "three"
+ },
+ {
+  "id": "p065",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Guidepup. heading 1",
+  "say": "Guidepup. heading one"
+ },
+ {
+  "id": "p066",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Reliable Automation For Your Screen Reader A11y Workflows Through JavaScript",
+  "say": "Reliable Automation For Your Screen Reader A eleven y Workflows Through JavaScript"
+ },
+ {
+  "id": "p067",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Full Control",
+  "say": "Full Control"
+ },
+ {
+  "id": "p068",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Mirrors Real User Experience",
+  "say": "Mirrors Real User Experience"
+ },
+ {
+  "id": "p069",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Framework Agnostic",
+  "say": "Framework Agnostic"
+ },
+ {
+  "id": "p070",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Run with Jest, with Playwright, as an. paragraph",
+  "say": "Run with Jest, with Playwright, as an. paragraph"
+ },
+ {
+  "id": "p071",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "Get Started. link",
+  "say": "Get Started. link"
+ },
+ {
+  "id": "p072",
+  "source": "snapshot:examples/playwright-orca/tests/firefox/firefox.spokenPhrase.snapshot.json",
+  "text": "GitHub. link",
+  "say": "GitHub. link"
+ },
+ {
+  "id": "p073",
+  "source": "snapshot:examples/playwright-screenreader/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "Guidepup",
+  "say": "Guidepup"
+ },
+ {
+  "id": "p074",
+  "source": "snapshot:examples/playwright-screenreader/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "Docs",
+  "say": "Docs"
+ },
+ {
+  "id": "p075",
+  "source": "snapshot:examples/playwright-screenreader/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "API",
+  "say": "API"
+ },
+ {
+  "id": "p076",
+  "source": "snapshot:examples/playwright-screenreader/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "GitHub",
+  "say": "GitHub"
+ },
+ {
+  "id": "p077",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "heading level 1 Guidepup",
+  "say": "heading level one Guidepup"
+ },
+ {
+  "id": "p078",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "Screen Reader A11y Workflows",
+  "say": "Screen Reader A eleven y Workflows"
+ },
+ {
+  "id": "p079",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "heading level 3 Full Control",
+  "say": "heading level three Full Control"
+ },
+ {
+  "id": "p080",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "heading level 3 Mirrors Real User Experience",
+  "say": "heading level three Mirrors Real User Experience"
+ },
+ {
+  "id": "p081",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "heading level 3 Framework Agnostic",
+  "say": "heading level three Framework Agnostic"
+ },
+ {
+  "id": "p082",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "link Get Started",
+  "say": "link Get Started"
+ },
+ {
+  "id": "p083",
+  "source": "snapshot:examples/playwright-voiceover/tests/chromium/chromium.spokenPhrase.snapshot.json",
+  "text": "link GitHub",
+  "say": "link GitHub"
+ }
+]

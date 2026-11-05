@@ -1,0 +1,11 @@
+CPU ASR benchmark for screen-reader speech (truncation detection). Results: REPORT.md,
+results.csv (one row per model x clip), summary.csv / tables.md (per model).
+
+Rerun everything:  scripts/run_all.sh
+  (needs uv, docker image guidepup-orca:26.04-audio, gcc; venvs/align is created by hand:
+   uv venv -p 3.12 venvs/align && VIRTUAL_ENV=venvs/align uv pip install torch==2.8.0
+   torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu && VIRTUAL_ENV=venvs/align
+   uv pip install numpy soundfile scipy jiwer whisper-normalizer piper-tts huggingface_hub)
+Rescore only:      scripts/score_all.sh && venvs/align/bin/python scripts/summarize_real.py && venvs/align/bin/python scripts/decision.py && python3 scripts/update_report.py
+One model:         PIN_CPUS=12-15 tools/pin.sh venvs/fw/bin/python scripts/run_fw.py --model Systran/faster-whisper-base.en --subset core --out out/core/fw-base.en.jsonl
+Always run model processes through tools/pin.sh (taskset + LD_PRELOAD shim: onnxruntime otherwise re-pins its threads to other cores).

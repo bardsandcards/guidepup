@@ -1,0 +1,17 @@
+fw run_fw.py Systran/faster-whisper-tiny.en sil fw-tiny.en
+fw run_fw.py Systran/faster-whisper-base.en sil fw-base.en
+fw run_fw.py Systran/faster-distil-whisper-small.en sil fw-distil-small.en
+fw run_fw.py Systran/faster-whisper-small.en sil fw-small.en
+fw run_fw.py dropbox-dash/faster-whisper-large-v3-turbo sil fw-large-v3-turbo
+wcpp run_wcpp.py tiny.en-q5_1 sil wcpp-tiny.en-q5_1
+wcpp run_wcpp.py base.en-q5_1 sil wcpp-base.en-q5_1
+moon run_moon.py tiny sil moonshine-tiny
+moon run_moon.py base sil moonshine-base
+moonv run_moonv.py tiny-streaming sil moonv-tiny-streaming
+moonv run_moonv.py small-streaming sil moonv-small-streaming
+onnxasr run_onnxasr.py parakeet-tdt-0.6b-v2 sil parakeet-tdt-0.6b-v2
+onnxasr run_onnxasr.py parakeet-tdt-0.6b-v3 sil parakeet-tdt-0.6b-v3
+onnxasr run_onnxasr.py canary-180m-flash sil canary-180m-flash
+sherpa run_sherpa.py zipformer-en-2023-06-26 sil zipformer-en-2023-06-26
+vosk run_vosk.py vosk-model-small-en-us-0.15 sil vosk-small-en-us-0.15
+vosk run_vosk.py vosk-model-en-us-0.22-lgraph sil vosk-en-us-0.22-lgraph

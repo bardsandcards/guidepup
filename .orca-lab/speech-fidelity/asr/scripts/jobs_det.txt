@@ -1,0 +1,6 @@
+fw run_fw.py Systran/faster-whisper-tiny.en det fw-tiny.en
+fw run_fw.py Systran/faster-whisper-base.en det fw-base.en
+fw run_fw.py Systran/faster-distil-whisper-small.en det fw-distil-small.en
+fw run_fw.py Systran/faster-whisper-small.en det fw-small.en
+wcpp run_wcpp.py tiny.en-q5_1 det wcpp-tiny.en-q5_1
+wcpp run_wcpp.py base.en-q5_1 det wcpp-base.en-q5_1
