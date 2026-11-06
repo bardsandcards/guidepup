@@ -1,0 +1,44 @@
+name: exp-129-au-probe
+
+on:
+  push:
+    branches: [exp/129-au-probe]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-26, xcode-27]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: sw_vers && csrutil status
+      - name: Build cmorten's spike (ad-hoc, as its CI does)
+        run: |
+          git clone -q https://github.com/guidepup/macos-at-driver-server.git spike
+          git -C spike checkout -q 8fed5d3
+          xcodebuild -quiet \
+            -project spike/src/MacOSATDriverServer/MacOSATDriverServer.xcodeproj \
+            -scheme MacOSATDriverServerExtension -configuration Debug build \
+            CODE_SIGN_IDENTITY=- CODE_SIGNING_ALLOWED=YES CODE_SIGNING_REQUIRED=YES DEVELOPMENT_TEAM=
+      - name: Fetch Bocoup 0.1.2
+        run: |
+          mkdir bocoup
+          curl -fsSL https://registry.npmjs.org/@bocoup/macos-at-driver-server/-/macos-at-driver-server-0.1.2.tgz | tar xz -C bocoup
+      - name: Probe before guidepup setup
+        run: |
+          zsh exp-129/probe.sh spike/src/MacOSATDriverServer/Build/Debug/MacOSATDriverServer.app spike-before-setup
+          zsh exp-129/probe.sh bocoup/package/MacOSATDriverServer/Build/Debug/MacOSATDriverServer.app bocoup-before-setup
+      - run: npx @guidepup/setup setup --ci
+      - name: Probe after guidepup setup
+        run: |
+          zsh exp-129/probe.sh spike/src/MacOSATDriverServer/Build/Debug/MacOSATDriverServer.app spike-after-setup
+          zsh exp-129/probe.sh bocoup/package/MacOSATDriverServer/Build/Debug/MacOSATDriverServer.app bocoup-after-setup
